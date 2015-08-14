@@ -1,0 +1,8 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.scale-100"
+"ResourceDimensions"		"scale-100"
+
+[Files]
+"d:\OneDrive\documents\visual studio 2015\Projects\ZJULife\ZJULife\obj\Release\filemap.scale-100.pri"			"resources.pri"
+"d:\OneDrive\documents\visual studio 2015\Projects\ZJULife\ZJULife\obj\Release\PackageLayout\Assets\WideLogo.scale-100.png"			"Assets\WideLogo.scale-100.png"
+"d:\OneDrive\documents\visual studio 2015\Projects\ZJULife\ZJULife\obj\Release\PackageLayout\Assets\SmallLogo.scale-100.png"			"Assets\SmallLogo.scale-100.png"

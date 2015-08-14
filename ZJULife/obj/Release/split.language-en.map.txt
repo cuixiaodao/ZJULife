@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-en"
+"ResourceDimensions"		"language-en-us"
+
+[Files]
+"D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\split.language-en.pri"			"resources.pri"

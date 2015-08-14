@@ -1,0 +1,146 @@
+﻿{"Groups":[
+  {
+    "UniqueId": "Group-1",
+    "Title": "新生须知",       
+    "Items":
+    [
+      {
+        "UniqueId": "Group-1-Item-1",
+        "Title": "防坑须知",
+        "Description": "黑心，买，卖，商家",
+        "ImagePath": "Assets/Icon1.png",
+        "DataPath": "DataModel/RTF1_1.rtf"
+      },
+      {
+        "UniqueId": "Group-1-Item-2",
+        "Title": "内网资源",
+        "Description": "关键词：内网资源，cc98，缘网，nhd",
+        "ImagePath": "Assets/Icon2.png",
+        "DataPath": "DataModel/RTF1_2.rtf"
+      },
+      {
+        "UniqueId": "Group-1-Item-3",
+        "Title": "网络办理",
+        "Description": "关键词：网络办理，闪讯，vpn，宽带",
+        "ImagePath": "Assets/Icon3.png",
+        "DataPath": "DataModel/RTF1_3.rtf"
+      }
+    ]
+  },
+    {
+        "UniqueId": "Group-2",
+        "Title": "交通",
+        "Items": [
+            {
+                "UniqueId": "Group-2-Item-1",
+                "Title": "电子地图",
+                "Description": "关键词：地图，教学楼，图书馆，哪",
+                "ImagePath": "Assets/Icon4.png",
+                "DataPath": "DataModel/RTF2_1.rtf"
+            },
+            {
+                "UniqueId": "Group-2-Item-2",
+                "Title": "校车查询",
+                "Description": "关键词：校车，去，公交",
+                "ImagePath": "Assets/Icon5.png",
+                "DataPath": "DataModel/RTF2_2.rtf"
+            },
+            {
+                "UniqueId": "Group-2-Item-3",
+                "Title": "常去地点集合",
+                "Description": "关键词：银行，快寄",
+                "ImagePath": "Assets/Icon6.png",
+                "DataPath": "DataModel/RTF2_3.rtf"
+            }
+        ]
+    },
+    {
+        "UniqueId": "Group-3",
+        "Title": "学习",
+        "Items": [
+            {
+                "UniqueId": "Group-3-Item-1",
+                "Title": "自习地点",
+                "Description": "关键词：自习，学习，看书，教室，教学楼",
+                "ImagePath": "Assets/Icon7.png",
+                "DataPath": "DataModel/RTF3_1.rtf"
+            },
+            {
+                "UniqueId": "Group-3-Item-2",
+                "Title": "选课经验",
+                "Description": "关键词：选课，绩点，学分",
+                "ImagePath": "Assets/Icon8.png",
+                "DataPath": "DataModel/RTF3_2.rtf"
+            },
+            {
+                "UniqueId": "Group-3-Item-3",
+                "Title": "综素与二课",
+                "Description": "关键词：第二课堂，学分，综素加分",
+                "ImagePath": "Assets/Icon9.png",
+                "DataPath": "DataModel/RTF3_3.rtf"
+            },
+            {
+                "UniqueId": "Group-3-Item-4",
+                "Title": "奖助学金申报",
+                "Description": "关键词：奖学金，助学金，申报",
+                "ImagePath": "Assets/Icon10.png",
+                "DataPath": "DataModel/RTF3_4.rtf"
+            }
+        ]
+    },
+    {
+        "UniqueId": "Group-4",
+        "Title": "医食住购",
+        "Items": [
+            {
+                "UniqueId": "Group-4-Item-1",
+                "Title": "就医事项",
+                "Description": "关键词：医院，受伤",
+                "ImagePath": "Assets/Icon11.png",
+                "DataPath": "DataModel/RTF4_1.rtf"
+            },
+            {
+                "UniqueId": "Group-4-Item-2",
+                "Title": "吃货交流",
+                "Description": "关键词：吃货，食物，好吃的",
+                "ImagePath": "Assets/Icon12.png",
+                "DataPath": "DataModel/RTF4_2.rtf"
+            },
+            {
+                "UniqueId": "Group-4-Item-3",
+                "Title": "临时住所",
+                "Description": "关键词：临时住所，宾馆，旅馆",
+                "ImagePath": "Assets/Icon13.png",
+                "DataPath": "DataModel/RTF4_3.rtf"
+            },
+            {
+                "UniqueId": "Group-4-Item-4",
+                "Title": "购物推荐",
+                "Description": "关键词：购物，买东西，卖",
+                "ImagePath": "Assets/Icon14.png",
+                "DataPath": "DataModel/RTF4_4.rtf"
+            }
+        ]
+    },
+    {
+        "UniqueId": "Group-5",
+        "Title": "其他",
+        "Items": [
+            {
+                "UniqueId": "Group-5-Item-1",
+                "Title": "关于",
+                "Description": "关键词：关于，开发",
+                "ImagePath": "Assets/Icon15.png",
+                "DataPath": "DataModel/RTF5_1.rtf"
+            },
+            {
+                "UniqueId": "Group-5-Item-2",
+                "Title": "更多校内app",
+                "Description": "关键词：校内app推荐，求是潮客户端，CC98,cc98",
+                "ImagePath": "Assets/Icon16.png",
+                "DataPath": "DataModel/RTF5_2.rtf"
+            }
+        ]
+    }
+]
+}

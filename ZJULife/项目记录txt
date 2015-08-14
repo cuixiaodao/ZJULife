@@ -1,0 +1,22 @@
+﻿1.完善页面，完善了界面转换动画。
+2.进一步完善地图，提高地图响应速度。（如性能仍然不良，建议将drawMapIcon读取转为async）
+3.对定位加了时间限制。
+4.地图遇到错误用messageDialog提示。
+5.await MyMap.TrySetViewAsync(pos, MyMap.ZoomLevel, MyMap.Heading, MyMap.Pitch, MapAnimationKind.Linear) 更改到backlocation()函数下，位置变动不再
+	引起定位。
+6.提高定位速度。
+7.change 定位精度， default.(定位响应速度提升巨大)
+8.改好了suspend
+9.增加了bing launch.
+10.修改了defaultviewmodel,使之仍为places，防止查路线出错。
+11.修改了placeslist 背景色，透明度。
+12.转入bing地图时不再传入位置，提高体验。。
+13.更改了string为空的检测
+14.使用places.json
+15.*4号班车endtime is null,Bus-7-Trip-3-1
+16，加入sqlite数据库，数据由excel->csv->导入sqlite studio;
+17. 提升至universal app.
+18.改成去除pivot5
+19,更新数据库，记得改app.xmal.cs
+20.更新程序记得改about页面版本号
+22.navigationHelper更改了如下语句:if (this.GoBackCommand.CanExecute(null) && e.Handled == false)

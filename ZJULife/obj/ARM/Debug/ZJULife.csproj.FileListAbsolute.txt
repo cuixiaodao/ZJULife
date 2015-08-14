@@ -1,0 +1,189 @@
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\App.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\About.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\AppRecommend.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\BusQuery.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\Map.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\SearchPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.xr.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\resources.pri
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\AppxManifest.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.build.appxrecipe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\XamlTypeInfo.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\XamlSaveStateFile.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.csproj.GenerateResource.Cache
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\priconfig.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\priconfig.xml.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\layout.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\layout.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\resources.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\resources.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\pri.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\pri.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\qualifiers.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\qualifiers.txt.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ProjectArchitectures.txt
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\App.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\About.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\AppRecommend.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\BusQuery.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\Map.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\SearchPage.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.xr.xml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\resources.pri
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\AppxManifest.xml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.build.appxrecipe
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.g.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.g.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.g.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.g.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.g.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\XamlTypeInfo.g.cs
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.xaml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.xaml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.xaml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.xaml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.xaml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.xaml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.xaml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.xaml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\XamlSaveStateFile.xml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.csproj.GenerateResource.Cache
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\priconfig.xml
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\priconfig.xml.intermediate
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\layout.resfiles
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\layout.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\resources.resfiles
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\resources.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\pri.resfiles
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\pri.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\qualifiers.txt
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\qualifiers.txt.intermediate
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Debug\ProjectArchitectures.txt
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.exe
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.pdb
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\App.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\About.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\AppRecommend.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\BusQuery.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\Map.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\SearchPage.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\ItemPage.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\PivotPage.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.xr.xml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.exe
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.pdb
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\resources.pri
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\AppxManifest.xml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\bin\ARM\Debug\ZJULife.build.appxrecipe
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\App.g.i.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\App.g.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\About.g.i.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\About.g.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.g.i.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.g.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.g.i.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.g.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\Map.g.i.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\Map.g.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.g.i.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.g.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.g.i.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.g.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.g.i.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.g.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\XamlTypeInfo.g.cs
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\App.xaml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\About.xaml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.xaml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.xaml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\Map.xaml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.xaml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.xaml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.xaml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\App.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\About.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\Map.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.xbf
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\XamlSaveStateFile.xml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.csproj.GenerateResource.Cache
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\priconfig.xml
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\priconfig.xml.intermediate
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\layout.resfiles
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\layout.resfiles.intermediate
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\resources.resfiles
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\resources.resfiles.intermediate
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\pri.resfiles
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\pri.resfiles.intermediate
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\qualifiers.txt
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\qualifiers.txt.intermediate
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\OneDrive\Documents\GitRepos\ZJULife\ZJULife\obj\ARM\Debug\ProjectArchitectures.txt

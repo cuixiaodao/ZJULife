@@ -1,0 +1,31 @@
+﻿{"Places": [
+        {
+            "Name": "外国",
+            "Latitude": 47.6249,
+            "Longitude": -122.1432,
+            "Kind": "Dormitory",
+            "Description": "32舍"
+        },
+        {
+            "Name": "31舍",
+            "Latitude": 30.2679866743,
+            "Longitude": 120.1232243450,
+            "Kind": "Dormitory",
+            "Description": "31舍"
+        },
+		{
+            "Name": "外国",
+            "Latitude": 47.6229,
+            "Longitude": -122.1412,
+            "Kind": "Dormitory",
+            "Description": "32舍"
+        },
+        {
+            "Name": "31舍",
+            "Latitude": 30.2679466743,
+            "Longitude": 120.1212243450,
+            "Kind": "Dormitory",
+            "Description": "31舍"
+        }
+            ]
+}

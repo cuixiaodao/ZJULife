@@ -1,0 +1,35 @@
+                <StackPanel x:Name="ResultsLists" Grid.Row="1" Margin="0,15,18,0">
+                    <StackPanel Orientation="Vertical" Margin="6,0,0,0">
+                        <TextBlock Text="仅供测试" HorizontalAlignment="Left"
+                                Foreground="{ThemeResource MyWhite}" FontSize="32"
+                                FontFamily="微软雅黑" CharacterSpacing="20" Margin="0,0,0,10"/>
+
+                        <TextBlock Text="仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试" 
+                                HorizontalAlignment="Left"
+                                TextWrapping="Wrap" MaxLines="3"
+                                Style="{ThemeResource MyHelpTextStyle}" FontSize="20"
+                                CharacterSpacing="6" TextTrimming="WordEllipsis"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="6,0,0,0">
+                        <TextBlock Text="仅供测试" HorizontalAlignment="Left"
+                                Foreground="{ThemeResource MyWhite}" FontSize="32"
+                                FontFamily="微软雅黑" CharacterSpacing="20" Margin="0,0,0,10"/>
+
+                        <TextBlock Text="仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试" 
+                                HorizontalAlignment="Left"
+                                TextWrapping="Wrap" MaxLines="3"
+                                Style="{ThemeResource MyHelpTextStyle}" FontSize="20"
+                                CharacterSpacing="6" TextTrimming="WordEllipsis"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Margin="6,0,0,0">
+                        <TextBlock Text="仅供测试" HorizontalAlignment="Left"
+                                Foreground="{ThemeResource MyWhite}" FontSize="32"
+                                FontFamily="微软雅黑" CharacterSpacing="20" Margin="0,0,0,10"/>
+
+                        <TextBlock Text="仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试仅供测试" 
+                                HorizontalAlignment="Left"
+                                TextWrapping="Wrap" MaxLines="3"
+                                Style="{ThemeResource MyHelpTextStyle}" FontSize="20"
+                                CharacterSpacing="6" TextTrimming="WordEllipsis"/>
+                    </StackPanel>
+                </StackPanel>

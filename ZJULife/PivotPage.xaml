@@ -1,0 +1,235 @@
+﻿<Page
+    x:Class="ZJULife.PivotPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ZJULife"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:ZJULife.Data"
+    xmlns:valueconverter="using:ZJULife.Converters"
+    mc:Ignorable="d"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    Background="{StaticResource MyDark}">
+    <Page.BottomAppBar>
+        <!---->
+        <CommandBar ClosedDisplayMode="Minimal" Opacity="0.9"  Background="{ThemeResource MyDark}">
+            <AppBarButton x:Name="FeedBackButton"  FontFamily="微软雅黑" Label="反馈" Icon="Account" Click="FeedBackButton_Click"/> 
+            <AppBarButton x:Name="CommentButton" FontFamily="微软雅黑" Label="评分" Icon="Like" Click="CommentButton_Click"/>                       
+            <AppBarButton x:Name="AboutButton" FontFamily="微软雅黑" Label="关于" Icon="Help" Click="AboutButton_Click"/>
+            <AppBarButton x:Name="MoreAppButton" FontFamily="微软雅黑" Label="应用推荐" Icon="ViewAll" Click="MoreAppButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+        <Page.Transitions>
+            <TransitionCollection>
+                <NavigationThemeTransition>
+                    <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                        <CommonNavigationTransitionInfo IsStaggeringEnabled="True"/>
+                    </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                </NavigationThemeTransition>
+            </TransitionCollection>
+        </Page.Transitions>
+
+        <Grid>
+            <Grid.Resources>
+                <Storyboard x:Name="ChangeClassName">
+                    <DoubleAnimation Storyboard.TargetName="AnimatedTransform" 
+                                 Storyboard.TargetProperty="Y"
+                                 From="5" 
+                                 To="0"                                 
+                                 Duration="0:0:0.1" />
+                </Storyboard>
+                <Storyboard x:Name="SearchIconPressedStoryboard">
+                    <DoubleAnimation Storyboard.TargetName="Rotation"
+                                Storyboard.TargetProperty=" RotationY"
+                                From="0" 
+                                To="-5"                                 
+                                Duration="0:0:0.1" />
+                    <DoubleAnimation Storyboard.TargetName="Rotation"
+                                Storyboard.TargetProperty=" RotationZ"
+                                From="0" 
+                                To="-5"                                 
+                                Duration="0:0:0.1" />
+                </Storyboard>
+                <Storyboard x:Name="SearchIconReleasedStoryboard">
+                    <DoubleAnimation Storyboard.TargetName="Rotation"
+                                Storyboard.TargetProperty=" RotationY"
+                                From="-5" 
+                                To="0"                                 
+                                Duration="0:0:0.1" />
+                    <DoubleAnimation Storyboard.TargetName="Rotation"
+                                Storyboard.TargetProperty=" RotationZ"
+                                From="-5" 
+                                To="0"                                 
+                                Duration="0:0:0.1" />
+                </Storyboard>
+            </Grid.Resources>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="{ThemeResource MyGreen}">
+                <Viewbox HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="18,6,0,0">
+                    <TextBlock FontFamily="Segoe UI Light" FontWeight="Bold" 
+                           Foreground="{StaticResource MyWhite}" >ZJU life</TextBlock>
+                </Viewbox>
+                <Viewbox x:Name="SearchIcon" VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                     Margin="0,24,18,20">
+                    <Image Source="Assets/Search.png" Tapped="Image_Tapped" PointerPressed="Image_PointerPressed" PointerReleased="Image_PointerReleased">
+                        <Image.Projection>
+                            <PlaneProjection x:Name="Rotation" CenterOfRotationX="0" CenterOfRotationY="1"  CenterOfRotationZ="1"/>
+                        </Image.Projection>
+                    </Image>
+                </Viewbox>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="18,5,0,0" FontSize="22" FontFamily="Segoe UI Light" Foreground="{StaticResource MyWhite}" Height="21" >for</TextBlock>
+                        <TextBlock Margin="6,5,0,0" FontSize="22" FontFamily="Segoe UI Light" Foreground="{StaticResource MyGreen_x}" FontWeight="Bold" Height="21">Convenience</TextBlock>
+                    </StackPanel>
+
+                    <Pivot x:Uid="Pivot" x:Name="pivot" CommonNavigationTransitionInfo.IsStaggerElement="True"
+                        SelectionChanged="pivot_SelectionChanged">
+                        <Pivot.Resources>
+                            <valueconverter:WidthConverter x:Key="widthConverter" />
+
+                            <Style TargetType="Ellipse" x:Key="MyEllipseStyle">
+                                <Setter Property="Fill" Value="{ThemeResource MyGray}" />
+                                <Setter Property="Width" Value="25" />
+                                <Setter Property="Height" Value="25"/>
+                                <Setter Property="Margin" Value="4,8,0,0"/>
+                            </Style>
+
+                            <Style TargetType="GridView" x:Key="MyPivotItemGridViewStyle">
+                                <Setter Property="IsItemClickEnabled" Value="True" />
+                                <Setter Property="Margin" Value="0,0,0,0"/>
+                                <Setter Property="ContinuumNavigationTransitionInfo.ExitElementContainer" Value="True" />
+                                <Setter Property="Height" Value="Auto" />
+                            </Style>
+
+                            <DataTemplate x:Name="ItemTemplate">
+                                <StackPanel Width="{Binding ElementName=pivot,Path=ActualWidth,Converter={StaticResource widthConverter},ConverterParameter=0.5}"
+                                        Margin="0,16,0,18">
+                                    <Image Source="{Binding ImagePath}" HorizontalAlignment="Center"
+                                       Margin="18,0,18,0" Stretch="Uniform" />
+
+                                    <TextBlock
+                                        Text="{Binding Title}" TextWrapping="Wrap"
+                                        Pivot.SlideInAnimationGroup="1" CommonNavigationTransitionInfo.IsStaggerElement="True"
+                                        Style="{ThemeResource MyTextBlockStyle}" TextAlignment="Center"
+                                        Margin="0,10,0,0"/>
+                                </StackPanel>
+                            </DataTemplate>
+
+                            <DataTemplate x:Name="MyPivotItemTemplate">
+                                <GridView
+                                    Style="{ThemeResource MyPivotItemGridViewStyle}" 
+                                    ItemsSource="{Binding Items}"                             
+                                    ItemClick="ItemView_ItemClick"
+                                    ItemTemplate="{StaticResource ItemTemplate}">
+                                </GridView>
+                            </DataTemplate>
+                        </Pivot.Resources>
+                        <!--Pivot item one-->
+                        <PivotItem
+                    x:Uid="PivotItem1" 
+                    Margin="0,0,0,0"  
+                    DataContext="{Binding FirstGroup}"
+                    d:DataContext="{Binding Groups[0], Source={d:DesignData Source=/DataModel/Data.json, Type=data:DataSource}}"
+                    ContentTemplate="{StaticResource MyPivotItemTemplate}"    
+                    CommonNavigationTransitionInfo.IsStaggerElement="True">
+
+                            <PivotItem.Header>
+                                <Ellipse x:Name="ClassIcon1" Style="{ThemeResource MyEllipseStyle}" Fill="{ThemeResource MyWhite}" />
+                            </PivotItem.Header>
+
+                            <!--Double line list with text wrapping-->
+                            <!--<GridView
+                        Style="{ThemeResource MyPivotItemGridViewStyle}" 
+                        ItemsSource="{Binding Items}"                             
+                        ItemClick="ItemView_ItemClick"
+                        ItemTemplate="{StaticResource ItemTemplate}">
+                        </GridView>-->
+                        </PivotItem>
+
+                        <!--Pivot item two-->
+                        <PivotItem
+                    x:Uid="PivotItem2"
+                    Margin="0,0,0,0"
+                    Loaded="SecondPivot_Loaded"
+                    DataContext="{Binding SecondGroup}"
+                    d:DataContext="{Binding Groups[1], Source={d:DesignData Source=/DataModel/Data.json, Type=data:DataSource}}" 
+                          ContentTemplate="{StaticResource MyPivotItemTemplate}">
+
+                            <PivotItem.Header>
+                                <Ellipse x:Name="ClassIcon2" Style="{ThemeResource MyEllipseStyle}" />
+                            </PivotItem.Header>
+
+                            <!--Double line list no text wrapping-->
+                            <!--<GridView
+                        Style="{ThemeResource MyPivotItemGridViewStyle}" 
+                        ItemsSource="{Binding Items}"                             
+                        ItemClick="ItemView_ItemClick"
+                        ItemTemplate="{StaticResource ItemTemplate}">
+                        </GridView>-->
+                        </PivotItem>
+
+                        <!--Pivot item three-->
+                        <PivotItem
+                    x:Uid="PivotItem3"
+                    Margin="0,0,0,0"
+                    Loaded="ThirdPivot_Loaded"
+                    DataContext="{Binding ThirdGroup}"
+                    d:DataContext="{Binding Groups[2], Source={d:DesignData Source=/DataModel/Data.json, Type=data:DataSource}}" 
+                          ContentTemplate="{StaticResource MyPivotItemTemplate}">
+
+                            <PivotItem.Header>
+                                <Ellipse x:Name="ClassIcon3" Style="{ThemeResource MyEllipseStyle}" />
+                            </PivotItem.Header>
+
+                            <!--Double line list no text wrapping-->
+                            <GridView                       
+                        Style="{ThemeResource MyPivotItemGridViewStyle}"             
+                        ItemClick="ItemView_ItemClick"                
+                        ItemsSource="{Binding Items}"
+                        ItemTemplate="{StaticResource ItemTemplate}">
+                            </GridView>
+                        </PivotItem>
+
+                        <!--Pivot item four-->
+                        <PivotItem
+                    x:Uid="PivotItem4"
+                    Margin="0,0,0,0"
+                    Loaded="ForThPivot_Loaded"
+                    DataContext="{Binding ForthGroup}"
+                    d:DataContext="{Binding Groups[3], Source={d:DesignData Source=/DataModel/Data.json, Type=data:DataSource}}">
+
+                            <PivotItem.Header>
+                                <Ellipse x:Name="ClassIcon4" Style="{ThemeResource MyEllipseStyle}" />
+                            </PivotItem.Header>
+
+                            <!--Double line list no text wrapping-->
+                            <GridView                       
+                        Style="{ThemeResource MyPivotItemGridViewStyle}"             
+                        ItemClick="ItemView_ItemClick"                
+                        ItemsSource="{Binding Items}"
+                        ItemTemplate="{StaticResource ItemTemplate}">
+                            </GridView>
+                        </PivotItem>
+                    </Pivot>
+                </StackPanel>
+
+                <TextBlock x:Name="ClassNameTextBlock" Style="{ThemeResource MyTextBlockStyle}" 
+                       FontWeight="Bold" FontSize="28" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                       Margin="0,25,18,0" Text="Loading..." RenderTransformOrigin="0.5,0.5" >
+                    <TextBlock.RenderTransform>
+                        <TranslateTransform x:Name="AnimatedTransform"/>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </Grid>
+        </Grid>
+</Page>

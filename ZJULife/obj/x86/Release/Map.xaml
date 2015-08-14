@@ -1,0 +1,128 @@
+﻿<Page 
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps" 
+    x:Class="ZJULife.Map"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ZJULife"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:valueconverter="using:ZJULife.Converters"
+    mc:Ignorable="d"   
+    Background="{ThemeResource MyDark}" >
+    
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Page.BottomAppBar>
+        <CommandBar  Opacity="0.8"  Background="{ThemeResource MyDark}">
+            <AppBarButton x:ConnectionId='1' x:Name="PlacesButton" FontFamily="微软雅黑" Label="地点" Icon="Home"                           />
+            <AppBarButton x:Name="RouteButton" FontFamily="微软雅黑" Label="路线" Icon="Go">
+                <AppBarButton.Flyout>
+                    <Flyout x:Name="FindRouteFlyout">
+                        <TextBox x:ConnectionId='4' x:Name="FindRouteTextBox"   HorizontalAlignment="Left" Width="360" Margin="20,0,20,0"
+                                BorderThickness="0,0,0,1.5" Foreground="{ThemeResource MyDark}" 
+                                FontSize="28" IsSpellCheckEnabled="False" FontFamily="微软雅黑" PlaceholderText="输入目的地" 
+                                                                                                        InputScope="Search"/>
+                    </Flyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+
+            <AppBarButton x:ConnectionId='2' x:Name="LocationButton" FontFamily="微软雅黑" Label="我" Icon="Target"                             />
+            <AppBarButton x:ConnectionId='3' x:Name="BingButton"  FontFamily="微软雅黑" Label="Bing"                          Icon="Forward"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <!--TODO: the Map Control-->
+        <Maps:MapControl x:ConnectionId='5' x:Name="MyMap" Margin="0,0,0,-65"
+                         MapServiceToken="m2wVybIZi887s2i955L6Eg"                             LandmarksVisible="True" >
+        </Maps:MapControl>
+        <Popup x:Name="mapObjectDescriptionPopup" VerticalAlignment="Top" Height="auto">            
+            <Grid Background="{ThemeResource MyDark}" Opacity="0.9" Height="auto" Width="{Binding ElementName=mapObjectDescriptionPopup,Path=ActualWidth}">                    
+                <TextBlock x:Name="mapObjectDescriptionTextblock" Foreground="{ThemeResource MyWhite}" 
+                       FontSize="24" FontFamily="微软雅黑" TextWrapping="Wrap" Margin="8,8,8,8"/>
+            </Grid>
+        </Popup>        
+                        
+        <Grid x:Name="MyPlacesGrid" Visibility="Collapsed" Opacity="0.8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="2*" />                    
+                <ColumnDefinition  Width="3*" />
+            </Grid.ColumnDefinitions>
+            
+            <Grid x:Name="PlacesListColumn" Background="{ThemeResource MyDark}" Height="500" VerticalAlignment="Bottom">                  
+                <Grid.Resources>
+                    <DataTemplate x:Name="ItemTemplate">
+                        <TextBlock Text="{Binding Name}" FontFamily="微软雅黑"  FontWeight="Medium" FontSize="18" Foreground="{ThemeResource MyWhite}"                                                                                                   
+                            TextAlignment="Left" HorizontalAlignment="Left" Margin="12,0,0,12" TextWrapping="Wrap"/>
+                    </DataTemplate>
+                    
+                    <CollectionViewSource x:Name="GroupedPlaces" IsSourceGrouped="True" ItemsPath="InternalList" />		               
+                </Grid.Resources>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="9*" />
+                </Grid.RowDefinitions>
+                
+                <ComboBox x:ConnectionId='6' x:Name="CampusComboBox" BorderThickness="0"                                                    FontSize="28">
+                    <ComboBoxItem x:Name="Zjg" Content="紫金港" Tag="ZJG" />
+                    <ComboBoxItem x:Name="Yq" Content="玉泉" Tag="YQ" />
+                </ComboBox>
+
+                <SemanticZoom Grid.Row="1" Name="semanticZoom" VerticalAlignment="Top" Margin="4,0,4,0">
+                    <SemanticZoom.ZoomedInView>
+                        <ListView x:ConnectionId='7' VerticalAlignment="Bottom" HorizontalAlignment="Right"
+                                    x:Name="PlacesList"
+			                        ItemsSource="{Binding Source={StaticResource GroupedPlaces}}"
+			                        ItemTemplate="{StaticResource ItemTemplate}" 
+                                    ContinuumNavigationTransitionInfo.ExitElementContainer="True"
+                                    ScrollViewer.HorizontalScrollMode="Disabled"    
+                                    ScrollViewer.IsHorizontalScrollChainingEnabled="False"
+                                    IsItemClickEnabled="True"
+                                                                                      
+                                    SelectionMode="None"                        
+                                    Foreground="{StaticResource MyWhite}">
+                            <!-- ContainerContentChanging="IncrementalUpdateHandler"-->
+
+                            <ListView.GroupStyle>
+                                <GroupStyle HidesIfEmpty="True" >
+                                    <GroupStyle.HeaderTemplate>
+                                        <DataTemplate>
+                                            <Grid HorizontalAlignment="Left" Margin="0,0,0,20">
+                                                <Grid.Resources>
+                                                    <valueconverter:SourceConverter x:Key="sourcehConverter" />
+                                                </Grid.Resources>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="3*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Image Source="{Binding Key,Converter={StaticResource sourcehConverter} }" />
+                                                <TextBlock Grid.Column="1" FontSize="22" Margin="4,4,0,8" Text="{Binding Key}" Foreground="{StaticResource MyWhite}" FontFamily="微软雅黑"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </GroupStyle.HeaderTemplate>
+                                </GroupStyle>
+                            </ListView.GroupStyle>
+                        </ListView>
+                    </SemanticZoom.ZoomedInView>
+                </SemanticZoom>                               
+            </Grid>
+        </Grid>
+    </Grid>       
+</Page>
+

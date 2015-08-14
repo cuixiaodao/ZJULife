@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>78e91726-de53-4723-b41a-5c4d6e11865e</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ZJULife</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\AppRecommend\OfficeLens.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\AppRecommend\OneDo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\AppRecommend\PicsArt.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\AppRecommend\QiuShiChao.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\AppRecommend\Realarm.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\AppRecommend\XodoDocs.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\AppRecommend\ZJUWiFi.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon10.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon11.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon12.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon13.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon14.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon15.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon16.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon5.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon6.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon7.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon8.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon9.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\IconBusSearch.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\IconDoubleArrow.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\IconTo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo106.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo120.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo170.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Logo360.scale-240.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MapIcons\Building.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MapIcons\DiningHall.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MapIcons\Dorm.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MapIcons\Gym.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MapIcons\Hospital.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MapIcons\Market.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MapIcons\Position.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MapIcons\Spot.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\MapIcons\StudyPlace.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Search.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\after_class.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\after_class\afterclass1.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\after_class\afterclass2.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\after_class\afterclass3.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\after_class\afterclass4.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\anti_fake.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\anti_fake\anti_fake1.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\anti_fake\anti_fake2.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\award.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\award\award1.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\common_class.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\css\format.css" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\eating.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\eating\dongbeicai.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\eating\wangzijiulou.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\eating\yaduokafei.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\hospital.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\hotel.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\IPbd1.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\IPbd2.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\StaticWG.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\sxtc.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\Thumb-up128.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\VPNSetting1.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\VPNSetting2.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\VPNSetting3.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_resources.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\ShoppingRecommend.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\OffenGoPlaces.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\study_room.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\PassedStopsConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\SourceConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\TimeConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Converters\WidthConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Htmls\after_class - Copy\_notes\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Htmls\anti_fake\_notes\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Htmls\award\_notes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)DataModel\Data.db" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\after_class\_notes\afterclass1.jpg.mno" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\after_class\_notes\afterclass2.jpg.mno" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\after_class\_notes\afterclass3.jpg.mno" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\eating\_notes\dongbeicai.jpg.mno" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\eating\_notes\wangzijiulou.jpg.mno" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\eating\_notes\yaduokafei.jpg.mno" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\net_manage\Thumbs.db" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\net_manage\_notes\IPbd1.jpg.mno" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\net_manage\_notes\IPbd2.jpg.mno" />
+    <None Include="$(MSBuildThisFileDirectory)Htmls\net_manage\_notes\sxtc.jpg.mno" />
+  </ItemGroup>
+</Project>

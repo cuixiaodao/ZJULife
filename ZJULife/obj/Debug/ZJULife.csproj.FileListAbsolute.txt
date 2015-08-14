@@ -1,0 +1,74 @@
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\bin\Debug\App.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\bin\Debug\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\bin\Debug\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\bin\Debug\ZJULife.xr.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\bin\Debug\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\bin\Debug\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\bin\Debug\resources.pri
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\bin\Debug\AppxManifest.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\bin\Debug\ZJULife.build.appxrecipe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\App.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\App.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\ItemPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\ItemPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\PivotPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\PivotPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\XamlTypeInfo.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\App.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\ItemPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\PivotPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\App.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\XamlSaveStateFile.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\priconfig.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\priconfig.xml.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\layout.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\layout.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\resources.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\resources.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\pri.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\pri.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\qualifiers.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\qualifiers.txt.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 副本\ZJULife\obj\Debug\ProjectArchitectures.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\bin\Debug\App.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\bin\Debug\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\bin\Debug\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\bin\Debug\ZJULife.xr.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\bin\Debug\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\bin\Debug\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\bin\Debug\resources.pri
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\bin\Debug\AppxManifest.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\bin\Debug\ZJULife.build.appxrecipe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\App.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\App.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\ItemPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\ItemPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\PivotPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\PivotPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\XamlTypeInfo.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\App.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\ItemPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\App.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\XamlSaveStateFile.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\PivotPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\priconfig.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\priconfig.xml.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\layout.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\layout.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\resources.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\resources.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\pri.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\pri.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\qualifiers.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\qualifiers.txt.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife - 永久备份 - 副本\ZJULife\obj\Debug\ProjectArchitectures.txt

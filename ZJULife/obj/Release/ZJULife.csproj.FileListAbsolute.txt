@@ -1,0 +1,114 @@
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\App.g.i.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\App.g.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\About.g.i.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\About.g.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\BusQuery.g.i.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\BusQuery.g.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\Map.g.i.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\Map.g.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\SearchPage.g.i.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\SearchPage.g.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\ItemPage.g.i.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\ItemPage.g.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\PivotPage.g.i.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\PivotPage.g.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\XamlTypeInfo.g.cs
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\App.xaml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\About.xaml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\BusQuery.xaml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\Map.xaml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\SearchPage.xaml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\ItemPage.xaml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\PivotPage.xaml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\App.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\About.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\BusQuery.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\Map.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\SearchPage.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\ItemPage.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\PivotPage.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\XamlSaveStateFile.xml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\ZJULife.exe
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\ZJULife.pdb
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\App.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\About.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\BusQuery.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\Map.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\SearchPage.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\ItemPage.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\PivotPage.xbf
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\ZJULife.xr.xml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\ZJULife.exe
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\ZJULife.pdb
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\resources.pri
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\AppxManifest.xml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\bin\Release\ZJULife.build.appxrecipe
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\priconfig.xml
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\priconfig.xml.intermediate
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\layout.resfiles
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\layout.resfiles.intermediate
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\resources.resfiles
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\resources.resfiles.intermediate
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\pri.resfiles
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\pri.resfiles.intermediate
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\qualifiers.txt
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\qualifiers.txt.intermediate
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\MultipleQualifiersPerDimensionFound.txt
+D:\OneDrive\Documents\待办事物\ZJULife\ZJULife\obj\Release\ProjectArchitectures.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\App.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\About.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\BusQuery.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\Map.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\SearchPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\ZJULife.xr.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\resources.pri
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\AppxManifest.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\Release\ZJULife.build.appxrecipe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\App.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\App.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\About.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\About.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\BusQuery.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\BusQuery.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\Map.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\Map.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\SearchPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\SearchPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\ItemPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\ItemPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\PivotPage.g.i.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\PivotPage.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\XamlTypeInfo.g.cs
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\App.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\About.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\BusQuery.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\Map.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\SearchPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\ItemPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\PivotPage.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\App.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\About.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\BusQuery.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\Map.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\SearchPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\ItemPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\PivotPage.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\XamlSaveStateFile.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\ZJULife.exe
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\ZJULife.pdb
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\priconfig.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\priconfig.xml.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\layout.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\layout.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\resources.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\resources.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\pri.resfiles
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\pri.resfiles.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\qualifiers.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\qualifiers.txt.intermediate
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\MultipleQualifiersPerDimensionFound.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\Release\ProjectArchitectures.txt

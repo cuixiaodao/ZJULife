@@ -1,0 +1,127 @@
+﻿{
+    "Groups": [
+        {
+            "UniqueId": "Group-1",
+            "Title": "新生常识",
+            "Items": [
+                {
+                    "UniqueId": "Group-1-Item-1",
+                    "Title": "防坑须知",
+                    "Description": "关键词：黑心，买卖，商家，坑",
+                    "ImagePath": "Assets/Icon1.png",
+                    "DataPath": "Htmls/anti_fake.html"
+                },
+                {
+                    "UniqueId": "Group-1-Item-2",
+                    "Title": "内网导航",
+                    "Description": "关键词：内网导航，资源，cc98，缘网，nhd，电影，视频，游戏",
+                    "ImagePath": "Assets/Icon2.png",
+                    "DataPath": "Htmls/net_resources.html"
+                },
+                {
+                    "UniqueId": "Group-1-Item-3",
+                    "Title": "网络办理",
+                    "Description": "关键词：网络办理，闪讯，vpn，宽带，电信，移动",
+                    "ImagePath": "Assets/Icon3.png",
+                    "DataPath": "Htmls/net_manage.html"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Group-2",
+            "Title": "交通",
+            "Items": [
+                {
+                    "UniqueId": "Group-2-Item-1",
+                    "Title": "电子地图",
+                    "Description": "关键词：地图，教学楼，图书馆，去哪",
+                    "ImagePath": "Assets/Icon4.png",
+                    "DataPath": ""
+                },
+                {
+                    "UniqueId": "Group-2-Item-2",
+                    "Title": "校车查询",
+                    "Description": "关键词：校车，校区，公交",
+                    "ImagePath": "Assets/Icon5.png",
+                    "DataPath": ""
+                },
+                {
+                    "UniqueId": "Group-2-Item-3",
+                    "Title": "常去地点集合",
+                    "Description": "关键词：银行，快寄",
+                    "ImagePath": "Assets/Icon6.png",
+                    "DataPath": "Htmls/OffenGoPlaces.html"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Group-3",
+            "Title": "学习",
+            "Items": [
+                {
+                    "UniqueId": "Group-3-Item-1",
+                    "Title": "自习地点",
+                    "Description": "关键词：自习，学习，看书，教室，教学楼",
+                    "ImagePath": "Assets/Icon7.png",
+                    "DataPath": "Htmls/after_class.html"
+                },
+                {
+                    "UniqueId": "Group-3-Item-2",
+                    "Title": "选课经验",
+                    "Description": "关键词：选课，绩点，学分，经验",
+                    "ImagePath": "Assets/Icon8.png",
+                    "DataPath": "Htmls/common_class.html"
+                },
+                {
+                    "UniqueId": "Group-3-Item-3",
+                    "Title": "综素与二课",
+                    "Description": "关键词：第二课堂，学分，综素加分",
+                    "ImagePath": "Assets/Icon9.png",
+                    "DataPath": "Htmls/after_class.html"
+                },
+                {
+                    "UniqueId": "Group-3-Item-4",
+                    "Title": "奖助学金申报",
+                    "Description": "关键词：奖学金，助学金，申报",
+                    "ImagePath": "Assets/Icon10.png",
+                    "DataPath": "Htmls/award.html"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Group-4",
+            "Title": "医食住购",
+            "Items": [
+                {
+                    "UniqueId": "Group-4-Item-1",
+                    "Title": "就医事项",
+                    "Description": "关键词：医院，受伤，120",
+                    "ImagePath": "Assets/Icon11.png",
+                    "DataPath": "Htmls/hospital.html"
+                },
+                {
+                    "UniqueId": "Group-4-Item-2",
+                    "Title": "吃货交流",
+                    "Description": "关键词：吃货，食物，好吃的",
+                    "ImagePath": "Assets/Icon12.png",
+                    "DataPath": "Htmls/eating.html"
+                },
+                {
+                    "UniqueId": "Group-4-Item-3",
+                    "Title": "临时住宿",
+                    "Description": "关键词：临时住宿，宾馆，旅馆",
+                    "ImagePath": "Assets/Icon13.png",
+                    "DataPath": "Htmls/hotel.html"
+                },
+                {
+                    "UniqueId": "Group-4-Item-4",
+                    "Title": "购物推荐",
+                    "Description": "关键词：购物，买东西，卖，商场",
+                    "ImagePath": "Assets/Icon14.png",
+                    "DataPath": "Htmls/hotel.html"
+                }
+            ]
+        }
+    ]
+}
+            

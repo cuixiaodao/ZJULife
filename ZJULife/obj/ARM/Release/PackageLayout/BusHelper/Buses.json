@@ -1,0 +1,1621 @@
+﻿{
+    "Buses": [
+        {
+            "UniqueId": "Bus-1",
+            "Name": "1号班车",
+            "Stops": "玉泉,紫金港",
+            "Note": "周一至周五运行,紫金港始发点：生活区。玉泉始发点：教二南侧",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-1-Trip-1",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:05",
+                    "EndTime": "07:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:55",
+                    "EndTime": "08:30",
+                    "Note": "1号加，此趟次学生请勿乘坐"
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-3",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "07:35",
+                    "EndTime": "08:20",
+                    "Note": "此趟次紫金港校区只停靠生活区和风雨操场 "
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-4",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "09:00",
+                    "EndTime": "09:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-5",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "09:45",
+                    "EndTime": "10:15",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-6",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "10:20",
+                    "EndTime": "10:50",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-7",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "11:40",
+                    "EndTime": "12:10",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-8",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:30",
+                    "EndTime": "13:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-9",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "12:25",
+                    "EndTime": "12:55",
+                    "Note": "此趟次学生请勿乘坐"
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-10",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:55",
+                    "EndTime": "13:25",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-11",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "13:20",
+                    "EndTime": "13:50",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-12",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "15:00",
+                    "EndTime": "15:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-13",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "15:50",
+                    "EndTime": "16:20",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-14",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "16:20",
+                    "EndTime": "16:50",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-15",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "16:20",
+                    "EndTime": "17:00",
+                    "Note": "此趟次学生请勿乘坐"
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-16",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "17:05",
+                    "EndTime": "17:30",
+                    "Note": "此趟次学生请勿乘坐"
+                },
+                {
+                    "UniqueId": "Bus-1-Trip-17",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "17:37",
+                    "EndTime": "18:07",
+                    "Note": "此趟次学生请勿乘坐"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-2",
+            "Name": "2号班车",
+            "Stops": "之江，玉泉,紫金港",
+            "Note": "周一至周五运行,紫金港始发点：生活区。玉泉始发点：教二南侧",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-2-Trip-1",
+                    "StartStop": "之江",
+                    "PassedStop": "玉泉07:55",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:25",
+                    "EndTime": "08:30",
+                    "Note": "只停靠玉泉校区教十一南面、丰潭中学、紫金文苑西停靠，学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-2-Trip-2",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "08:30",
+                    "EndTime": "09:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-2-Trip-3",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "09:00",
+                    "EndTime": "09:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-2-Trip-4",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "09:45",
+                    "EndTime": "10:15",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-2-Trip-5",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "11:55",
+                    "EndTime": "12:25",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-2-Trip-6",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "12:25",
+                    "EndTime": "12:55",
+                    "Note": "此趟次学生请勿乘坐"
+                },
+                {
+                    "UniqueId": "Bus-2-Trip-7",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "15:00",
+                    "EndTime": "15:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-2-Trip-8",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "15:50",
+                    "EndTime": "16:20",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-2-Trip-9",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "16:20",
+                    "EndTime": "16:50",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-2-Trip-10",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉17:30",
+                    "EndStop": "之江",
+                    "StartTime": "17:05",
+                    "EndTime": "17:55",
+                    "Note": "此趟次玉泉校区只停靠教十二北面停靠，学生请勿乘坐"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-3",
+            "Name": "3号班车",
+            "Stops": "西溪,紫金港",
+            "Note": "周一至周五运行,紫金港始发点：生活区。西溪始发点：南大门",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-3-Trip-1",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:05",
+                    "EndTime": "07:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-2",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:55",
+                    "EndTime": "08:30",
+                    "Note": "3号加，此趟次学生请勿乘坐"
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-3",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "07:45",
+                    "EndTime": "08:20",
+                    "Note": "此趟次紫金港校区只停靠生活区和风雨操场 "
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-4",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "09:00",
+                    "EndTime": "09:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-5",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "09:45",
+                    "EndTime": "10:15",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-6",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "10:15",
+                    "EndTime": "10:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-7",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "11:40",
+                    "EndTime": "12:10",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-8",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:30",
+                    "EndTime": "13:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-9",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "12:25",
+                    "EndTime": "12:55",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-10",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:55",
+                    "EndTime": "13:25",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-11",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "13:20",
+                    "EndTime": "13:50",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-12",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "15:00",
+                    "EndTime": "15:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-13",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "15:50",
+                    "EndTime": "16:20",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-14",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "16:20",
+                    "EndTime": "16:50",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-15",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "17:05",
+                    "EndTime": "17:30",
+                    "Note": "此趟次学生请勿乘坐"
+                },
+                {
+                    "UniqueId": "Bus-3-Trip-16",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "17:37",
+                    "EndTime": "18:07",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-4",
+            "Name": "4号班车",
+            "Stops": "湖滨,西溪，紫金港",
+            "Note": "湖滨与紫金港校区之间往来，请配合搭乘3号和附B一紫金港、玉泉、西溪、湖滨往来班车",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-4-Trip-1",
+                    "StartStop": "湖滨",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:05",
+                    "EndTime": "07:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-4-Trip-2",
+                    "StartStop": "湖滨",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:35",
+                    "EndTime": "08:30",
+                    "Note": "4号加"
+                },
+                {
+                    "UniqueId": "Bus-4-Trip-3",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "17:05",
+                    "EndTime": "00:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-4-Trip-4",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "17:05",
+                    "EndTime": "17:45",
+                    "Note": "4号加"
+                }
+
+            ]
+        },
+        {
+            "UniqueId": "Bus-5",
+            "Name": "5号班车",
+            "Stops": "华家池,紫金港",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-5-Trip-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:00",
+                    "EndTime": "07:40",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-5-Trip-2",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "13:30",
+                    "EndTime": "14:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-5-Trip-3",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "14:45",
+                    "EndTime": "15:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-5-Trip-4",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "16:20",
+                    "EndTime": "17:20",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-6",
+            "Name": "6号班车",
+            "Stops": "华家池,西溪,玉泉,紫金港",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-6-Trip-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:40",
+                    "EndTime": "08:30",
+                    "Note": "6号加，景芳二区7:25学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-6-Trip-2",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉",
+                    "EndStop": "西溪",
+                    "StartTime": "09:00",
+                    "EndTime": "09:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-6-Trip-3",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "09:45",
+                    "EndTime": "10:20",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-6-Trip-4",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "11:35",
+                    "EndTime": "12:40",
+                    "Note": "学生请勿搭乘 "
+                },
+                {
+                    "UniqueId": "Bus-6-Trip-5",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:40",
+                    "EndTime": "13:40",
+                    "Note": "此趟次紫金文苑北只下客"
+                },
+                {
+                    "UniqueId": "Bus-6-Trip-6",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "17:05",
+                    "EndTime": "18:00",
+                    "Note": "6号加，经东门到体育馆"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-7",
+            "Name": "7号班车",
+            "Stops": "华家池,湖滨,之江,西溪,玉泉,紫金港",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-7-Trip-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "15:50",
+                    "EndTime": "16:55",
+                    "Note": "学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-7-Trip-2-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "西溪,玉泉",
+                    "EndStop": "紫金港",
+                    "StartTime": "16:55",
+                    "EndTime": "18:20",
+                    "Note": "秋学期上课专用，无课时不运行"
+                },
+                {
+                    "UniqueId": "Bus-7-Trip-2-2",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "00:00",
+                    "EndTime": "17:45",
+                    "Note": "秋学期上课专用，无课时不运行；16:55发自华家池"
+                },
+                {
+                    "UniqueId": "Bus-7-Trip-3-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "湖滨,西溪,玉泉",
+                    "EndStop": "华家池",
+                    "StartTime": "16:55",
+                    "EndTime": "18:20",
+                    "Note": "秋学期上课专用，无课时不运行;湖滨校区只下不上"
+                },
+                {
+                    "UniqueId": "Bus-7-Trip-3-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪",
+                    "EndStop": "湖滨",
+                    "StartTime": "21:25",
+                    "EndTime": "00:00",
+                    "Note": "秋学期上课专用，无课时不运行;湖滨校区只下不上"
+                },
+                {
+                    "UniqueId": "Bus-7-Trip-4",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉",
+                    "EndStop": "之江",
+                    "StartTime": "21:05",
+                    "EndTime": "22:10",
+                    "Note": "7号加，之江校区乘客优先，周一、二、三、四运行,秋学期上课专用，无课时不运行"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-8",
+            "Name": "8号班车",
+            "Stops": "华家池,湖滨,之江,西溪,玉泉,紫金港",
+            "Note": "周末运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-8-Trip-1-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "湖滨,西溪,玉泉",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:25",
+                    "EndTime": "08:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-1-2",
+                    "StartStop": "湖滨",
+                    "PassedStop": "西溪",
+                    "EndStop": "玉泉",
+                    "StartTime": "00:00",
+                    "EndTime": "08:05",
+                    "Note": "07:25发自华家池"
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-2",
+                    "StartStop": "之江",
+                    "PassedStop": "玉泉08:05",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:35",
+                    "EndTime": "08:30",
+                    "Note": "周六上课临时增加，一辆，8号加之，之江校区学生优先"
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-3-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉11:25,西溪,",
+                    "EndStop": "紫金港",
+                    "StartTime": "11:00",
+                    "EndTime": "12:10",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-3-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "11:25 ",
+                    "EndTime": "00:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-4-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "西溪,玉泉11:55",
+                    "EndStop": "紫金港",
+                    "StartTime": "11:10",
+                    "EndTime": "12:20",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-4-2",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "00:00",
+                    "EndTime": "00:00",
+                    "Note": "11:55"
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-5-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉12:55,西溪,",
+                    "EndStop": "华家池",
+                    "StartTime": "12:30",
+                    "EndTime": "13:40",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-5-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "12:55",
+                    "EndTime": "00:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-6-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "西溪,玉泉12:50",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:10",
+                    "EndTime": "13:20",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-6-2",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "00:00",
+                    "EndTime": "00:00",
+                    "Note": "12:50"
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-7-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉17:30,西溪,湖滨",
+                    "EndStop": "华家池",
+                    "StartTime": "17:05",
+                    "EndTime": "18:20",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-7-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪",
+                    "EndStop": "湖滨",
+                    "StartTime": "17:30",
+                    "EndTime": "00:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-8",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉",
+                    "EndStop": "之江",
+                    "StartTime": "17:05",
+                    "EndTime": "18:10",
+                    "Note": "周六上课临时增加，一辆，8号加之，之江校区学生优先"
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-9",
+                    "StartStop": "西溪",
+                    "PassedStop": "玉泉17:45",
+                    "EndStop": "紫金港",
+                    "StartTime": "17:35",
+                    "EndTime": "18:20",
+                    "Note": "周日上课临时增加，一辆，8号加晚"
+                },
+                {
+                    "UniqueId": "Bus-8-Trip-10",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉21:30",
+                    "EndStop": "西溪",
+                    "StartTime": "21:05",
+                    "EndTime": "21:45",
+                    "Note": "周日上课临时增加，一辆，8号加晚"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-9",
+            "Name": "9号班车",
+            "Stops": "紫金港，玉泉,华家池",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-9-Trip-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "07:05",
+                    "EndTime": "07:55",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-9-Trip-2",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "16:20",
+                    "EndTime": "17:05",
+                    "Note": "此趟次学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-9-Trip-3",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "16:20",
+                    "EndTime": "17:05",
+                    "Note": "经华家池东大门到体育馆。此趟次学生请勿搭乘"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-10",
+            "Name": "10号班车",
+            "Stops": "紫金港,玉泉,西溪,湖滨,华家池",
+            "Note": "周一至周日运行,教职工优先，有空位时华家池校区的研究生可在“医学院、农生环组团”停靠点上车",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-10-Trip-1-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉,西溪,湖滨",
+                    "EndStop": "华家池",
+                    "StartTime": "22:05",
+                    "EndTime": "23:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-10-Trip-1-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪",
+                    "EndStop": "湖滨",
+                    "StartTime": "22:25",
+                    "EndTime": "00:00",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-11",
+            "Name": "11号班车",
+            "Stops": "华家池,西溪,玉泉,紫金港",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-11-Trip-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "玉泉08:00",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:20",
+                    "EndTime": "08:30",
+                    "Note": "学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-11-Trip-2",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "09:45",
+                    "EndTime": "10:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-11-Trip-3",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:00",
+                    "EndTime": "13:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-11-Trip-4",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉",
+                    "EndStop": "西溪",
+                    "StartTime": "14:30",
+                    "EndTime": "15:15",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-11-Trip-5",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "17:37",
+                    "EndTime": "18:25",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-12",
+            "Name": "12号班车",
+            "Stops": "玉泉,紫金港",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-12-Trip-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "11:40",
+                    "EndTime": "12:10",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-12-Trip-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:30",
+                    "EndTime": "13:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-12-Trip-3",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "13:20",
+                    "EndTime": "14:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-12-Trip-4",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "15:00",
+                    "EndTime": "15:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-12-Trip-5",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "17:37",
+                    "EndTime": "00:00",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-13",
+            "Name": "13号班车",
+            "Stops": "紫金港,华家池",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-13-Trip-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "06:50",
+                    "EndTime": "08:00",
+                    "Note": "此趟次紫金港校区只停靠生活区和风雨操场，经东大楼"
+                },
+                {
+                    "UniqueId": "Bus-13-Trip-2",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "07:30",
+                    "EndTime": "08:25",
+                    "Note": "此趟次紫金港校区只停靠生活区和风雨操场，经东大楼，学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-13-Trip-3",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "08:30",
+                    "EndTime": "09:40",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-13-Trip-4",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "13:00",
+                    "EndTime": "14:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-13-Trip-5",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "17:05",
+                    "EndTime": "18:10",
+                    "Note": "体育馆经东大楼(此趟次紫金文苑教师优先上车)"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-14",
+            "Name": "14号班车",
+            "Stops": "华家池,玉泉，紫金港",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-14-Trip-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "06:45",
+                    "EndTime": "07:15",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-14-Trip-2",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "07:15",
+                    "EndTime": "07:50",
+                    "Note": "此趟次紫金港校区只停靠生活区和风雨操场"
+                },
+                {
+                    "UniqueId": "Bus-14-Trip-3",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "11:35",
+                    "EndTime": "12:10",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-14-Trip-4",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "13:25",
+                    "EndTime": "14:05",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-14-Trip-5",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "16:40",
+                    "EndTime": "00:00",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-15",
+            "Name": "15号班车",
+            "Stops": "紫金港,西溪",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-15-Trip-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "07:00",
+                    "EndTime": "07:50",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-15-Trip-2",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "17:05",
+                    "EndTime": "17:40",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-16",
+            "Name": "16号班车",
+            "Stops": "紫金港,西溪,玉泉,之江",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-16-Trip-1",
+                    "StartStop": "西溪",
+                    "PassedStop": "玉泉教十二北面07:15",
+                    "EndStop": "之江",
+                    "StartTime": "07:05",
+                    "EndTime": "07:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-2",
+                    "StartStop": "之江",
+                    "PassedStop": "玉泉教十二北面08:20",
+                    "EndStop": "西溪",
+                    "StartTime": "07:55",
+                    "EndTime": "08:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-3",
+                    "StartStop": "紫金港",
+                    "PassedStop": "西溪7:45,玉泉教十二北面7:55",
+                    "EndStop": "之江",
+                    "StartTime": "07:05",
+                    "EndTime": "08:30",
+                    "Note": "此趟次紫金港校区只停靠生活区和风雨操场,之江校区乘客优先,学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-4",
+                    "StartStop": "西溪",
+                    "PassedStop": "玉泉教十二北面9:00",
+                    "EndStop": "之江",
+                    "StartTime": "08:50",
+                    "EndTime": "09:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-5",
+                    "StartStop": "之江",
+                    "PassedStop": "玉泉教十二北面",
+                    "EndStop": "西溪",
+                    "StartTime": "11:40",
+                    "EndTime": "12:15",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-6",
+                    "StartStop": "西溪",
+                    "PassedStop": "玉泉教十二北面12:35",
+                    "EndStop": "之江",
+                    "StartTime": "12:25",
+                    "EndTime": "13:05",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-7",
+                    "StartStop": "之江",
+                    "PassedStop": "玉泉教十二北面",
+                    "EndStop": "西溪",
+                    "StartTime": "12:25",
+                    "EndTime": "13:10",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-8",
+                    "StartStop": "西溪",
+                    "PassedStop": "玉泉教十二北面",
+                    "EndStop": "之江",
+                    "StartTime": "15:00",
+                    "EndTime": "15:40",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-9",
+                    "StartStop": "之江",
+                    "PassedStop": "玉泉教十二北面",
+                    "EndStop": "西溪",
+                    "StartTime": "15:45",
+                    "EndTime": "16:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-10",
+                    "StartStop": "西溪",
+                    "PassedStop": "玉泉教十二北面17:05",
+                    "EndStop": "之江",
+                    "StartTime": "16:50",
+                    "EndTime": "17:35",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-11",
+                    "StartStop": "之江",
+                    "PassedStop": "玉泉教十二北面17:25",
+                    "EndStop": "西溪",
+                    "StartTime": "17:05",
+                    "EndTime": "00:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-16-Trip-12",
+                    "StartStop": "之江",
+                    "PassedStop": "玉泉教十二北面18:05",
+                    "EndStop": "紫金港",
+                    "StartTime": "17:37",
+                    "EndTime": "18:50",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-17",
+            "Name": "校区间1号班车",
+            "Stops": "紫金港,玉泉,西溪,湖滨",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-17-Trip-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉8:20",
+                    "EndStop": "湖滨",
+                    "StartTime": "07:35",
+                    "EndTime": "08:45",
+                    "Note": "此趟次紫金港校区只停靠生活区和风雨操场，经紫金文苑西"
+                },
+                {
+                    "UniqueId": "Bus-17-Trip-2",
+                    "StartStop": "湖滨",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "08:45",
+                    "EndTime": "09:40",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-17-Trip-3",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "湖滨",
+                    "StartTime": "09:45",
+                    "EndTime": "10:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-17-Trip-4",
+                    "StartStop": "湖滨",
+                    "PassedStop": "西溪12:20",
+                    "EndStop": "玉泉",
+                    "StartTime": "12:00",
+                    "EndTime": "12:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-17-Trip-5",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "15:00",
+                    "EndTime": "15:40",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-17-Trip-6",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "湖滨",
+                    "StartTime": "15:50",
+                    "EndTime": "16:40",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-17-Trip-7",
+                    "StartStop": "湖滨",
+                    "PassedStop": "玉泉17:05",
+                    "EndStop": "紫金港",
+                    "StartTime": "16:40",
+                    "EndTime": "17:35",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-18",
+            "Name": "校区间2号班车",
+            "Stops": "玉泉,西溪,湖滨",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-18-Trip-1",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "07:30",
+                    "EndTime": "07:40",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-18-Trip-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "07:40",
+                    "EndTime": "07:50",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-18-Trip-3",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "08:10",
+                    "EndTime": "08:20",
+                    "Note": "此趟次学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-18-Trip-4",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "08:20",
+                    "EndTime": "08:30",
+                    "Note": "此趟次学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-18-Trip-5",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "08:30",
+                    "EndTime": "08:40",
+                    "Note": "此趟次学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-18-Trip-6",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪12:10",
+                    "EndStop": "湖滨",
+                    "StartTime": "12:00",
+                    "EndTime": "12:25",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-18-Trip-7",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪13:50",
+                    "EndStop": "湖滨",
+                    "StartTime": "13:40",
+                    "EndTime": "14:05",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-18-Trip-8",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "17:05",
+                    "EndTime": "17:15",
+                    "Note": "此趟次学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-18-Trip-9",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "玉泉",
+                    "StartTime": "17:15",
+                    "EndTime": "17:25",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-19",
+            "Name": "校区间3号班车",
+            "Stops": "玉泉,西溪,华家池",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-19-Trip-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "西溪",
+                    "EndStop": "玉泉",
+                    "StartTime": "07:40",
+                    "EndTime": "08:30",
+                    "Note": "此趟次学生请勿搭乘"
+                },
+                {
+                    "UniqueId": "Bus-19-Trip-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪",
+                    "EndStop": "华家池",
+                    "StartTime": "08:30",
+                    "EndTime": "09:20",
+                    "Note": "经东大楼"
+                },
+                {
+                    "UniqueId": "Bus-19-Trip-3",
+                    "StartStop": "华家池",
+                    "PassedStop": "西溪",
+                    "EndStop": "玉泉",
+                    "StartTime": "11:30",
+                    "EndTime": "12:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-19-Trip-4",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪",
+                    "EndStop": "华家池",
+                    "StartTime": "12:10",
+                    "EndTime": "12:50",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-19-Trip-5",
+                    "StartStop": "华家池",
+                    "PassedStop": "西溪",
+                    "EndStop": "玉泉",
+                    "StartTime": "16:00",
+                    "EndTime": "16:40",
+                    "Note": "经东大楼"
+                },
+                {
+                    "UniqueId": "Bus-19-Trip-6",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪",
+                    "EndStop": "华家池",
+                    "StartTime": "17:05",
+                    "EndTime": "17:40",
+                    "Note": "经东门，此趟次学生请勿搭乘"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-20",
+            "Name": "研究生1号班车",
+            "Stops": "玉泉,西溪,紫金港",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-20-Trip-1",
+                    "StartStop": "紫金港",
+                    "PassedStop": "西溪7:25",
+                    "EndStop": "玉泉",
+                    "StartTime": "06:55",
+                    "EndTime": "07:45",
+                    "Note": "此趟次紫金港校区只停靠生活区和风雨操场"
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-2",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪7:05",
+                    "EndStop": "紫金港",
+                    "StartTime": "06:55",
+                    "EndTime": "07:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-3",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉8:30",
+                    "EndStop": "西溪",
+                    "StartTime": "07:45",
+                    "EndTime": "08:45",
+                    "Note": "此趟次紫金港校区只停靠生活区和风雨操场"
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-4",
+                    "StartStop": "西溪",
+                    "PassedStop": "玉泉9:00",
+                    "EndStop": "紫金港",
+                    "StartTime": "08:45",
+                    "EndTime": "09:40",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-5",
+                    "StartStop": "紫金港",
+                    "PassedStop": "西溪12:10",
+                    "EndStop": "玉泉",
+                    "StartTime": "11:40",
+                    "EndTime": "12:15",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-6",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:25",
+                    "EndTime": "13:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-7",
+                    "StartStop": "紫金港",
+                    "PassedStop": "西溪14:00",
+                    "EndStop": "玉泉",
+                    "StartTime": "13:30",
+                    "EndTime": "14:10",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-8",
+                    "StartStop": "玉泉",
+                    "PassedStop": "西溪15:15",
+                    "EndStop": "紫金港",
+                    "StartTime": "15:05",
+                    "EndTime": "15:45",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-9",
+                    "StartStop": "紫金港",
+                    "PassedStop": "西溪16:45",
+                    "EndStop": "玉泉",
+                    "StartTime": "16:20",
+                    "EndTime": "15:55",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-10",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "16:55",
+                    "EndTime": "17:35",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-11",
+                    "StartStop": "紫金港",
+                    "PassedStop": "西溪",
+                    "EndStop": "玉泉",
+                    "StartTime": "21:05",
+                    "EndTime": "21:30",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-12",
+                    "StartStop": "玉泉",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "21:30",
+                    "EndTime": "22:00",
+                    "Note": ""
+                },
+                {
+                    "UniqueId": "Bus-20-Trip-13",
+                    "StartStop": "紫金港",
+                    "PassedStop": "玉泉",
+                    "EndStop": "西溪",
+                    "StartTime": "22:05",
+                    "EndTime": "00:00",
+                    "Note": "此趟次风雨操场停靠点与10号班车配合运行！"
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-21",
+            "Name": "研究生2号班车",
+            "Stops": "华家池,紫金港",
+            "Note": "周一至周五运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-21-Trip-1",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:00",
+                    "EndTime": "07:50",
+                    "Note": "华家池(第一学生宿舍)到紫金港(农生环组团、医药组团)"
+                },
+                {
+                    "UniqueId": "Bus-21-Trip-2",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "华家池",
+                    "StartTime": "07:00",
+                    "EndTime": "07:50",
+                    "Note": "紫金港(生活区)到华家池(中心广场南马路)"
+                },
+                {
+                    "UniqueId": "Bus-21-Trip-3",
+                    "StartStop": "华家池",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "17:05",
+                    "EndTime": "18:05",
+                    "Note": ""
+                }
+            ]
+        },
+        {
+            "UniqueId": "Bus-21",
+            "Name": "学生教学专用1号班车",
+            "Stops": "紫金港,西溪",
+            "Note": "周一至周五运行,凭学生证乘坐,自9月9日起运行",
+            "Trips": [
+                {
+                    "UniqueId": "Bus-21-Trip-1",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "07:15",
+                    "EndTime": "07:45",
+                    "Note": "西溪(南大门)到紫金港(东教学区,西教学区)"
+                },
+                {
+                    "UniqueId": "Bus-21-Trip-2",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "12:25",
+                    "EndTime": "12:55",
+                    "Note": "紫金港(生活区,西教学区,东教学区)到西溪(南大门)"
+                },
+                {
+                    "UniqueId": "Bus-21-Trip-3",
+                    "StartStop": "西溪",
+                    "PassedStop": "",
+                    "EndStop": "紫金港",
+                    "StartTime": "12:30",
+                    "EndTime": "13:00",
+                    "Note": "西溪(南大门)到紫金港(东教学区,西教学区)"
+                },
+                {
+                    "UniqueId": "Bus-21-Trip-4",
+                    "StartStop": "紫金港",
+                    "PassedStop": "",
+                    "EndStop": "西溪",
+                    "StartTime": "17:37",
+                    "EndTime": "18:07",
+                    "Note": "紫金港(生活区,西教学区,东教学区)到西溪(南大门)"
+                }
+        ]
+    }  
+]
+}

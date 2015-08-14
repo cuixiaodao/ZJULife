@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>CUICHAO-PC</Machine>
+    <WindowsUser>cuichao</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>b6d748e0-0626-4dc0-a253-5670e2dbbc12</PackageIdentityName>
+    <IntermediateOutputPath>D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Windows\obj\x86\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>4A753F713966FC9F86CC05CAE03048BD1623BE6B9582FEFEE4FAC207D9CE49D9</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>b6d748e0-0626-4dc0-a253-5670e2dbbc12_1.0.0.0_x86__07f4gkm7231h8</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>b6d748e0-0626-4dc0-a253-5670e2dbbc12_07f4gkm7231h8!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>b6d748e0-0626-4dc0-a253-5670e2dbbc12</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=cuichao</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Windows\bin\x86\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-03-26T13:09:36.227</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Windows\bin\x86\Debug\ZJULife.Windows.exe">
+      <PackagePath>ZJULife.Windows.exe</PackagePath>
+      <Modified>2015-03-26T13:20:25.592</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Comment.png">
+      <PackagePath>Assets\Comment.png</PackagePath>
+      <Modified>2015-02-21T07:53:23.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\FeedBack.png">
+      <PackagePath>Assets\FeedBack.png</PackagePath>
+      <Modified>2015-02-21T07:53:23.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon1.png">
+      <PackagePath>Assets\Icon1.png</PackagePath>
+      <Modified>2015-02-21T07:53:23.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon10.png">
+      <PackagePath>Assets\Icon10.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon11.png">
+      <PackagePath>Assets\Icon11.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon12.png">
+      <PackagePath>Assets\Icon12.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon13.png">
+      <PackagePath>Assets\Icon13.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon14.png">
+      <PackagePath>Assets\Icon14.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon15.png">
+      <PackagePath>Assets\Icon15.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon16.png">
+      <PackagePath>Assets\Icon16.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon2.png">
+      <PackagePath>Assets\Icon2.png</PackagePath>
+      <Modified>2015-02-21T07:53:23.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon3.png">
+      <PackagePath>Assets\Icon3.png</PackagePath>
+      <Modified>2015-02-21T07:53:23.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon4.png">
+      <PackagePath>Assets\Icon4.png</PackagePath>
+      <Modified>2015-02-21T07:53:23.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon5.png">
+      <PackagePath>Assets\Icon5.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon6.png">
+      <PackagePath>Assets\Icon6.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon7.png">
+      <PackagePath>Assets\Icon7.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon8.png">
+      <PackagePath>Assets\Icon8.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon9.png">
+      <PackagePath>Assets\Icon9.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\IconBusSearch.png">
+      <PackagePath>Assets\IconBusSearch.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\IconDoubleArrow.png">
+      <PackagePath>Assets\IconDoubleArrow.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\IconTo.png">
+      <PackagePath>Assets\IconTo.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-07T10:08:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Logo106.scale-240.png">
+      <PackagePath>Assets\Logo106.scale-240.png</PackagePath>
+      <Modified>2015-03-14T14:58:02.865</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Logo120.scale-240.png">
+      <PackagePath>Assets\Logo120.scale-240.png</PackagePath>
+      <Modified>2015-03-14T14:58:02.886</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Logo170.scale-240.png">
+      <PackagePath>Assets\Logo170.scale-240.png</PackagePath>
+      <Modified>2015-03-14T14:58:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Logo360.scale-240.png">
+      <PackagePath>Assets\Logo360.scale-240.png</PackagePath>
+      <Modified>2015-03-14T14:58:02.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\MapIcons\Building.png">
+      <PackagePath>Assets\MapIcons\Building.png</PackagePath>
+      <Modified>2015-03-25T08:20:58.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\MapIcons\DiningHall.png">
+      <PackagePath>Assets\MapIcons\DiningHall.png</PackagePath>
+      <Modified>2015-03-25T08:20:58.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\MapIcons\Dorm.png">
+      <PackagePath>Assets\MapIcons\Dorm.png</PackagePath>
+      <Modified>2015-03-25T08:20:58.611</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\MapIcons\Gym.png">
+      <PackagePath>Assets\MapIcons\Gym.png</PackagePath>
+      <Modified>2015-03-25T08:20:58.639</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\MapIcons\Hospital.png">
+      <PackagePath>Assets\MapIcons\Hospital.png</PackagePath>
+      <Modified>2015-03-25T08:31:36.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\MapIcons\Market.png">
+      <PackagePath>Assets\MapIcons\Market.png</PackagePath>
+      <Modified>2015-03-25T08:20:58.552</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\MapIcons\Position.png">
+      <PackagePath>Assets\MapIcons\Position.png</PackagePath>
+      <Modified>2015-03-02T08:40:13.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\MapIcons\Spot.png">
+      <PackagePath>Assets\MapIcons\Spot.png</PackagePath>
+      <Modified>2015-03-25T08:20:58.492</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\MapIcons\StudyPlace.png">
+      <PackagePath>Assets\MapIcons\StudyPlace.png</PackagePath>
+      <Modified>2015-03-25T08:20:58.582</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Search.png">
+      <PackagePath>Assets\Search.png</PackagePath>
+      <Modified>2015-02-21T07:53:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-07T10:08:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-07T10:08:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-07T10:08:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\StaticWG.png">
+      <PackagePath>Htmls\net_manage\StaticWG.png</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\Thumb-up128.png">
+      <PackagePath>Htmls\net_manage\Thumb-up128.png</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2015-02-15T11:01:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\DataModel\Data.db">
+      <PackagePath>DataModel\Data.db</PackagePath>
+      <Modified>2015-03-26T02:31:09.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\DataModel\Data.json">
+      <PackagePath>DataModel\Data.json</PackagePath>
+      <Modified>2015-03-21T13:42:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\after_class.html">
+      <PackagePath>Htmls\after_class.html</PackagePath>
+      <Modified>2015-03-21T13:50:19.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\anti_fake.html">
+      <PackagePath>Htmls\anti_fake.html</PackagePath>
+      <Modified>2015-03-21T13:06:33.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\award.html">
+      <PackagePath>Htmls\award.html</PackagePath>
+      <Modified>2015-03-21T13:22:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\common_class.html">
+      <PackagePath>Htmls\common_class.html</PackagePath>
+      <Modified>2015-03-21T13:49:35.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\eating.html">
+      <PackagePath>Htmls\eating.html</PackagePath>
+      <Modified>2015-03-21T13:23:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\hospital.html">
+      <PackagePath>Htmls\hospital.html</PackagePath>
+      <Modified>2015-03-21T12:48:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\hotel.html">
+      <PackagePath>Htmls\hotel.html</PackagePath>
+      <Modified>2015-03-21T12:48:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage.html">
+      <PackagePath>Htmls\net_manage.html</PackagePath>
+      <Modified>2015-03-21T13:47:35.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_resources.html">
+      <PackagePath>Htmls\net_resources.html</PackagePath>
+      <Modified>2015-03-21T13:31:49.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\study_room.html">
+      <PackagePath>Htmls\study_room.html</PackagePath>
+      <Modified>2015-03-21T12:48:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\after_class\afterclass1.jpg">
+      <PackagePath>Htmls\after_class\afterclass1.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\after_class\afterclass2.jpg">
+      <PackagePath>Htmls\after_class\afterclass2.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\after_class\afterclass3.jpg">
+      <PackagePath>Htmls\after_class\afterclass3.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:53.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\after_class\afterclass4.jpg">
+      <PackagePath>Htmls\after_class\afterclass4.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\anti_fake\anti_fake1.jpg">
+      <PackagePath>Htmls\anti_fake\anti_fake1.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\anti_fake\anti_fake2.jpg">
+      <PackagePath>Htmls\anti_fake\anti_fake2.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\award\award1.jpg">
+      <PackagePath>Htmls\award\award1.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\eating\dongbeicai.jpg">
+      <PackagePath>Htmls\eating\dongbeicai.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\eating\wangzijiulou.jpg">
+      <PackagePath>Htmls\eating\wangzijiulou.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\eating\yaduokafei.jpg">
+      <PackagePath>Htmls\eating\yaduokafei.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\IPbd1.jpg">
+      <PackagePath>Htmls\net_manage\IPbd1.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\IPbd2.jpg">
+      <PackagePath>Htmls\net_manage\IPbd2.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\sxtc.jpg">
+      <PackagePath>Htmls\net_manage\sxtc.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\VPNSetting1.jpg">
+      <PackagePath>Htmls\net_manage\VPNSetting1.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\VPNSetting2.jpg">
+      <PackagePath>Htmls\net_manage\VPNSetting2.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\VPNSetting3.jpg">
+      <PackagePath>Htmls\net_manage\VPNSetting3.jpg</PackagePath>
+      <Modified>2015-03-21T12:48:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\css\format.css">
+      <PackagePath>Htmls\css\format.css</PackagePath>
+      <Modified>2015-03-21T13:43:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Windows\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-03-26T11:30:39.436</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Windows\bin\x86\Debug\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+      <Modified>2015-03-26T13:20:25.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Windows\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-03-26T13:15:39.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Windows\bin\x86\Debug\ZJULife.Windows.xr.xml">
+      <PackagePath>ZJULife.Windows.xr.xml</PackagePath>
+      <Modified>2015-03-26T13:20:25.180</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Windows\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-03-26T13:09:35.916</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

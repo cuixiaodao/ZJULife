@@ -1,0 +1,3 @@
+MainPackage=D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\x86\Debug\ZJULife_1.1.0.4_x86_Debug.appx
+SymbolPackage=C:\Users\cuichao\Desktop\ZJULife_1.1.0.4_Debug_Test\ZJULife_1.1.0.4_x86_Debug.appxsym
+ResourcePack=D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\x86\Debug\ZJULife_1.1.0.4_scale-100.appx

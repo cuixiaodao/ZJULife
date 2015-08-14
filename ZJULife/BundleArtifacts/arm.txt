@@ -1,0 +1,2 @@
+MainPackage=D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Release\ZJULife_1.1.0.6_ARM.appx
+SymbolPackage=C:\Users\cuichao\Desktop\ZJULife_1.1.0.6_Test\ZJULife_1.1.0.6_ARM.appxsym

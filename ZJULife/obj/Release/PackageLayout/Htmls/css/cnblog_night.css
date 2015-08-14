@@ -1,0 +1,119 @@
+body {
+	overflow-x: hidden;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	font-family: "微软雅黑", "Segoe WP";
+	background-color: #3d3d3d;
+	background-repeat: repeat;
+	color: #ecf0f1;
+	font-style: normal;
+	line-height: 150%;
+	-ms-scrollbar-face-color: #111;
+	scrollbar-face-color: #111;
+	-ms-scrollbar-highlight-color: #555;
+	scrollbar-highlight-color: #555;
+	-ms-scrollbar-shadow-color: #555;
+	scrollbar-shadow-color: #555;
+	-ms-scrollbar-3dlight-color: #111;
+	scrollbar-3dlight-color: #111;
+	-ms-scrollbar-arrow-color: #555;
+	scrollbar-arrow-color: #555;
+	-ms-scrollbar-track-color: #111;
+	scrollbar-track-color: #111;
+	-ms-scrollbar-darkshadow-color: #4c4c4c;
+	scrollbar-darkshadow-color: #4c4c4c;
+	font-size: 16px;
+}
+
+.cnblogs-markdown .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: .5em;
+    background: #fff;
+    color: #000;
+    font-family: "Courier New", sans-serif !important;
+    font-size: 1em;
+    line-height: 1.5 !important;
+    padding: 5px !important;
+}
+
+.xml .hljs-attribute {
+    color: red;
+}
+
+.cnblogs-markdown code {
+    font-family: "Courier New", sans-serif !important;
+    font-size: 1em;
+    background-color: #f5f5f5 !important;
+    border: 1px solid #ccc !important;
+    padding: 2px 5px !important;
+    border-radius: 3px !important;
+}
+
+.cnblogs-markdown pre {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img {
+    height:auto;
+    width:100%;
+    border: 0;
+}
+
+.cnblogs_code {
+    background-color: #aaa;
+    font-family: Courier New !important;
+    font-size: 0.7em;
+    border: 1px solid #ccc;
+    padding: 5px;
+    overflow: auto;
+    margin: 5px 0;
+    color: #000;
+}
+
+    .cnblogs_code div {
+        background-color: #aaa;
+    }
+
+    .cnblogs_code pre {
+        font-family: Courier New !important;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+
+    .cnblogs_code span {
+        font-family: Courier New !important;
+        line-height: 1.5 !important;
+    }
+
+.codeLineNumber {
+    -moz-user-select: none;
+    color: teal;
+    padding-right: 10px;
+}
+
+
+
+pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap !important;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 0.7em;
+}
+
+
+a:visited, a:active, a:link {
+    color: #8d8c8c;
+    text-decoration: none;
+}
+
+a:hove

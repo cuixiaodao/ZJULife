@@ -1,0 +1,4 @@
+MainPackage=d:\OneDrive\documents\visual studio 2015\Projects\ZJULife\ZJULife\bin\Release\ZJULife_1.0.0.27_AnyCPU.appx
+SymbolPackage=C:\Users\cuichao\Desktop\ZJULife_1.0.0.27_Test\ZJULife_1.0.0.27_AnyCPU.appxsym
+ResourcePack=d:\OneDrive\documents\visual studio 2015\Projects\ZJULife\ZJULife\bin\Release\ZJULife_1.0.0.27_scale-100.appx
+ResourcePack=d:\OneDrive\documents\visual studio 2015\Projects\ZJULife\ZJULife\bin\Release\ZJULife_1.0.0.27_scale-140.appx

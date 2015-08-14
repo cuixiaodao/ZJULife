@@ -1,0 +1,358 @@
+﻿<Page
+    x:Class="ZJULife.BusQuery"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ZJULife"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:valueconverter="using:ZJULife.Converters"
+    xmlns:data="using:ZJULife.Data" 
+    mc:Ignorable="d"
+    Background="{StaticResource MyDark}">
+
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo/>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <Grid Background="{ThemeResource MyGreen}">
+            <Viewbox HorizontalAlignment="Left">
+                <TextBlock x:Name="test" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="18,10,24,10" FontSize="48" FontFamily="微软雅黑" 
+                        Foreground="{StaticResource MyWhite}" TextAlignment="Left" Text="校车查询" />
+            </Viewbox>
+        </Grid>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="18,40,18,0" >
+            <Grid.Resources>
+                <Storyboard x:Name="ShowSearchResultStoryboard">
+                    <SplitOpenThemeAnimation
+                            OpenedTargetName="SearchResultGrid" 
+                            ContentTargetName="semanticZoom"
+                            ClosedTargetName="BusSearchPanel"
+                            ContentTranslationDirection="Top"
+                            ContentTranslationOffset="200"  
+                            OffsetFromCenter="0"
+                            OpenedLength="300"
+                            ClosedLength="100"
+                            Duration="20"/>
+                </Storyboard>
+                <Storyboard x:Name="ShowBusSearchPanelStoryboard">
+                    <SplitOpenThemeAnimation
+                            OpenedTargetName="BusSearchPanel" 
+                            ContentTargetName="BusQueryIcon"
+                            ClosedTargetName="SearchResultGrid"
+                            ContentTranslationDirection="Top"
+                            ContentTranslationOffset="50"  
+                            OffsetFromCenter="0"
+                            OpenedLength="300"
+                            ClosedLength="100"
+                            Duration="20"/>
+                </Storyboard>
+            </Grid.Resources>
+            <Grid x:Name="SearchResultGrid" Visibility="Collapsed">
+                <Grid.Resources>
+                    <CollectionViewSource x:Name="GroupedTrips" IsSourceGrouped="True" ItemsPath="Trips" />
+
+                    <Style TargetType="TextBlock" x:Key="MyTextStyle">
+                        <Setter Property="Foreground" Value="{ThemeResource MyWhite}" />
+                        <Setter Property="FontFamily" Value="微软雅黑" />
+                        <Setter Property="FontWeight" Value="Medium" />
+                        <Setter Property="FontSize" Value="20" />
+                        <Setter Property="TextWrapping" Value="Wrap"/>
+                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="TextAlignment" Value="Center" />
+                        <Setter Property="Margin" Value="0,4,0,4"/>
+                    </Style>
+
+                    <valueconverter:PassedStopsConverter x:Key="passedStopsConverter" />
+                    <valueconverter:TimeConverter x:Key="timeConverter" />
+
+                    <DataTemplate x:Name="ItemTemplate">
+                        <Border  Margin="0,4,0,24" BorderBrush="{ThemeResource MyGreen}" BorderThickness="0,0,0,2.5">
+                            <Grid Width="{Binding ElementName=semanticZoom,Path=ActualWidth}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="3*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Text="{Binding StartTime,Converter={StaticResource timeConverter}}" Style="{ThemeResource MyTextStyle}" />
+                                <TextBlock Grid.Column="1" Text="{Binding EndTime,Converter={StaticResource timeConverter}}" Style="{ThemeResource MyTextStyle}" />
+                                <TextBlock Grid.Column="2" Text="{Binding Note}" Style="{ThemeResource MyTextStyle}" FontSize="16" FontWeight="SemiBold"/>
+                                <TextBlock Grid.Row="1" Text="{Binding StartStop}" Style="{ThemeResource MyTextStyle}" />
+                                <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding EndStop}" Style="{ThemeResource MyTextStyle}" />
+                                <TextBlock Grid.Column="2" Grid.Row="1" Text="{Binding PassedStop,Converter={StaticResource passedStopsConverter}}" Style="{ThemeResource MyTextStyle}" />
+                            </Grid>
+                        </Border>
+
+                        <!--<TextBlock Text="{Binding Name}"  FontFamily="微软雅黑"  FontWeight="Medium" FontSize="24" Foreground="{ThemeResource MyWhite}"-->
+                        <!--TextAlignment="Right" HorizontalAlignment="Right" Margin="40,0,0,20" />-->
+                    </DataTemplate>
+                </Grid.Resources>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="12*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock x:Name="ResultsTextBlock" HorizontalAlignment="Left" Style="{ThemeResource MyHelpTextStyle}"
+                    FontSize="20" CharacterSpacing="6"  Text="查询结果"/>
+                <Grid x:Name="SearchResultListGrid" Grid.Row="1">
+                    <SemanticZoom Name="semanticZoom" VerticalAlignment="Top" Margin="4,0,4,0" >
+                    <SemanticZoom.ZoomedInView >
+                        <ListView VerticalAlignment="Top" HorizontalAlignment="Left"
+                                    x:Name="Trips"                                  
+			                        ItemsSource="{Binding Source={StaticResource GroupedTrips}}"
+			                        ItemTemplate="{StaticResource ItemTemplate}" 
+                                    ContinuumNavigationTransitionInfo.ExitElementContainer="True"
+                                    ScrollViewer.HorizontalScrollMode="Disabled"    
+                                    ScrollViewer.IsHorizontalScrollChainingEnabled="False"
+                                    IsItemClickEnabled="False"                                                        
+                                    SelectionMode="None"                        
+                                    Foreground="{StaticResource MyWhite}" >                                    
+                                    
+                            <!-- ContainerContentChanging="IncrementalUpdateHandler"-->
+
+                            <ListView.GroupStyle>
+                                <GroupStyle HidesIfEmpty="True" >
+                                    <GroupStyle.HeaderTemplate>
+                                        <DataTemplate>
+                                            <Grid HorizontalAlignment="Left" Margin="0,0,0,6" Background="{ThemeResource MyGreen}"
+                                                   Width="{Binding ElementName=semanticZoom,Path=ActualWidth}">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="30" />
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock FontSize="24" FontWeight="SemiBold" Style="{ThemeResource MyTextStyle}" Text="{Binding Name}" />
+                                                <TextBlock Grid.Column="1" Style="{ThemeResource MyTextStyle}" Text=":" FontWeight="SemiBold"/>
+                                                <TextBlock Grid.Column="2" Style="{ThemeResource MyTextStyle}" Text="{Binding Note}" FontSize="16" FontWeight="SemiBold" />
+                                            </Grid>
+                                        </DataTemplate>
+                                    </GroupStyle.HeaderTemplate>
+                                </GroupStyle>
+                            </ListView.GroupStyle>
+                        </ListView>
+                    </SemanticZoom.ZoomedInView>
+                    <SemanticZoom.ZoomedOutView>
+                        <GridView Background="{ThemeResource MyDark}" Opacity="0.9"
+                            Width="{Binding ElementName=SearchResultGrid,Path=ActualWidth}"
+                            Height="{Binding ElementName=SearchResultListGrid,Path=ActualHeight}"
+                            VerticalAlignment="Bottom" HorizontalAlignment="Center"                                    
+			                ItemsSource="{Binding Source={StaticResource GroupedTrips},Path=CollectionGroups}"			                                                    
+                            ScrollViewer.HorizontalScrollMode="Disabled"    
+                            ScrollViewer.IsHorizontalScrollChainingEnabled="False" >
+                            <GridView.Resources>
+                                <valueconverter:WidthConverter x:Key="widthConverter" />
+                            </GridView.Resources>
+                            
+                            <GridView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="4,8,4,4" Background="{ThemeResource MyGreen}" HorizontalAlignment="Center" >                                              
+                                        <TextBlock Text="{Binding Group.Name}" FontSize="20" FontWeight="SemiBold" 
+                                                   Style="{ThemeResource MyTextStyle}" Height="50" 
+                                                   Width="{Binding ElementName=SearchResultGrid,Path=ActualWidth,Converter={StaticResource widthConverter},ConverterParameter=0.3}" />
+                                    </Grid>
+                                </DataTemplate>
+                            </GridView.ItemTemplate>
+                        </GridView>                                                
+                    </SemanticZoom.ZoomedOutView>                                   
+                </SemanticZoom>
+                </Grid>
+            </Grid>
+
+            <StackPanel x:Name="BusSearchPanel" Orientation="Vertical" Background="{ThemeResource MyDark}" >
+                <StackPanel.Resources>
+                    <Style TargetType="ComboBox" x:Name="myComboBoxStyle">
+                        <Setter Property="BorderBrush" Value="{StaticResource MyGreen}"/>
+                        <Setter Property="Foreground" Value="{StaticResource MyWhite}"/>
+                        <Setter Property="Height" Value="60"/>
+                        <Setter Property="FontSize" Value="28"/>
+                        <Setter Property="FontFamily" Value="微软雅黑"/>
+                    </Style>
+                </StackPanel.Resources>
+
+                <TextBlock Style="{ThemeResource MyHelpTextStyle}">路线</TextBlock>
+                <Grid Margin="0,0,0,12">   
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ComboBox x:Name="StartPoint" Style="{ThemeResource myComboBoxStyle}" PlaceholderText="请选择出发点">
+                        <ComboBoxItem Content="紫金港" IsSelected="True" />
+                        <ComboBoxItem Content="玉泉" />
+                        <ComboBoxItem Content="西溪"/>
+                        <ComboBoxItem Content="华家池" />
+                        <ComboBoxItem Content="之江" />
+                        <ComboBoxItem Content="湖滨" />
+                    </ComboBox>
+                    
+                    <Grid Grid.Column="1" x:Name="ExchangeStartAndEndGrid" Tapped="ExchangeStartAndEndGrid_Tapped"
+                          PointerPressed="ExchangeStartAndEndGrid_PointerPressed" PointerReleased="ExchangeStartAndEndGrid_PointerReleased">                                            
+                        <Grid.Resources>
+                            <Storyboard x:Name="ExchangeStartAndEndGridPressedStoryboard">
+                                <DoubleAnimation Storyboard.TargetName="ExchangeStartAndEndIconScale"
+                                    Storyboard.TargetProperty="ScaleX"
+                                    From="1" 
+                                    To="1.2"                                 
+                                    Duration="0:0:0.1" />
+                                 <DoubleAnimation Storyboard.TargetName="ExchangeStartAndEndIconScale"
+                                    Storyboard.TargetProperty="ScaleY"
+                                    From="1" 
+                                    To="1.2"                                 
+                                    Duration="0:0:0.1" />
+                            </Storyboard>
+                            <Storyboard x:Name="ExchangeStartAndEndGridReleasedStoryboard">
+                                    <DoubleAnimation Storyboard.TargetName="ExchangeStartAndEndIconScale"
+                                                Storyboard.TargetProperty="ScaleX"
+                                                From="1.2" 
+                                                To="1"                                 
+                                                Duration="0:0:0.1" />
+                                    <DoubleAnimation Storyboard.TargetName="ExchangeStartAndEndIconScale"
+                                                Storyboard.TargetProperty="ScaleY"
+                                                From="1.2" 
+                                                To="1"                                 
+                                                Duration="0:0:0.1" />
+                            </Storyboard>
+                        </Grid.Resources>
+                        
+                        <Image x:Name="ExchangeStartAndEndIcon" Width="24" Source="ms-appx:///Assets/IconDoubleArrow.png"  Margin="4,0,4,0" >
+                            <Image.RenderTransform>
+                                <ScaleTransform x:Name="ExchangeStartAndEndIconScale" />
+                            </Image.RenderTransform>
+                        </Image>
+                    </Grid>   
+
+                    <ComboBox Grid.Column="2" x:Name="EndPoint" Style="{ThemeResource myComboBoxStyle}" PlaceholderText="选择终点">
+                        <ComboBoxItem Content="紫金港"/>
+                        <ComboBoxItem Content="玉泉" IsSelected="True"/>
+                        <ComboBoxItem Content="西溪"/>
+                        <ComboBoxItem Content="华家池"/>
+                        <ComboBoxItem Content="之江"/>
+                        <ComboBoxItem Content="湖滨"/>
+                    </ComboBox>
+                </Grid>
+
+                <TextBlock Style="{ThemeResource MyHelpTextStyle}">时间范围</TextBlock>
+                <Grid Margin="0,0,0,12">
+                    <Grid.Resources>
+                        <Style TargetType="TimePicker" x:Name="MyTimePickerStyle">
+                            <Setter Property="BorderBrush" Value="{StaticResource MyGreen}"/>
+                            <Setter Property="BorderThickness" Value="2.5"/>
+                            <Setter Property="Foreground" Value="{StaticResource MyWhite}"/>
+                            <Setter Property="FontFamily" Value="微软雅黑"/>
+                            <Setter Property="FontSize" Value="28"/>
+                            <Setter Property="Height" Value="60" />
+                            <Setter Property="MinuteIncrement" Value="10"/>
+                        </Style>
+                        
+                    <ControlTemplate x:Key="MyTimePickerControlTemplate" TargetType="TimePicker">
+                        <StackPanel Margin="{TemplateBinding Padding}" x:Name="LayoutRoot">
+                            <ContentPresenter x:Name="HeaderContentPresenter" Style="{StaticResource HeaderContentPresenterStyle}" Margin="0,0,0,-3"
+					            Content="{TemplateBinding Header}" ContentTemplate="{TemplateBinding HeaderTemplate}" />
+                            <Button x:Name="FlyoutButton"
+					            Foreground="{TemplateBinding Foreground}"
+					            BorderBrush="{TemplateBinding BorderBrush}"
+					            BorderThickness="2.5"
+					            Padding="6.5,0,0,3"
+					            IsEnabled="{TemplateBinding IsEnabled}"
+					            HorizontalAlignment="Stretch"
+					            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" />
+                        </StackPanel>
+                    </ControlTemplate>
+                     
+                    </Grid.Resources>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TimePicker x:Name="MinTime" Style="{ThemeResource MyTimePickerStyle}" Time="7:0:0" Template="{StaticResource MyTimePickerControlTemplate}" />
+                    <Image Grid.Column="1" Width="24" Source="ms-appx:///Assets/IconTo.png" Margin="4,0,4,0"/>
+                    <TimePicker x:Name="MaxTime" Grid.Column="2" Style="{ThemeResource MyTimePickerStyle}" Time="22:00" Template="{StaticResource MyTimePickerControlTemplate}" />
+                </Grid>
+
+                <TextBlock Style="{ThemeResource MyHelpTextStyle}">校车类型</TextBlock>
+                <Grid Margin="0,0,0,12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox x:Name="BusKind" Style="{ThemeResource myComboBoxStyle}" 
+                              PlaceholderText="选择校车类型" FontSize="20" Height="Auto">
+                        <ComboBoxItem Content="所有类型" IsSelected="True"/>
+                        <ComboBoxItem Content="教师车" />
+                        <ComboBoxItem Content="学生车"/>
+                    </ComboBox>
+                </Grid>
+                <Grid Margin="0,0,0,12">
+                    <Grid.Resources>
+                        <Storyboard x:Name="BusQueryIconPressedStoryboard">
+                            <DoubleAnimation Storyboard.TargetName="BusQueryIconRotation"
+                                Storyboard.TargetProperty=" RotationY"
+                                From="0" 
+                                To="-5"                                 
+                                Duration="0:0:0.1" />
+                            <DoubleAnimation Storyboard.TargetName="BusQueryIconRotation"
+                                Storyboard.TargetProperty=" RotationZ"
+                                From="0" 
+                                To="-5"                                 
+                                Duration="0:0:0.1" />
+                        </Storyboard>
+                        <Storyboard x:Name="BusQueryIconReleasedStoryboard">
+                            <DoubleAnimation Storyboard.TargetName="BusQueryIconRotation"
+                                            Storyboard.TargetProperty=" RotationY"
+                                            From="-5" 
+                                            To="0"                                 
+                                            Duration="0:0:0.1" />
+                            <DoubleAnimation Storyboard.TargetName="BusQueryIconRotation"
+                                            Storyboard.TargetProperty=" RotationZ"
+                                            From="-5" 
+                                            To="0"                                 
+                                            Duration="0:0:0.1" />
+                        </Storyboard>
+                    </Grid.Resources>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+ 
+                    <Image x:Name="BusQueryIcon" Source="ms-appx:///Assets/IconBusSearch.png" 
+                           Tapped="BusQueryIcon_Tapped" PointerPressed="BusQueryIcon_PointerPressed" PointerReleased="BusQueryIcon_PointerReleased">
+                        <Image.Projection>
+                            <PlaneProjection x:Name="BusQueryIconRotation" CenterOfRotationX="0" CenterOfRotationY="1"  CenterOfRotationZ="1"/>
+                        </Image.Projection>
+                    </Image>
+                </Grid>
+            </StackPanel>
+        </Grid >
+    </Grid>
+</Page>

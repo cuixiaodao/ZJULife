@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="45681cuichaozju.13699E8A4EC7B" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>ZH-CN</Language>
+			<Scale>240</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="About.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/About.xbf">
+				<Candidate type="Path">
+					<Value>About.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="App.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="BusQuery.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/BusQuery.xbf">
+				<Candidate type="Path">
+					<Value>BusQuery.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ItemPage.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/ItemPage.xbf">
+				<Candidate type="Path">
+					<Value>ItemPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Map.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Map.xbf">
+				<Candidate type="Path">
+					<Value>Map.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PivotPage.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/PivotPage.xbf">
+				<Candidate type="Path">
+					<Value>PivotPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SearchPage.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/SearchPage.xbf">
+				<Candidate type="Path">
+					<Value>SearchPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ZJULife.xr.xml" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/ZJULife.xr.xml">
+				<Candidate type="Path">
+					<Value>ZJULife.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="Comment.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Comment.png">
+					<Candidate type="Path">
+						<Value>Assets\Comment.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FeedBack.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/FeedBack.png">
+					<Candidate type="Path">
+						<Value>Assets\FeedBack.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon1.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon1.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon10.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon10.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon10.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon11.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon11.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon11.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon12.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon12.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon12.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon13.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon13.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon13.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon14.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon14.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon14.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon15.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon15.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon15.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon16.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon16.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon16.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon2.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon2.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon2.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon3.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon3.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon3.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon4.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon4.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon4.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon5.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon5.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon5.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon6.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon6.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon6.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon7.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon7.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon7.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon8.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon8.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon8.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Icon9.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Icon9.png">
+					<Candidate type="Path">
+						<Value>Assets\Icon9.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="IconBusSearch.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/IconBusSearch.png">
+					<Candidate type="Path">
+						<Value>Assets\IconBusSearch.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="IconDoubleArrow.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/IconDoubleArrow.png">
+					<Candidate type="Path">
+						<Value>Assets\IconDoubleArrow.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="IconTo.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/IconTo.png">
+					<Candidate type="Path">
+						<Value>Assets\IconTo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Logo.png"/>
+				<NamedResource name="Logo106.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Logo106.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo106.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo120.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Logo120.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo120.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo170.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Logo170.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo170.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo360.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Logo360.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo360.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Search.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/Search.png">
+					<Candidate type="Path">
+						<Value>Assets\Search.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/SmallLogo.png"/>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/SplashScreen.png"/>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/StoreLogo.png"/>
+				<ResourceMapSubtree name="MapIcons">
+					<NamedResource name="Building.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/MapIcons/Building.png">
+						<Candidate type="Path">
+							<Value>Assets\MapIcons\Building.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="DiningHall.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/MapIcons/DiningHall.png">
+						<Candidate type="Path">
+							<Value>Assets\MapIcons\DiningHall.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Dorm.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/MapIcons/Dorm.png">
+						<Candidate type="Path">
+							<Value>Assets\MapIcons\Dorm.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Gym.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/MapIcons/Gym.png">
+						<Candidate type="Path">
+							<Value>Assets\MapIcons\Gym.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Hospital.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/MapIcons/Hospital.png">
+						<Candidate type="Path">
+							<Value>Assets\MapIcons\Hospital.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Market.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/MapIcons/Market.png">
+						<Candidate type="Path">
+							<Value>Assets\MapIcons\Market.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Position.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/MapIcons/Position.png">
+						<Candidate type="Path">
+							<Value>Assets\MapIcons\Position.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Spot.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/MapIcons/Spot.png">
+						<Candidate type="Path">
+							<Value>Assets\MapIcons\Spot.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="StudyPlace.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Assets/MapIcons/StudyPlace.png">
+						<Candidate type="Path">
+							<Value>Assets\MapIcons\StudyPlace.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="BusHelper">
+				<NamedResource name="Buses.json" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/BusHelper/Buses.json">
+					<Candidate type="Path">
+						<Value>BusHelper\Buses.json</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Common">
+				<NamedResource name="ReadMe.txt" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Common/ReadMe.txt">
+					<Candidate type="Path">
+						<Value>Common\ReadMe.txt</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="DataModel">
+				<NamedResource name="Data.db" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/DataModel/Data.db">
+					<Candidate type="Path">
+						<Value>DataModel\Data.db</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Data.json" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/DataModel/Data.json">
+					<Candidate type="Path">
+						<Value>DataModel\Data.json</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Htmls">
+				<NamedResource name="after_class.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/after_class.html">
+					<Candidate type="Path">
+						<Value>Htmls\after_class.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="anti_fake.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/anti_fake.html">
+					<Candidate type="Path">
+						<Value>Htmls\anti_fake.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="award.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/award.html">
+					<Candidate type="Path">
+						<Value>Htmls\award.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="common_class.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/common_class.html">
+					<Candidate type="Path">
+						<Value>Htmls\common_class.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="eating.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/eating.html">
+					<Candidate type="Path">
+						<Value>Htmls\eating.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="hospital.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/hospital.html">
+					<Candidate type="Path">
+						<Value>Htmls\hospital.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="hotel.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/hotel.html">
+					<Candidate type="Path">
+						<Value>Htmls\hotel.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="net_manage.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage.html">
+					<Candidate type="Path">
+						<Value>Htmls\net_manage.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="net_resources.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_resources.html">
+					<Candidate type="Path">
+						<Value>Htmls\net_resources.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="study_room.html" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/study_room.html">
+					<Candidate type="Path">
+						<Value>Htmls\study_room.html</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="after_class">
+					<NamedResource name="afterclass1.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/after_class/afterclass1.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\after_class\afterclass1.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="afterclass2.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/after_class/afterclass2.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\after_class\afterclass2.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="afterclass3.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/after_class/afterclass3.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\after_class\afterclass3.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="afterclass4.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/after_class/afterclass4.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\after_class\afterclass4.jpg</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="anti_fake">
+					<NamedResource name="anti_fake1.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/anti_fake/anti_fake1.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\anti_fake\anti_fake1.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="anti_fake2.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/anti_fake/anti_fake2.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\anti_fake\anti_fake2.jpg</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="award">
+					<NamedResource name="award1.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/award/award1.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\award\award1.jpg</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="css">
+					<NamedResource name="format.css" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/css/format.css">
+						<Candidate type="Path">
+							<Value>Htmls\css\format.css</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="eating">
+					<NamedResource name="dongbeicai.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/eating/dongbeicai.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\eating\dongbeicai.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="wangzijiulou.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/eating/wangzijiulou.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\eating\wangzijiulou.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="yaduokafei.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/eating/yaduokafei.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\eating\yaduokafei.jpg</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="net_manage">
+					<NamedResource name="IPbd1.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/IPbd1.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\net_manage\IPbd1.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="IPbd2.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/IPbd2.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\net_manage\IPbd2.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="StaticWG.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/StaticWG.png">
+						<Candidate type="Path">
+							<Value>Htmls\net_manage\StaticWG.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="sxtc.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/sxtc.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\net_manage\sxtc.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Thumb-up128.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/Thumb-up128.png">
+						<Candidate type="Path">
+							<Value>Htmls\net_manage\Thumb-up128.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="VPNSetting1.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/VPNSetting1.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\net_manage\VPNSetting1.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="VPNSetting2.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/VPNSetting2.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\net_manage\VPNSetting2.jpg</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="VPNSetting3.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/VPNSetting3.jpg">
+						<Candidate type="Path">
+							<Value>Htmls\net_manage\VPNSetting3.jpg</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Resources">
+			<NamedResource name="NavigationFailedExceptionMessage" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Resources/NavigationFailedExceptionMessage">
+				<Candidate qualifiers="Language-ZH-CN" isDefault="true" type="String">
+					<Value>Navigation failed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NewItemDescription" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Resources/NewItemDescription">
+				<Candidate qualifiers="Language-ZH-CN" isDefault="true" type="String">
+					<Value>Item Description: Pellentesque porta, mauris quis interdum vehicula, urna sapien ultrices velit, nec venenatis dui odio in augue. Cras posuere, enim a cursus convallis, neque turpis malesuada erat, ut adipiscing neque tortor ac erat.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
