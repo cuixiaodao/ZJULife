@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
@@ -57,24 +58,6 @@ namespace ZJULife
         /// session.  The state will be null the first time a page is visited.</param>
         private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-            //载入用户常去地点
-            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (localsettings.Values.ContainsKey("busKind"))
-            {
-                StartPoint.SelectedIndex = (int)localsettings.Values["startPoint"];
-                EndPoint.SelectedIndex = (int)localsettings.Values["endPoint"];
-                BusKind.SelectedIndex = (int)localsettings.Values["busKind"];
-            }
-            //预设出发时间
-            TimeSpan now = DateTime.Now.TimeOfDay;
-            TimeSpan earliestTime = TimeSpan.Parse("06:30");
-            TimeSpan lastestTime = TimeSpan.Parse("23:30");
-
-            //MinTime.Time = now > TimeSpan.Parse("22:00") | now < TimeSpan.Parse("06:30") ? TimeSpan.Parse("06:30") : now;
-            MinTime.Time = now < TimeSpan.Parse("23:10") && now > earliestTime ? now : earliestTime;
-
-            TimeSpan maxTime= MinTime.Time.Add(TimeSpan.Parse("02:00"));
-            MaxTime.Time = maxTime<lastestTime?maxTime : lastestTime;
         }
 
         /// <summary>
@@ -87,15 +70,6 @@ namespace ZJULife
         /// serializable state.</param>
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
-            //存储用户常去地点
-            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (!(localsettings.Values.ContainsKey("busKind")
-                  && (int)localsettings.Values["startPoint"] == StartPoint.SelectedIndex))
-            {
-                localsettings.Values["startPoint"] = StartPoint.SelectedIndex;
-                localsettings.Values["endPoint"] = EndPoint.SelectedIndex;
-                localsettings.Values["busKind"] = BusKind.SelectedIndex;
-            }
         }
 
         #region NavigationHelper registration
@@ -117,34 +91,41 @@ namespace ZJULife
         {
             this.navigationHelper.OnNavigatedTo(e);
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
-            ////载入用户常去地点
-            //Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            //if (localsettings.Values.ContainsKey(("startPoint")))
-            //{
-            //    StartPoint.SelectedIndex = (int)localsettings.Values["startPoint"];
-            //    EndPoint.SelectedIndex = (int)localsettings.Values["endPoint"];
-            //    BusKind.SelectedIndex = (int)localsettings.Values["busKind"];
-            //}
-            ////预设出发时间
-            //TimeSpan now = DateTime.Now.TimeOfDay;
-            //MinTime.Time = now > TimeSpan.Parse("22:30") | now < TimeSpan.Parse("06:30") ? TimeSpan.Parse("06:30") : now;
-            //MaxTime.Time = now.Add(TimeSpan.Parse("03:00"));
 
-            //if (localsettings.Values.ContainsKey(("endPoint")))
-            //{
-            //    EndPoint.SelectedIndex = (int)localsettings.Values["endPoint"];
-            //}
+            //载入用户常去地点
+            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (localsettings.Values.ContainsKey("busKind"))
+            {
+                StartPoint.SelectedIndex = (int)localsettings.Values["startPoint"];
+                EndPoint.SelectedIndex = (int)localsettings.Values["endPoint"];
+                BusKind.SelectedIndex = (int)localsettings.Values["busKind"];
+            }
+            //预设出发时间
+            TimeSpan now = DateTime.Now.TimeOfDay;
+            TimeSpan earliestTime = TimeSpan.Parse("06:30");
+            TimeSpan lastestTime = TimeSpan.Parse("23:30");
+
+            MinTime.Time = (now < TimeSpan.Parse("23:10")) && (now > earliestTime) ? now : earliestTime;
+
+            TimeSpan maxTime = MinTime.Time.Add(TimeSpan.Parse("02:00"));
+            MaxTime.Time = maxTime < lastestTime ? maxTime : lastestTime;
+
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
             Windows.Phone.UI.Input.HardwareButtons.BackPressed -= HardwareButtons_BackPressed;
-            ////存储用户常去地点
-            //Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            //localsettings.Values["startPoint"] = StartPoint.SelectedIndex;
-            //localsettings.Values["endPoint"] = EndPoint.SelectedIndex;
-            //localsettings.Values["busKind"] = BusKind.SelectedIndex;
+
+            //存储用户常去地点
+            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (!(localsettings.Values.ContainsKey("busKind")
+                  && (int)localsettings.Values["startPoint"] == StartPoint.SelectedIndex))
+            {
+                localsettings.Values["startPoint"] = StartPoint.SelectedIndex;
+                localsettings.Values["endPoint"] = EndPoint.SelectedIndex;
+                localsettings.Values["busKind"] = BusKind.SelectedIndex;
+            }
         }
 
         private void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
@@ -188,17 +169,8 @@ namespace ZJULife
              ((ComboBoxItem)EndPoint.SelectedItem).Content.ToString(),
             MinTime.Time, MaxTime.Time, ((ComboBoxItem)BusKind.SelectedItem).Content.ToString());
 
-            //DefaultViewModel["BusSearchResults"] = results;
-            //var source = new ObservableCollection<Bus>(results);
-            GroupedTrips.Source = results;
-            if (results == null)
-            {
-                ResultsTextBlock.Text = "无查询结果";
-            }
-            else
-            {
-                ResultsTextBlock.Text = "查询结果";
-            }
+            DefaultViewModel["BusSearchResults"] = results;
+            ResultsTextBlock.Text = results == null ? "无查询结果" : "查询结果";
         }
 
         private void ExchangeStartAndEndGrid_Tapped(object sender, TappedRoutedEventArgs e)

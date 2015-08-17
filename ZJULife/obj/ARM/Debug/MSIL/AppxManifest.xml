@@ -43,13 +43,12 @@
     <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
     <build:Item Name="TargetFrameworkMoniker" Value="WindowsPhoneApp,Version=v8.1" />
     <build:Item Name="VisualStudio" Version="14.0" />
-    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Enterprise 2015 RC" />
-    <build:Item Name="OperatingSystem" Version="10.0.10122.0 (fbl_impressive.150513-1845)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.22823.1" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
+    <build:Item Name="OperatingSystem" Version="10.0.10240.16384 (th1.150709-1700)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.23107.0" />
     <build:Item Name="ProjectGUID" Value="{A7353F55-E570-4837-8B3D-0162A356CE57}" />
-    <build:Item Name="ilc.exe" Version="1.0.22816.00 built by: PROJECTNREL" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />
-    <build:Item Name="SQLite.WP81" Version="3.8.10.2" />
+    <build:Item Name="SQLite.WP81" Version="3.8.11.1" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>
 </Package>

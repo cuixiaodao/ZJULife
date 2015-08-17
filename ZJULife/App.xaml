@@ -24,14 +24,11 @@
             <Setter Property="FontWeight" Value="ExtraLight" />            
             <Setter Property="FontSize" Value="20" />
         </Style>
-        
+
         <Style TargetType="ListView" x:Key="MyListViewStyle">
             <Setter Property="IsItemClickEnabled" Value="True" />
             <Setter Property="Margin" Value="12,25,18,0"/>
             <Setter Property="ContinuumNavigationTransitionInfo.ExitElementContainer" Value="True" />
         </Style>
-        
-
-        
     </Application.Resources>
 </Application>

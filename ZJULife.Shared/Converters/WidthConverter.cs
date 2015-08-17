@@ -7,7 +7,7 @@ namespace ZJULife.Converters
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            return float.Parse((string)parameter) * (double)value;
+            return double.Parse((string)parameter) * (double)value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

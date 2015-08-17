@@ -1,5 +1,4 @@
-﻿<Page 
-    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps" 
+﻿<Page xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"     
     x:Class="ZJULife.Map"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,7 +8,7 @@
     xmlns:valueconverter="using:ZJULife.Converters"
     mc:Ignorable="d"   
     Background="{ThemeResource MyDark}" >
-    
+
     <Page.Transitions>
         <TransitionCollection>
             <NavigationThemeTransition>
@@ -22,44 +21,58 @@
 
     <Page.BottomAppBar>
         <CommandBar Opacity="0.8"  Background="{ThemeResource MyDark}">
-            <AppBarButton x:ConnectionId='1' x:Name="PlacesButton" FontFamily="微软雅黑" Label="地点" Icon="Home"                           />
+            <CommandBar.Resources>
+                <Style x:Name="AutoSuggestBoxStyle" TargetType="AutoSuggestBox">
+                    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                    <Setter Property="TextMemberPath" Value="Name"/>
+                    <Setter Property="Margin" Value="10,0,0,0" />
+                </Style>
+
+                <DataTemplate x:Name="AutoSuggestBoxItemTemplate">
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </CommandBar.Resources>
+            
+            <AppBarButton x:ConnectionId='1' x:Name="PlacesButton" FontFamily="微软雅黑" Label="地点" Icon="List"                           />
+            <AppBarButton x:Name="FindButton"  FontFamily="微软雅黑" Label="搜索" Icon="Find">
+                <AppBarButton.Flyout>
+                    <Flyout x:Name="FindPositionFlyout">
+                        <AutoSuggestBox x:ConnectionId='5' x:Name="FindPositionTextBox" Margin="20,0,20,0" Style="{ThemeResource AutoSuggestBoxStyle}"
+                                PlaceholderText="输入地点关键字" ItemTemplate="{ThemeResource AutoSuggestBoxItemTemplate}"                          
+                                                                                                                                
+                                                                   >
+                        </AutoSuggestBox>
+                    </Flyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
             <AppBarButton x:Name="RouteButton" FontFamily="微软雅黑" Label="路线" Icon="Go">
                 <AppBarButton.Flyout>
                     <Flyout x:Name="FindRouteFlyout">
-                        <Grid x:Name="FindRouteGrid" HorizontalAlignment="Left">
-                            <Grid.Resources>
-                                <Style TargetType="TextBox" x:Key="MyPositionTextBoxStyle">
-                                    <Setter Property="Foreground" Value="{ThemeResource MyDark}" />
-                                    <Setter Property="FontFamily" Value="微软雅黑" />
-                                    <Setter Property="IsSpellCheckEnabled" Value="False" />
-                                    <Setter Property="FontSize" Value="28" />
-                                    <!--<Setter Property="InputScope" Value="Search" />-->
-                                    <Setter Property="BorderThickness" Value="0,0,0,1.5" />
-                                </Style>
-                            </Grid.Resources>
-                            
+                        <Grid x:Name="FindRouteGrid" HorizontalAlignment="Stretch">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="40" />
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <TextBox x:ConnectionId='4' x:Name="StartPositionTextBox" Margin="10,0,0,0" PlaceholderText="输入起点" 
+                            <AutoSuggestBox x:ConnectionId='3' x:Name="StartPositionTextBox" Style="{ThemeResource AutoSuggestBoxStyle}" 
+                               PlaceholderText="出发地关键字" ItemTemplate="{ThemeResource AutoSuggestBoxItemTemplate}"                     
                                                                                                            
-                                     Style="{ThemeResource MyPositionTextBoxStyle}"  InputScope="Search" />
+                                                                   >
+                            </AutoSuggestBox>
 
                             <Image Grid.Column="1" Width="24" Source="ms-appx:///Assets/IconTo.png" VerticalAlignment="Center" Margin="0,0,0,16"/>
 
-                            <TextBox x:ConnectionId='5' Grid.Column="2" x:Name="EndPositionTextBox" Margin="0,0,10,0"
-                                     PlaceholderText="输入目的地"                                                                       
-                                     InputScope="Search" Style="{ThemeResource MyPositionTextBoxStyle}"/>
+                            <AutoSuggestBox x:ConnectionId='4' x:Name="EndPositionTextBox" Grid.Column="2" Style="{ThemeResource AutoSuggestBoxStyle}"
+                                PlaceholderText="目的地关键字" ItemTemplate="{ThemeResource AutoSuggestBoxItemTemplate}"                           
+                                                                                                            
+                                                                   >
+                            </AutoSuggestBox>
                         </Grid>
                     </Flyout>
                 </AppBarButton.Flyout>
             </AppBarButton>
-
             <AppBarButton x:ConnectionId='2' x:Name="LocationButton" FontFamily="微软雅黑" Label="我" Icon="Target"                             />
-            <AppBarButton x:ConnectionId='3' x:Name="BingButton"  FontFamily="微软雅黑" Label="Bing"                          Icon="Forward"/>
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -74,37 +87,38 @@
         <Maps:MapControl x:ConnectionId='6' x:Name="MyMap" Margin="0,0,0,-65"
                          MapServiceToken="m2wVybIZi887s2i955L6Eg"                             LandmarksVisible="True" >
         </Maps:MapControl>
-        <Popup x:Name="mapObjectDescriptionPopup" VerticalAlignment="Top" Height="auto">            
-            <Grid Background="{ThemeResource MyDark}" Opacity="0.9" Height="auto" Width="{Binding ElementName=mapObjectDescriptionPopup,Path=ActualWidth}">                    
+
+        <Popup x:Name="mapObjectDescriptionPopup" VerticalAlignment="Top" Height="auto">
+            <Grid Background="{ThemeResource MyDark}" Opacity="0.9" Height="auto" Width="{Binding ElementName=mapObjectDescriptionPopup,Path=ActualWidth}">
                 <TextBlock x:Name="mapObjectDescriptionTextblock" Foreground="{ThemeResource MyWhite}" 
                        FontSize="24" FontFamily="微软雅黑" TextWrapping="Wrap" Margin="8,8,8,8"/>
             </Grid>
-        </Popup>        
-                        
-        <Grid x:Name="MyPlacesGrid" Visibility="Collapsed" Opacity="0.8">
+        </Popup>
+
+        <Grid x:Name="MyPlacesGrid" Visibility="Collapsed" Opacity="0.8" >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition  Width="2*" />                    
+                <ColumnDefinition  Width="2*" />
                 <ColumnDefinition  Width="3*" />
             </Grid.ColumnDefinitions>
-            
-            <Grid x:Name="PlacesListColumn" Background="{ThemeResource MyDark}" Height="500" VerticalAlignment="Bottom">                  
+
+            <Grid x:Name="PlacesListColumn" Margin="0,80,0,0" VerticalAlignment="Stretch" Background="{ThemeResource MyDark}" >
                 <Grid.Resources>
                     <valueconverter:WidthConverter x:Key="widthConverter" />
-                    
+
                     <DataTemplate x:Name="ItemTemplate">
                         <TextBlock Text="{Binding Name}" FontFamily="微软雅黑"  FontWeight="Medium" FontSize="18" Foreground="{ThemeResource MyWhite}"                                                                                                   
                             TextAlignment="Left" HorizontalAlignment="Left" Margin="12,0,0,12" TextWrapping="Wrap"/>
-                    </DataTemplate>                   
+                    </DataTemplate>
 
-                    <CollectionViewSource x:Name="GroupedPlaces" IsSourceGrouped="True" ItemsPath="InternalList" />		               
+                    <CollectionViewSource x:Name="GroupedPlaces" IsSourceGrouped="True" ItemsPath="InternalList" />
                 </Grid.Resources>
-                
+
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="9*" />
                 </Grid.RowDefinitions>
 
-                <ComboBox x:ConnectionId='7' x:Name="CampusComboBox" BorderThickness="0"                                                    FontSize="28" PlaceholderText="请选择校区">
+                <ComboBox x:ConnectionId='7' x:Name="CampusComboBox"  BorderThickness="0,0,0,2.5" FontSize="28" FontWeight="SemiBold" PlaceholderText="请选择校区"                                                    >
                     <ComboBoxItem Content="紫金港" Tag="ZJG" />
                     <ComboBoxItem Content="玉泉" Tag="YQ" />
                     <ComboBoxItem Content="西溪" Tag="XX" />
@@ -154,7 +168,9 @@
 			                ItemsSource="{Binding Source={StaticResource GroupedPlaces},Path=CollectionGroups}"			                                                    
                             ScrollViewer.HorizontalScrollMode="Disabled"    
                             ScrollViewer.IsHorizontalScrollChainingEnabled="False" 
-                           >                        --><!-- ItemTemplate="{ThemeResource GroupHeaderTemplate}"--><!--    
+                           >                        -->
+                    <!-- ItemTemplate="{ThemeResource GroupHeaderTemplate}"-->
+                    <!--    
                             <GridView.ItemTemplate>
                                 <DataTemplate x:Name="GroupHeaderTemplate">
                                     <Grid HorizontalAlignment="Left" Margin="0,0,0,20" Background="{ThemeResource MyDark}" Opacity="0.9">
@@ -172,10 +188,10 @@
                                 </DataTemplate>
                             </GridView.ItemTemplate>
                         </GridView>                                                
-                    </SemanticZoom.ZoomedOutView>-->     
-                </SemanticZoom>                               
+                    </SemanticZoom.ZoomedOutView>-->
+                </SemanticZoom>
             </Grid>
         </Grid>
-    </Grid>       
+    </Grid>
 </Page>
 

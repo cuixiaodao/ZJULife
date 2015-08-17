@@ -39,3 +39,4 @@
  
 # Debug files 
 *.dSYM/ 
+.vs/

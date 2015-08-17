@@ -85,6 +85,7 @@ namespace ZJULife
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
+            this.defaultViewModel["RecommendApps"] =RecommendApp.GetAppRecommendList();
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

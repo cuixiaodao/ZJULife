@@ -67,7 +67,7 @@ namespace ZJULife
                 }
                 if (e.PageState.ContainsKey("PreviousSearchResult"))
                 {
-                    this.DefaultViewModel["RelativeItems"] = (e.PageState["PreviousSearchResult"]);
+                    this.DefaultViewModel["RelativeItems"] = e.PageState["PreviousSearchResult"];
                 }
             }
         }
@@ -180,31 +180,12 @@ namespace ZJULife
                 {
                     handler(this, TappedArgs_e);
                 }
-                //InputPane.GetForCurrentView().TryHide();
-                //ResultsTextBlock.Focus(FocusState.Programmatic);
-                //var items = await DataSource.GetRelativeItemsAsync(SearchTextBox.Text);
-                //this.DefaultViewModel["RelativeItems"] = items;
-                //if (items == null)
-                //{
-                //    ResultsTextBlock.Visibility = Visibility.Visible;
-                //}
-                //else
-                //{
-                //    ResultsTextBlock.Visibility = Visibility.Collapsed;
-                //}
             }
         }
 
         private void SearchTextBox_GotFocus(object sender, RoutedEventArgs e)
-        {
-            //SearchTextBox.Foreground = new SolidColorBrush(Color.FromArgb(255, 30, 30, 30));
+        {           
             SearchTextBox.SelectAll();
         }
-
-        //private void SearchTextBox_Tapped(object sender, TappedRoutedEventArgs e)
-        //{
-        //    this.Focus(FocusState.Programmatic);
-        //    InputPane.GetForCurrentView().TryShow();
-        //}
     }
 }

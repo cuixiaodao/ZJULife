@@ -98,40 +98,5 @@ namespace ZJULife
         }
 
         #endregion NavigationHelper registration
-
-        //private async void FeedBackGrid_Tapped(object sender, TappedRoutedEventArgs e)
-        //{
-        //    Windows.ApplicationModel.Email.EmailMessage mail = new Windows.ApplicationModel.Email.EmailMessage();
-        //    mail.Subject = "ZJU life Windows客户端问题反馈与功能建议";
-        //    mail.Body = "感谢回复！/n";
-        //    mail.To.Add(new Windows.ApplicationModel.Email.EmailRecipient("3120103843@zju.edu.cn", "cuichao"));
-        //    await Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(mail);
-        //}
-
-        //private void FeedBackGrid_PointerPressed(object sender, PointerRoutedEventArgs e)
-        //{
-        //    FeedBackGridPressedStoryboard.Begin();
-        //}
-
-        //private void FeedBackGrid_PointerReleased(object sender, PointerRoutedEventArgs e)
-        //{
-        //    FeedbackGridReleasedStoryboard.Begin();
-        //}
-
-        //private async void CommentGrid_Tapped(object sender, TappedRoutedEventArgs e)
-        //{
-        //    await Windows.System.Launcher.LaunchUriAsync(new Uri(string.Format("ms-windows-store:reviewapp?appid={0}", CurrentApp.AppId)));
-        //    //await Windows.System.Launcher.LaunchUriAsync(new Uri(string.Format("ms-windows-store:reviewapp")));
-        //}
-
-        //private void CommentGrid_PointerPressed(object sender, PointerRoutedEventArgs e)
-        //{
-        //    CommentGridPressedStoryboard.Begin();
-        //}
-
-        //private void CommentGrid_PointerReleased(object sender, PointerRoutedEventArgs e)
-        //{
-        //    CommentGridReleasedStoryboard.Begin();
-        //}
     }
 }

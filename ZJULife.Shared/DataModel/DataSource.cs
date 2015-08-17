@@ -96,10 +96,9 @@ namespace ZJULife.Data
 
         public static async Task<DataGroup> GetGroupAsync(string uniqueId)
         {
-            await _dataSource.GetDataAsync();
-            // Simple linear search is acceptable for small data sets
+            await _dataSource.GetDataAsync();                              
             var matches = _dataSource.Groups.Where((group) => group.UniqueId.Equals(uniqueId));
-            if (matches.Count() == 1) return matches.First();
+            if (matches.Count() != 0) return matches.First();
             return null;
         }
 
@@ -108,7 +107,7 @@ namespace ZJULife.Data
             await _dataSource.GetDataAsync();
             // Simple linear search is acceptable for small data sets
             var matches = _dataSource.Groups.SelectMany(group => group.Items).Where((item) => item.UniqueId.Equals(uniqueId));
-            if (matches.Count() == 1) return matches.First();
+            if (matches.Count() != 0) return matches.First();
             return null;
         }
 
@@ -133,6 +132,8 @@ namespace ZJULife.Data
             JsonObject jsonObject = JsonObject.Parse(jsonText);
             JsonArray jsonArray = jsonObject["Groups"].GetArray();
 
+            var test = jsonArray.Count + jsonArray.ToString();
+
             foreach (JsonValue groupValue in jsonArray)
             {
                 JsonObject groupObject = groupValue.GetObject();
@@ -148,7 +149,7 @@ namespace ZJULife.Data
                                                        itemObject["ImagePath"].GetString(),
                                                        itemObject["DataPath"].GetString()));
                 }
-                this.Groups.Add(group);
+                this._groups.Add(group);
             }
         }
     }

@@ -73,8 +73,7 @@ namespace ZJULife
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var dataGroup = await DataSource.GetGroupAsync("Group-1");
-            this.DefaultViewModel[FirstGroupName] = dataGroup;
+            this.DefaultViewModel[FirstGroupName] = await DataSource.GetGroupAsync("Group-1");
         }
 
         /// <summary>
@@ -96,20 +95,17 @@ namespace ZJULife
         ///
         private async void SecondPivot_Loaded(object sender, RoutedEventArgs e)
         {
-            var dataGroup = await DataSource.GetGroupAsync("Group-2");
-            this.DefaultViewModel[SecondGroupName] = dataGroup;
+            this.DefaultViewModel[SecondGroupName] = await DataSource.GetGroupAsync("Group-2");
         }
 
         private async void ThirdPivot_Loaded(object sender, RoutedEventArgs e)
         {
-            var dataGroup = await DataSource.GetGroupAsync("Group-3");
-            this.DefaultViewModel[ThirdGroupName] = dataGroup;
+            this.DefaultViewModel[ThirdGroupName] = await DataSource.GetGroupAsync("Group-3");
         }
 
         private async void ForThPivot_Loaded(object sender, RoutedEventArgs e)
         {
-            var dataGroup = await DataSource.GetGroupAsync("Group-4");
-            this.DefaultViewModel[ForthGroupName] = dataGroup;
+            this.DefaultViewModel[ForthGroupName] = await DataSource.GetGroupAsync("Group-4");
         }
 
         /// <summary>
@@ -119,8 +115,8 @@ namespace ZJULife
         {
             // Navigate to the appropriate destination page, configuring the new page
             // by passing required information as a navigation parameter
-            var itemId = ((DataItem)e.ClickedItem).UniqueId;
-            switch (itemId.ToString())
+            string itemId = ((DataItem)e.ClickedItem).UniqueId;
+            switch (itemId)
             {
                 case "Group-2-Item-2":
                     if (!Frame.Navigate(typeof(BusQuery)))
@@ -168,18 +164,11 @@ namespace ZJULife
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
-            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedFrom(e);
-            Windows.Phone.UI.Input.HardwareButtons.BackPressed -= HardwareButtons_BackPressed;
-        }
-
-        private void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
-        {
-            Application.Current.Exit();
         }
 
         #endregion NavigationHelper registration

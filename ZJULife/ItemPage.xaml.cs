@@ -58,7 +58,7 @@ namespace ZJULife
             // TODO: Create an appropriate data model for your problem domain to replace the sample data.
             var item = await DataSource.GetItemAsync((string)e.NavigationParameter);
             this.DefaultViewModel["Item"] = item;
-            //ItemContent.Navigate(new Uri("ms-appx-web:///Htmls/cc.html"));
+                    
             ItemContent.Navigate(new Uri("ms-appx-web:///" + item.DataPath));
         }
 
@@ -102,19 +102,5 @@ namespace ZJULife
 
         #endregion NavigationHelper registration
 
-        //private void ItemContent_Tapped(object sender, TappedRoutedEventArgs e)
-        //{
-        //    if (BackToTopIcon.Visibility == Visibility.Collapsed)
-        //    {
-        //        //BackToTopIcon.Visibility = Visibility.Visible;
-        //        ShowBackToTopIconNameStoryboard.Begin();
-        //    }
-        //    else
-        //    {
-        //        //BackToTopIcon.Visibility = Visibility.Collapsed;
-        //        ShowBackToTopIconNameStoryboard.Begin();
-        //    }
-
-        //}
     }
 }

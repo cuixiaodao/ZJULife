@@ -74,20 +74,6 @@ namespace ZJULife
         /// session.  The state will be null the first time a page is visited.</param>
         private void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-            FindRouteGrid.Width=Window.Current.Bounds.Width;
-
-            MyMap.ZoomLevel = 16;
-            backToLocationAsync();
-            
-            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (localsettings.Values.ContainsKey(("myCampus")))
-            {
-                CampusComboBox.SelectedIndex = (int)localsettings.Values["myCampus"];
-            }
-            else
-            {
-                CampusComboBox.SelectedIndex = 0;
-            }
         }
 
         /// <summary>
@@ -100,13 +86,6 @@ namespace ZJULife
         /// serializable state.</param>
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
-            //存储用户校区
-            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (!(localsettings.Values.ContainsKey("myCampus")
-                && (int)localsettings.Values["myCampus"] == CampusComboBox.SelectedIndex))
-            {
-                localsettings.Values["myCampus"] = CampusComboBox.SelectedIndex;
-            }
         }
 
         #region NavigationHelper registration
@@ -128,7 +107,21 @@ namespace ZJULife
         {
             geolocator.PositionChanged += GeolocatorPositionChanged;
             this.navigationHelper.OnNavigatedTo(e);
+
+            //初始化地图
             await drawMapIconsAsync();
+            MyMap.ZoomLevel = 16;
+            backToLocationAsync();
+
+            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (localsettings.Values.ContainsKey(("myCampus")))
+            {
+                CampusComboBox.SelectedIndex = (int)localsettings.Values["myCampus"];
+            }
+            else
+            {
+                CampusComboBox.SelectedIndex = 0;
+            }
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -136,6 +129,14 @@ namespace ZJULife
             this.navigationHelper.OnNavigatedFrom(e);
             geolocator.PositionChanged -= GeolocatorPositionChanged;
             geolocator = null;
+
+            //存储用户校区
+            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            if (!(localsettings.Values.ContainsKey("myCampus")
+                && (int)localsettings.Values["myCampus"] == CampusComboBox.SelectedIndex))
+            {
+                localsettings.Values["myCampus"] = CampusComboBox.SelectedIndex;
+            }
         }
 
         private void LocationButton_Click(object sender, RoutedEventArgs e)
@@ -198,9 +199,6 @@ namespace ZJULife
             // How to draw a new MapIcon with a label, anchorpoint and custom  icon.
             // Icon comes from shared project assets
             var anchorPoint = new Point(0.5, 0.5);
-            //var buildingImage = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/MapIcons/Building.png"));
-            //var DormitoryImage = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/MapIcons/Dormitory.png"));
-
             List<Place> places = await Place.GetPlacesAsync();
             this.DefaultViewModel["Places"] = places;
 
@@ -218,21 +216,9 @@ namespace ZJULife
                         NormalizedAnchorPoint = anchorPoint,
                         ZIndex = 5
                     };
-                    shape.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/MapIcons/" + dataObject.Kind.ToString() + ".png"));
-                    //switch (dataObject.Kind)
-                    //{
-                    //    case Kinds.Building:
-                    //        shape.Image = buildingImage;
-                    //        break;
-                    //    case Kinds.Dorm:
-                    //        shape.Image = DormitoryImage;
-                    //        break;
-                    //    default:
-                    //        shape.Image = buildingImage;
-                    //        break;
-                    //}
-
+                    shape.Image = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///Assets/MapIcons/" + dataObject.Kind.ToString() + ".png"));                
                     shape.AddData(dataObject.Description);
+
                     MyMap.MapElements.Add(shape);
                 }
             }
@@ -276,35 +262,22 @@ namespace ZJULife
             MyMap.MapElements.Add(line);
         }
 
-        //private bool DeleteShapesFromLevel(int zIndex)
-        //{
-        //    // Delete shapes by z-index
-        //    var shapesOnLevel = MyMap.MapElements.Where(p => p.ZIndex == zIndex);
-        //    if (shapesOnLevel.Any())
-        //    {
-        //        foreach (var shape in shapesOnLevel.ToList())
-        //        {
-        //            MyMap.MapElements.Remove(shape);
-        //        }
-        //        return true;
-        //    }
-        //    return false;
-        //}
-
         private void PositionTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
             //FindRouteTextBox.SelectAll();
-            ((TextBox)e.OriginalSource).SelectAll();
+           ((TextBox)e.OriginalSource).SelectAll();
         }
+
+
 
         private async void FindRouteTextBox_KeyDown(object sender, KeyRoutedEventArgs e)
         {
             if (e.Key == Windows.System.VirtualKey.Enter)
             {
-                if (StartPositionTextBox.Text !=string.Empty && EndPositionTextBox.Text != string.Empty)
+                if (StartPositionTextBox.Text != string.Empty && EndPositionTextBox.Text != string.Empty)
                 {
-                    var startPlace = findPlace(StartPositionTextBox.Text);
-                    var endPlace = findPlace(EndPositionTextBox.Text);
+                    var startPlace = findPlace(StartPositionTextBox.Text).First();
+                    var endPlace = findPlace(EndPositionTextBox.Text).First();
 
                     if (startPlace == null)
                     {
@@ -320,14 +293,14 @@ namespace ZJULife
 
                     StartPositionTextBox.Text = startPlace.Name;
                     EndPositionTextBox.Text = endPlace.Name;
-                    
+
                     var routeResult = await MapRouteFinder.GetWalkingRouteAsync(startPlace.Position, endPlace.Position);
                     try
                     {
                         DrawRoute(routeResult.Route);
-                        FindRouteFlyout.Hide();
-                        MyMap.ZoomLevel = 16;
+                        MyMap.ZoomLevel = 18;
                         await MyMap.TrySetViewAsync(startPlace.Position, MyMap.ZoomLevel, MyMap.Heading, MyMap.Pitch, MapAnimationKind.Linear);
+                        FindRouteFlyout.Hide();
                     }
                     catch (Exception)
                     {
@@ -341,9 +314,8 @@ namespace ZJULife
             }
         }
 
-        private Place findPlace(string placeName)
-        {
-            Place foundPlace;
+        private List<Place> findPlace(string placeName)
+        {           
             var places = ((List<Place>)DefaultViewModel["Places"]);
             var allFoundPlaces = from place in places
                                  where place.Name.Contains(placeName)
@@ -351,11 +323,10 @@ namespace ZJULife
 
             //改进查询算法
             if (allFoundPlaces.Any())
-            {
-                foundPlace = allFoundPlaces.First();
-                return foundPlace;
+            {              
+                return allFoundPlaces.ToList();
             }
-            return null;           
+            return null;
         }
 
         private async Task giveMessageAsync(string message)
@@ -365,90 +336,51 @@ namespace ZJULife
             return;
         }
 
-        //private async void FindRouteTextBox_KeyDown(object sender, KeyRoutedEventArgs e)
+        //private void FindPositionTextBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         //{
-        //    if (e.Key == Windows.System.VirtualKey.Enter)
+        //    if (FindPositionTextBox.Text != string.Empty)
         //    {
-        //        checkGeolocator();
-        //        Geoposition point = await geolocator.GetGeopositionAsync();
-        //        var startPosition = GeopositionToGeoPoint(point);
-        //        var places = ((List<Place>)DefaultViewModel["Places"]);
-        //        var allEndPosition = from place in places
-        //                             where place.Name.Contains(FindRouteTextBox.Text)
-        //                             select place.Position;
-
-        //        //改进查询算法
-        //        if (!allEndPosition.Any())
-        //        {
-        //            await findNoRouteAsync();
-        //            return;                    
-        //        }
-        //        Geopoint endPosition = allEndPosition.First();
-        //        //校外查询部分，效果不佳，暂时去除。
-        //        //else
-        //        //{
-        //        //    var result = await MapLocationFinder.FindLocationsAsync(FindRouteTextBox.Text, startPosition, 3);
-        //        //    if (!(result.Status == MapLocationFinderStatus.Success&&result.Locations.Any()))
-        //        //    {
-        //        //        await findNoRouteAsync();
-        //        //        return;
-        //        //    }
-
-        //        //    endPosition = result.Locations.First().Point;
-        //        //}
-
-        //        var routeResult = await MapRouteFinder.GetWalkingRouteAsync(startPosition, endPosition);
-        //        try
-        //        {
-        //            DrawRoute(routeResult.Route);
-        //            FindRouteFlyout.Hide();
-        //        }
-        //        catch (Exception)
-        //        {
-        //            await findNoRouteAsync();
-        //        }
-
-        //        //原始查询算法
-        //        //try
-        //        //{
-        //        //    endPosition = allEndPosition.First();
-        //        //}
-        //        //catch (Exception)
-        //        //{
-        //        //    try
-        //        //    {
-        //        //        var result = await MapLocationFinder.FindLocationsAsync(FindRouteTextBox.Text, startPosition, 1);
-        //        //        endPosition = result.Locations.First().Point;
-        //        //    }
-        //        //    catch (Exception)
-        //        //    {
-        //        //        var messageDialog = new Windows.UI.Popups.MessageDialog("Sorry, can't find a route.");
-        //        //        await messageDialog.ShowAsync();
-        //        //        return;
-        //        //    }
-        //        //}
-
-        //        //var routeResult = await MapRouteFinder.GetWalkingRouteAsync(startPosition, endPosition);
-        //        //try
-        //        //{
-        //        //    DrawRoute(routeResult.Route);
-        //        //    FindRouteFlyout.Hide();
-        //        //}
-        //        //catch (Exception)
-        //        //{
-        //        //    var messageDialog = new Windows.UI.Popups.MessageDialog("Sorry, can't find a route.");
-        //        //    await messageDialog.ShowAsync();
-        //        //    return;
-        //        //}
+        //        var allFoundPlaces = findPlace(FindPositionTextBox.Text);
+        //        FindPositionTextBox.ItemsSource = allFoundPlaces;
         //    }
         //}
 
-        private async void BingButton_Click(object sender, RoutedEventArgs e)
+        private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
-            string uriToLaunch = @"bingmaps:?";
-            var uri = new Uri(uriToLaunch);
-            await Windows.System.Launcher.LaunchUriAsync(uri);
+            if (sender.Text != string.Empty)
+            {
+                var allFoundPlaces = findPlace(sender.Text);
+                sender.ItemsSource = allFoundPlaces;
+            }
         }
+
+        private async void FindPositionTextBox_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+        {      
+                var place = (Place)args.SelectedItem;
+                MyMap.ZoomLevel = 18;
+                await MyMap.TrySetViewAsync(place.Position, MyMap.ZoomLevel, MyMap.Heading, MyMap.Pitch, MapAnimationKind.Linear);
+                FindPositionFlyout.Hide();          
+        }
+
+        //private async void FindPositionTextBox_KeyDown(object sender, KeyRoutedEventArgs e)
+        //{
+        //    if (e.Key == Windows.System.VirtualKey.Enter)
+        //    {           
+        //        var places = FindPositionTextBox.Items;
+
+        //        if (!places.Any())
+        //        {
+        //            await giveMessageAsync("请输入地点关键字(仅限校内地点)");                   
+        //        }
+        //        else
+        //        {
+        //            var place = (Place)places.First();
+        //            MyMap.ZoomLevel = 18;
+        //            await MyMap.TrySetViewAsync(place.Position, MyMap.ZoomLevel, MyMap.Heading, MyMap.Pitch, MapAnimationKind.Linear);
+        //            FindPositionFlyout.Hide();
+        //        }
+        //    }      
+        //}   
 
         private void checkGeolocator()
         {
@@ -463,11 +395,6 @@ namespace ZJULife
             }
         }
 
-        //private Geopoint GeopositionToGeoPoint(Geoposition point)
-        //{
-        //    return new Geopoint(new BasicGeoposition { Latitude = point.Coordinate.Point.Position.Latitude - 0.0020070243, Longitude = point.Coordinate.Point.Position.Longitude + 0.0051115839 });
-        //    //加减数仅是因为mapcontrol没有针对中国的火星坐标系进行纠偏，粗略调整
-        //}
 
         //实验纠偏
         const double pi = 3.14159265358979324;
@@ -536,8 +463,6 @@ namespace ZJULife
         private void MyMap_MapTapped(MapControl sender, MapInputEventArgs args)
         {
             var mapObjectDescription = new StringBuilder();
-            //resultText.AppendLine(string.Format("Position={0},{1}", args.Position.X, args.Position.Y));
-            //resultText.AppendLine(string.Format("Location={0:F9},{1:F9}", args.Location.Position.Latitude, args.Location.Position.Longitude));
 
             foreach (var mapObject in sender.FindMapElementsAtOffset(args.Position))
             {
@@ -562,5 +487,7 @@ namespace ZJULife
             var newPlaces = await Place.GetPlacesAsync(((ComboBoxItem)CampusComboBox.SelectedItem).Tag.ToString());
             GroupedPlaces.Source = linqGroupedList(newPlaces);
         }
+
+
     }
 }
