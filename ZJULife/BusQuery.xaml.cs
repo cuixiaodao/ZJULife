@@ -93,23 +93,30 @@ namespace ZJULife
             Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
 
             //载入用户常去地点
-            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (localsettings.Values.ContainsKey("busKind"))
+            //var localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            //if (localsettings.Values.ContainsKey("busKind"))
+            //{
+            //    StartPoint.SelectedIndex = (int)localsettings.Values["startPoint"];
+            //    EndPoint.SelectedIndex = (int)localsettings.Values["endPoint"];
+            //    BusKind.SelectedIndex = (int)localsettings.Values["busKind"];
+            //}
+            var savedSetings = Windows.Storage.ApplicationData.Current.LocalSettings.Values;
+            if (savedSetings.ContainsKey("busKind"))
             {
-                StartPoint.SelectedIndex = (int)localsettings.Values["startPoint"];
-                EndPoint.SelectedIndex = (int)localsettings.Values["endPoint"];
-                BusKind.SelectedIndex = (int)localsettings.Values["busKind"];
+                StartPoint.SelectedIndex = (int)savedSetings["startPoint"];
+                EndPoint.SelectedIndex = (int)savedSetings["endPoint"];
+                BusKind.SelectedIndex = (int)savedSetings["busKind"];
             }
-            //预设出发时间
+
+            //预设出发时间            
+            TimeSpan earliestTime = new TimeSpan(6,30,0);
+            TimeSpan lastestTime = new TimeSpan(23, 30, 0);
             TimeSpan now = DateTime.Now.TimeOfDay;
-            TimeSpan earliestTime = TimeSpan.Parse("06:30");
-            TimeSpan lastestTime = TimeSpan.Parse("23:30");
+        
+            MinTime.Time = (now < lastestTime  &&  now > earliestTime) ? now : earliestTime;
 
-            MinTime.Time = (now < TimeSpan.Parse("23:10")) && (now > earliestTime) ? now : earliestTime;
-
-            TimeSpan maxTime = MinTime.Time.Add(TimeSpan.Parse("02:00"));
+            TimeSpan maxTime = MinTime.Time.Add(new TimeSpan(2, 0, 0));
             MaxTime.Time = maxTime < lastestTime ? maxTime : lastestTime;
-
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
@@ -118,14 +125,10 @@ namespace ZJULife
             Windows.Phone.UI.Input.HardwareButtons.BackPressed -= HardwareButtons_BackPressed;
 
             //存储用户常去地点
-            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (!(localsettings.Values.ContainsKey("busKind")
-                  && (int)localsettings.Values["startPoint"] == StartPoint.SelectedIndex))
-            {
-                localsettings.Values["startPoint"] = StartPoint.SelectedIndex;
-                localsettings.Values["endPoint"] = EndPoint.SelectedIndex;
-                localsettings.Values["busKind"] = BusKind.SelectedIndex;
-            }
+            var savedSetings = Windows.Storage.ApplicationData.Current.LocalSettings.Values;
+            savedSetings["startPoint"] = StartPoint.SelectedIndex;
+            savedSetings["endPoint"] = EndPoint.SelectedIndex;
+            savedSetings["busKind"] = BusKind.SelectedIndex;
         }
 
         private void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)

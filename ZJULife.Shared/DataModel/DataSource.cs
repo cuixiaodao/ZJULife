@@ -89,50 +89,54 @@ namespace ZJULife.Data
 
         public static async Task<IEnumerable<DataGroup>> GetGroupsAsync()
         {
-            await _dataSource.GetDataAsync();
+          //  if (_dataSource.Groups.Count == 0)
+                await _dataSource.GetDataAsync();
 
             return _dataSource.Groups;
         }
 
         public static async Task<DataGroup> GetGroupAsync(string uniqueId)
         {
-            await _dataSource.GetDataAsync();                              
+          //  if (_dataSource.Groups.Count == 0)
+                await _dataSource.GetDataAsync();
+
             var matches = _dataSource.Groups.Where((group) => group.UniqueId.Equals(uniqueId));
-            if (matches.Count() != 0) return matches.First();
+            if (matches.Any()) return matches.First();
             return null;
         }
 
         public static async Task<DataItem> GetItemAsync(string uniqueId)
         {
-            await _dataSource.GetDataAsync();
-            // Simple linear search is acceptable for small data sets
+           // if (_dataSource.Groups.Count == 0)              
+                await _dataSource.GetDataAsync(); 
+                       
             var matches = _dataSource.Groups.SelectMany(group => group.Items).Where((item) => item.UniqueId.Equals(uniqueId));
-            if (matches.Count() != 0) return matches.First();
+            if (matches.Any()) return matches.First();
             return null;
         }
 
         public static async Task<List<DataItem>> GetRelativeItemsAsync(string key)
         {
-            await _dataSource.GetDataAsync();
-            // Simple linear search is acceptable for small data sets
+            //if (_dataSource.Groups.Count == 0)
+                await _dataSource.GetDataAsync();
+
             var matches = _dataSource.Groups.SelectMany(group => group.Items).Where((item) => item.Description.Contains(key));
-            if (matches.Count() != 0) return matches.ToList<DataItem>();
+            if (matches.Any()) return matches.ToList<DataItem>();
             return null;
         }
 
         private async Task GetDataAsync()
         {
-            if (this._groups.Count != 0)
+            if (this._groups.Any())
                 return;
+           // this._groups.Clear();
 
             Uri dataUri = new Uri("ms-appx:///DataModel/Data.json");
 
             StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
             string jsonText = await FileIO.ReadTextAsync(file);
             JsonObject jsonObject = JsonObject.Parse(jsonText);
-            JsonArray jsonArray = jsonObject["Groups"].GetArray();
-
-            var test = jsonArray.Count + jsonArray.ToString();
+            JsonArray jsonArray = jsonObject["Groups"].GetArray();            
 
             foreach (JsonValue groupValue in jsonArray)
             {
@@ -149,7 +153,7 @@ namespace ZJULife.Data
                                                        itemObject["ImagePath"].GetString(),
                                                        itemObject["DataPath"].GetString()));
                 }
-                this._groups.Add(group);
+                this.Groups.Add(group);
             }
         }
     }

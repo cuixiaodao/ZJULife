@@ -91,8 +91,7 @@
 
                     <DataTemplate x:Name="ItemTemplate">
                         <Border  Margin="0,4,0,24" BorderBrush="{ThemeResource MyGreen}" BorderThickness="0,0,0,2.5">
-                            <!--<Grid Width="{Binding ElementName=semanticZoom,Path=ActualWidth}">-->
-                            <Grid Width="400">
+                            <Grid Width="{Binding ElementName=semanticZoom,Path=ActualWidth}">                           
                                 <Grid.RowDefinitions>
                                     <RowDefinition />
                                     <RowDefinition />
@@ -133,9 +132,7 @@
                                     SelectionMode="None"                        
                                     Foreground="{StaticResource MyWhite}" >
 
-                                <!-- ContainerContentChanging="IncrementalUpdateHandler" HorizontalAlignment="Left"  -->
-
-                            <ListView.GroupStyle>
+                                <ListView.GroupStyle>
                                 <GroupStyle HidesIfEmpty="True" >
                                     <GroupStyle.HeaderTemplate>
                                         <DataTemplate>

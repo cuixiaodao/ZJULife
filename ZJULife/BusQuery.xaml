@@ -132,9 +132,7 @@
                                     SelectionMode="None"                        
                                     Foreground="{StaticResource MyWhite}" >
 
-                                <!-- ContainerContentChanging="IncrementalUpdateHandler" HorizontalAlignment="Left"  -->
-
-                            <ListView.GroupStyle>
+                                <ListView.GroupStyle>
                                 <GroupStyle HidesIfEmpty="True" >
                                     <GroupStyle.HeaderTemplate>
                                         <DataTemplate>

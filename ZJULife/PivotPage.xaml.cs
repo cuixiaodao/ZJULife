@@ -72,8 +72,7 @@ namespace ZJULife
         /// session. The state will be null the first time a page is visited.</param>
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-            // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            this.DefaultViewModel[FirstGroupName] = await DataSource.GetGroupAsync("Group-1");
+            // TODO: Create an appropriate data model for your problem domain to replace the sample data            
         }
 
         /// <summary>
@@ -161,9 +160,10 @@ namespace ZJULife
         /// </summary>
         /// <param name="e">Provides data for navigation methods and event
         /// handlers that cannot cancel the navigation request.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             this.navigationHelper.OnNavigatedTo(e);
+            this.DefaultViewModel[FirstGroupName] = await DataSource.GetGroupAsync("Group-1");
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)

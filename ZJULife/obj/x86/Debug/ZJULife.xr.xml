@@ -10,6 +10,7 @@
     <RootPropertyPathName Name="AppIcon" />
     <RootPropertyPathName Name="RecommendApps" />
     <RootPropertyPathName Name="Trips" />
+    <RootPropertyPathName Name="ActualWidth" />
     <RootPropertyPathName Name="PassedStop" />
     <RootPropertyPathName Name="EndStop" />
     <RootPropertyPathName Name="StartStop" />
@@ -17,7 +18,6 @@
     <RootPropertyPathName Name="EndTime" />
     <RootPropertyPathName Name="StartTime" />
     <RootPropertyPathName Name="BusSearchResults" />
-    <RootPropertyPathName Name="ActualWidth" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="ActualHeight" />
     <RootPropertyPathName Name="CollectionGroups" />
@@ -197,10 +197,10 @@
     <RootType FullName="ZJULife.About" />
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="RelativeSource" />
-      <RootProperty Name="Converter" />
-      <RootProperty Name="Source" />
       <RootProperty Name="ElementName" />
       <RootProperty Name="Path" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="Source" />
       <RootProperty Name="ConverterParameter" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
