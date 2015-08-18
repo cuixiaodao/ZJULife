@@ -70,14 +70,9 @@ Htmls\net_resources.html
 Htmls\OffenGoPlaces.html
 Htmls\ShoppingRecommend.html
 Htmls\study_room.html
-About.xbf
 App.xbf
-AppRecommend.xbf
-BusQuery.xbf
+ItemDetailPage1.xbf
 ItemPage.xbf
-Map.xbf
-PivotPage.xbf
-SearchPage.xbf
-ZJULife.xr.xml
-BusHelper\Buses.json
+MainPage.xbf
+ZJULife.Windows.xr.xml
 DataModel\Data.json

@@ -91,6 +91,8 @@
 
                 <HyperlinkButton HorizontalAlignment="Center" NavigateUri="https://github.com/CuiXiaoDao/ZJULife.git" FontSize="16" 
                                  Foreground="CornflowerBlue" Content="点我，github源码" />
+                <HyperlinkButton HorizontalAlignment="Center" NavigateUri="https://onedrive.live.com/view.aspx?resid=3D9D2BF742D85628!228750" 
+                                 FontSize="16" Foreground="CornflowerBlue" Content="点我，参与内容编辑" />
                 
 
                 <TextBlock Margin="0,4,0,4" Foreground="{ThemeResource MyWhite}" FontFamily="微软雅黑"

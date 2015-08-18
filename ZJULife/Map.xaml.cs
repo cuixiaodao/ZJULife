@@ -279,33 +279,29 @@ namespace ZJULife
                     var startPlace = findPlace(StartPositionTextBox.Text).First();
                     var endPlace = findPlace(EndPositionTextBox.Text).First();
 
-                    if (startPlace == null)
+                    if (startPlace == null || endPlace == null)
                     {
-                        await giveMessageAsync("未能在校内找到该起点");
-                        return;
+                        await giveMessageAsync("未能在校内找到起点或终点");                       
                     }
+                    else
+                    {
+                        StartPositionTextBox.Text = startPlace.Name;
+                        EndPositionTextBox.Text = endPlace.Name;
 
-                    if (endPlace == null)
-                    {
-                        await giveMessageAsync("未能在校内找到该终点");
-                        return;
+                        var routeResult = await MapRouteFinder.GetWalkingRouteAsync(startPlace.Position, endPlace.Position);
+                        try
+                        {
+                            DrawRoute(routeResult.Route);
+                            MyMap.ZoomLevel = 18;
+                            await MyMap.TrySetViewAsync(startPlace.Position, MyMap.ZoomLevel, MyMap.Heading, MyMap.Pitch, MapAnimationKind.Linear);
+                            FindRouteFlyout.Hide();
+                        }
+                        catch (Exception)
+                        {
+                            await giveMessageAsync("抱歉，未能找到路线，试试自带地图吧。");
+                        }
                     }
-
-                    StartPositionTextBox.Text = startPlace.Name;
-                    EndPositionTextBox.Text = endPlace.Name;
-
-                    var routeResult = await MapRouteFinder.GetWalkingRouteAsync(startPlace.Position, endPlace.Position);
-                    try
-                    {
-                        DrawRoute(routeResult.Route);
-                        MyMap.ZoomLevel = 18;
-                        await MyMap.TrySetViewAsync(startPlace.Position, MyMap.ZoomLevel, MyMap.Heading, MyMap.Pitch, MapAnimationKind.Linear);
-                        FindRouteFlyout.Hide();
-                    }
-                    catch (Exception)
-                    {
-                        await giveMessageAsync("抱歉，未能找到路线，试试自带地图吧。");
-                    }
+                    
                 }
                 else
                 {
@@ -336,15 +332,6 @@ namespace ZJULife
             return;
         }
 
-        //private void FindPositionTextBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
-        //{
-        //    if (FindPositionTextBox.Text != string.Empty)
-        //    {
-        //        var allFoundPlaces = findPlace(FindPositionTextBox.Text);
-        //        FindPositionTextBox.ItemsSource = allFoundPlaces;
-        //    }
-        //}
-
         private void AutoSuggestBox_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
         {
             if (sender.Text != string.Empty)
@@ -361,26 +348,6 @@ namespace ZJULife
                 await MyMap.TrySetViewAsync(place.Position, MyMap.ZoomLevel, MyMap.Heading, MyMap.Pitch, MapAnimationKind.Linear);
                 FindPositionFlyout.Hide();          
         }
-
-        //private async void FindPositionTextBox_KeyDown(object sender, KeyRoutedEventArgs e)
-        //{
-        //    if (e.Key == Windows.System.VirtualKey.Enter)
-        //    {           
-        //        var places = FindPositionTextBox.Items;
-
-        //        if (!places.Any())
-        //        {
-        //            await giveMessageAsync("请输入地点关键字(仅限校内地点)");                   
-        //        }
-        //        else
-        //        {
-        //            var place = (Place)places.First();
-        //            MyMap.ZoomLevel = 18;
-        //            await MyMap.TrySetViewAsync(place.Position, MyMap.ZoomLevel, MyMap.Heading, MyMap.Pitch, MapAnimationKind.Linear);
-        //            FindPositionFlyout.Hide();
-        //        }
-        //    }      
-        //}   
 
         private void checkGeolocator()
         {
@@ -413,9 +380,6 @@ namespace ZJULife
             double sqrtMagic = Math.Sqrt(magic);
             dLat = (dLat * 180.0) / ((a * (1 - ee)) / (magic * sqrtMagic) * pi);
             dLon = (dLon * 180.0) / (a / sqrtMagic * Math.Cos(radLat) * pi);
-            //double[] latlng = { wgLat + dLat, wgLon + dLon };
-            //latlng[0] = wgLat + dLat;
-            //latlng[1] = wgLon + dLon;
 
             return new Geopoint(new BasicGeoposition { Latitude = wgLat + dLat + 0.000355, Longitude = wgLon + dLon - 0.000067 });
             //加减数仅是因为mapcontrol没有针对中国的火星坐标系进行纠偏，粗略调整
@@ -484,8 +448,12 @@ namespace ZJULife
 
         private async void CampusComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            PlacesAccordion.ItemsSource = null;
             var newPlaces = await Place.GetPlacesAsync(((ComboBoxItem)CampusComboBox.SelectedItem).Tag.ToString());
-            GroupedPlaces.Source = linqGroupedList(newPlaces);
+            var places = linqGroupedList(newPlaces);
+
+            PlacesAccordion.ItemsSource = places;
+            PlacesAccordion.SelectedIndex = Math.Max(places.Count-1,0);
         }
 
 

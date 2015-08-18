@@ -59,6 +59,18 @@ namespace ZJULife.ZJULife_XamlTypeInfo
             {
                 xamlType = CreateXamlType(typeIndex);
             }
+            var userXamlType = xamlType as global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType;
+            if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
+            {
+                global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
+                if (libXamlType != null)
+                {
+                    if(libXamlType.IsConstructible || xamlType == null)
+                    {
+                        xamlType = libXamlType;
+                    }
+                }
+            }
             if (xamlType != null)
             {
                 _xamlTypeCacheByName.Add(xamlType.FullName, xamlType);
@@ -82,6 +94,18 @@ namespace ZJULife.ZJULife_XamlTypeInfo
             if(typeIndex != -1)
             {
                 xamlType = CreateXamlType(typeIndex);
+            }
+            var userXamlType = xamlType as global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType;
+            if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
+            {
+                global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
+                if (libXamlType != null)
+                {
+                    if(libXamlType.IsConstructible || xamlType == null)
+                    {
+                        xamlType = libXamlType;
+                    }
+                }
             }
             if (xamlType != null)
             {
@@ -124,7 +148,7 @@ namespace ZJULife.ZJULife_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[18];
+            _typeNameTable = new string[30];
             _typeNameTable[0] = "ZJULife.About";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -138,13 +162,25 @@ namespace ZJULife.ZJULife_XamlTypeInfo
             _typeNameTable[10] = "ZJULife.Converters.TimeConverter";
             _typeNameTable[11] = "ZJULife.Converters.WidthConverter";
             _typeNameTable[12] = "ZJULife.BusQuery";
-            _typeNameTable[13] = "ZJULife.Converters.SourceConverter";
-            _typeNameTable[14] = "ZJULife.Map";
-            _typeNameTable[15] = "ZJULife.SearchPage";
-            _typeNameTable[16] = "ZJULife.ItemPage";
-            _typeNameTable[17] = "ZJULife.PivotPage";
+            _typeNameTable[13] = "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion";
+            _typeNameTable[14] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[15] = "Syncfusion.UI.Xaml.Controls.Layout.AccordionSelectionMode";
+            _typeNameTable[16] = "System.Enum";
+            _typeNameTable[17] = "System.ValueType";
+            _typeNameTable[18] = "Windows.UI.Xaml.Media.SolidColorBrush";
+            _typeNameTable[19] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[20] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[21] = "Int32";
+            _typeNameTable[22] = "System.Collections.IList";
+            _typeNameTable[23] = "System.Collections.Generic.IList`1<Int32>";
+            _typeNameTable[24] = "Windows.UI.Xaml.Style";
+            _typeNameTable[25] = "ZJULife.Converters.SourceConverter";
+            _typeNameTable[26] = "ZJULife.Map";
+            _typeNameTable[27] = "ZJULife.SearchPage";
+            _typeNameTable[28] = "ZJULife.ItemPage";
+            _typeNameTable[29] = "ZJULife.PivotPage";
 
-            _typeTable = new global::System.Type[18];
+            _typeTable = new global::System.Type[30];
             _typeTable[0] = typeof(global::ZJULife.About);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -158,11 +194,23 @@ namespace ZJULife.ZJULife_XamlTypeInfo
             _typeTable[10] = typeof(global::ZJULife.Converters.TimeConverter);
             _typeTable[11] = typeof(global::ZJULife.Converters.WidthConverter);
             _typeTable[12] = typeof(global::ZJULife.BusQuery);
-            _typeTable[13] = typeof(global::ZJULife.Converters.SourceConverter);
-            _typeTable[14] = typeof(global::ZJULife.Map);
-            _typeTable[15] = typeof(global::ZJULife.SearchPage);
-            _typeTable[16] = typeof(global::ZJULife.ItemPage);
-            _typeTable[17] = typeof(global::ZJULife.PivotPage);
+            _typeTable[13] = typeof(global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion);
+            _typeTable[14] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[15] = typeof(global::Syncfusion.UI.Xaml.Controls.Layout.AccordionSelectionMode);
+            _typeTable[16] = typeof(global::System.Enum);
+            _typeTable[17] = typeof(global::System.ValueType);
+            _typeTable[18] = typeof(global::Windows.UI.Xaml.Media.SolidColorBrush);
+            _typeTable[19] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[20] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[21] = typeof(global::System.Int32);
+            _typeTable[22] = typeof(global::System.Collections.IList);
+            _typeTable[23] = typeof(global::System.Collections.Generic.IList<global::System.Int32>);
+            _typeTable[24] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[25] = typeof(global::ZJULife.Converters.SourceConverter);
+            _typeTable[26] = typeof(global::ZJULife.Map);
+            _typeTable[27] = typeof(global::ZJULife.SearchPage);
+            _typeTable[28] = typeof(global::ZJULife.ItemPage);
+            _typeTable[29] = typeof(global::ZJULife.PivotPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -204,17 +252,24 @@ namespace ZJULife.ZJULife_XamlTypeInfo
         private object Activate_10_TimeConverter() { return new global::ZJULife.Converters.TimeConverter(); }
         private object Activate_11_WidthConverter() { return new global::ZJULife.Converters.WidthConverter(); }
         private object Activate_12_BusQuery() { return new global::ZJULife.BusQuery(); }
-        private object Activate_13_SourceConverter() { return new global::ZJULife.Converters.SourceConverter(); }
-        private object Activate_14_Map() { return new global::ZJULife.Map(); }
-        private object Activate_15_SearchPage() { return new global::ZJULife.SearchPage(); }
-        private object Activate_16_ItemPage() { return new global::ZJULife.ItemPage(); }
-        private object Activate_17_PivotPage() { return new global::ZJULife.PivotPage(); }
+        private object Activate_13_SfAccordion() { return new global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion(); }
+        private object Activate_25_SourceConverter() { return new global::ZJULife.Converters.SourceConverter(); }
+        private object Activate_26_Map() { return new global::ZJULife.Map(); }
+        private object Activate_27_SearchPage() { return new global::ZJULife.SearchPage(); }
+        private object Activate_28_ItemPage() { return new global::ZJULife.ItemPage(); }
+        private object Activate_29_PivotPage() { return new global::ZJULife.PivotPage(); }
         private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
+        }
+        private void VectorAdd_23_IList(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Int32>)instance;
+            var newItem = (global::System.Int32)item;
+            collection.Add(newItem);
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
@@ -310,43 +365,116 @@ namespace ZJULife.ZJULife_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 13:   //  ZJULife.Converters.SourceConverter
+            case 13:   //  Syncfusion.UI.Xaml.Controls.Layout.SfAccordion
+                userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
+                userType.Activator = Activate_13_SfAccordion;
+                userType.AddMemberName("SelectionMode");
+                userType.AddMemberName("AccentBrush");
+                userType.AddMemberName("HeaderTemplate");
+                userType.AddMemberName("ContentTemplate");
+                userType.AddMemberName("HeaderTemplateSelector");
+                userType.AddMemberName("ContentTemplateSelector");
+                userType.AddMemberName("SelectedItem");
+                userType.AddMemberName("SelectedIndex");
+                userType.AddMemberName("SelectedItems");
+                userType.AddMemberName("SelectedIndices");
+                userType.AddMemberName("ItemContainerStyle");
+                xamlType = userType;
+                break;
+
+            case 14:   //  Windows.UI.Xaml.Controls.ItemsControl
+                xamlType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 15:   //  Syncfusion.UI.Xaml.Controls.Layout.AccordionSelectionMode
+                userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("One", global::Syncfusion.UI.Xaml.Controls.Layout.AccordionSelectionMode.One);
+                userType.AddEnumValue("OneOrMore", global::Syncfusion.UI.Xaml.Controls.Layout.AccordionSelectionMode.OneOrMore);
+                userType.AddEnumValue("ZeroOrOne", global::Syncfusion.UI.Xaml.Controls.Layout.AccordionSelectionMode.ZeroOrOne);
+                userType.AddEnumValue("ZeroOrMore", global::Syncfusion.UI.Xaml.Controls.Layout.AccordionSelectionMode.ZeroOrMore);
+                xamlType = userType;
+                break;
+
+            case 16:   //  System.Enum
+                userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 17:   //  System.ValueType
                 userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_13_SourceConverter;
+                xamlType = userType;
+                break;
+
+            case 18:   //  Windows.UI.Xaml.Media.SolidColorBrush
+                xamlType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 19:   //  Windows.UI.Xaml.DataTemplate
+                xamlType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 20:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
+                xamlType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 21:   //  Int32
+                xamlType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 22:   //  System.Collections.IList
+                userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 23:   //  System.Collections.Generic.IList`1<Int32>
+                userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_23_IList;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 24:   //  Windows.UI.Xaml.Style
+                xamlType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 25:   //  ZJULife.Converters.SourceConverter
+                userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_25_SourceConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  ZJULife.Map
+            case 26:   //  ZJULife.Map
                 userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_Map;
+                userType.Activator = Activate_26_Map;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  ZJULife.SearchPage
+            case 27:   //  ZJULife.SearchPage
                 userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_SearchPage;
+                userType.Activator = Activate_27_SearchPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  ZJULife.ItemPage
+            case 28:   //  ZJULife.ItemPage
                 userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_ItemPage;
+                userType.Activator = Activate_28_ItemPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  ZJULife.PivotPage
+            case 29:   //  ZJULife.PivotPage
                 userType = new global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_PivotPage;
+                userType.Activator = Activate_29_PivotPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
@@ -356,6 +484,61 @@ namespace ZJULife.ZJULife_XamlTypeInfo
             return xamlType;
         }
 
+        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> _otherProviders;
+        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> OtherProviders
+        {
+            get
+            {
+                if(_otherProviders == null)
+                {
+                    _otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
+                    global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
+                    provider = new global::Syncfusion.SfAccordion.WP.Syncfusion_SfAccordion_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    _otherProviders.Add(provider); 
+                    provider = new global::Syncfusion.SfShared.WP.Syncfusion_SfShared_WP_2013_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    _otherProviders.Add(provider); 
+                }
+                return _otherProviders;
+            }
+        }
+
+        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForName(string typeName)
+        {
+            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
+            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
+            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
+            {
+                xamlType = xmp.GetXamlType(typeName);
+                if(xamlType != null)
+                {
+                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
+                    {
+                        return xamlType;
+                    }
+                    foundXamlType = xamlType;
+                }
+            }
+            return foundXamlType;
+        }
+
+        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForType(global::System.Type type)
+        {
+            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
+            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
+            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
+            {
+                xamlType = xmp.GetXamlType(type);
+                if(xamlType != null)
+                {
+                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
+                    {
+                        return xamlType;
+                    }
+                    foundXamlType = xamlType;
+                }
+            }
+            return foundXamlType;
+        }
 
         private object get_0_About_NavigationHelper(object instance)
         {
@@ -387,42 +570,142 @@ namespace ZJULife.ZJULife_XamlTypeInfo
             var that = (global::ZJULife.BusQuery)instance;
             return that.DefaultViewModel;
         }
-        private object get_6_Map_NavigationHelper(object instance)
+        private object get_6_SfAccordion_SelectionMode(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.SelectionMode;
+        }
+        private void set_6_SfAccordion_SelectionMode(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            that.SelectionMode = (global::Syncfusion.UI.Xaml.Controls.Layout.AccordionSelectionMode)Value;
+        }
+        private object get_7_SfAccordion_AccentBrush(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.AccentBrush;
+        }
+        private void set_7_SfAccordion_AccentBrush(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            that.AccentBrush = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
+        }
+        private object get_8_SfAccordion_HeaderTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.HeaderTemplate;
+        }
+        private void set_8_SfAccordion_HeaderTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            that.HeaderTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_9_SfAccordion_ContentTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.ContentTemplate;
+        }
+        private void set_9_SfAccordion_ContentTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            that.ContentTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_10_SfAccordion_HeaderTemplateSelector(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.HeaderTemplateSelector;
+        }
+        private void set_10_SfAccordion_HeaderTemplateSelector(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            that.HeaderTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
+        }
+        private object get_11_SfAccordion_ContentTemplateSelector(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.ContentTemplateSelector;
+        }
+        private void set_11_SfAccordion_ContentTemplateSelector(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            that.ContentTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
+        }
+        private object get_12_SfAccordion_SelectedItem(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.SelectedItem;
+        }
+        private void set_12_SfAccordion_SelectedItem(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            that.SelectedItem = (global::System.Object)Value;
+        }
+        private object get_13_SfAccordion_SelectedIndex(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.SelectedIndex;
+        }
+        private void set_13_SfAccordion_SelectedIndex(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            that.SelectedIndex = (global::System.Int32)Value;
+        }
+        private object get_14_SfAccordion_SelectedItems(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.SelectedItems;
+        }
+        private object get_15_SfAccordion_SelectedIndices(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.SelectedIndices;
+        }
+        private object get_16_SfAccordion_ItemContainerStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            return that.ItemContainerStyle;
+        }
+        private void set_16_SfAccordion_ItemContainerStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Controls.Layout.SfAccordion)instance;
+            that.ItemContainerStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_17_Map_NavigationHelper(object instance)
         {
             var that = (global::ZJULife.Map)instance;
             return that.NavigationHelper;
         }
-        private object get_7_Map_DefaultViewModel(object instance)
+        private object get_18_Map_DefaultViewModel(object instance)
         {
             var that = (global::ZJULife.Map)instance;
             return that.DefaultViewModel;
         }
-        private object get_8_SearchPage_NavigationHelper(object instance)
+        private object get_19_SearchPage_NavigationHelper(object instance)
         {
             var that = (global::ZJULife.SearchPage)instance;
             return that.NavigationHelper;
         }
-        private object get_9_SearchPage_DefaultViewModel(object instance)
+        private object get_20_SearchPage_DefaultViewModel(object instance)
         {
             var that = (global::ZJULife.SearchPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_10_ItemPage_NavigationHelper(object instance)
+        private object get_21_ItemPage_NavigationHelper(object instance)
         {
             var that = (global::ZJULife.ItemPage)instance;
             return that.NavigationHelper;
         }
-        private object get_11_ItemPage_DefaultViewModel(object instance)
+        private object get_22_ItemPage_DefaultViewModel(object instance)
         {
             var that = (global::ZJULife.ItemPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_12_PivotPage_NavigationHelper(object instance)
+        private object get_23_PivotPage_NavigationHelper(object instance)
         {
             var that = (global::ZJULife.PivotPage)instance;
             return that.NavigationHelper;
         }
-        private object get_13_PivotPage_DefaultViewModel(object instance)
+        private object get_24_PivotPage_DefaultViewModel(object instance)
         {
             var that = (global::ZJULife.PivotPage)instance;
             return that.DefaultViewModel;
@@ -471,52 +754,129 @@ namespace ZJULife.ZJULife_XamlTypeInfo
                 xamlMember.Getter = get_5_BusQuery_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.SelectionMode":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "SelectionMode", "Syncfusion.UI.Xaml.Controls.Layout.AccordionSelectionMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_6_SfAccordion_SelectionMode;
+                xamlMember.Setter = set_6_SfAccordion_SelectionMode;
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.AccentBrush":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "AccentBrush", "Windows.UI.Xaml.Media.SolidColorBrush");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_7_SfAccordion_AccentBrush;
+                xamlMember.Setter = set_7_SfAccordion_AccentBrush;
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.HeaderTemplate":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_8_SfAccordion_HeaderTemplate;
+                xamlMember.Setter = set_8_SfAccordion_HeaderTemplate;
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.ContentTemplate":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "ContentTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_9_SfAccordion_ContentTemplate;
+                xamlMember.Setter = set_9_SfAccordion_ContentTemplate;
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.HeaderTemplateSelector":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "HeaderTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_10_SfAccordion_HeaderTemplateSelector;
+                xamlMember.Setter = set_10_SfAccordion_HeaderTemplateSelector;
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.ContentTemplateSelector":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "ContentTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_11_SfAccordion_ContentTemplateSelector;
+                xamlMember.Setter = set_11_SfAccordion_ContentTemplateSelector;
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.SelectedItem":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_12_SfAccordion_SelectedItem;
+                xamlMember.Setter = set_12_SfAccordion_SelectedItem;
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.SelectedIndex":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_13_SfAccordion_SelectedIndex;
+                xamlMember.Setter = set_13_SfAccordion_SelectedIndex;
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.SelectedItems":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "SelectedItems", "System.Collections.IList");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_14_SfAccordion_SelectedItems;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.SelectedIndices":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "SelectedIndices", "System.Collections.Generic.IList`1<Int32>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_15_SfAccordion_SelectedIndices;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Syncfusion.UI.Xaml.Controls.Layout.SfAccordion.ItemContainerStyle":
+                userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Layout.SfAccordion");
+                xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "ItemContainerStyle", "Windows.UI.Xaml.Style");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_16_SfAccordion_ItemContainerStyle;
+                xamlMember.Setter = set_16_SfAccordion_ItemContainerStyle;
+                break;
             case "ZJULife.Map.NavigationHelper":
                 userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ZJULife.Map");
                 xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ZJULife.Common.NavigationHelper");
-                xamlMember.Getter = get_6_Map_NavigationHelper;
+                xamlMember.Getter = get_17_Map_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ZJULife.Map.DefaultViewModel":
                 userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ZJULife.Map");
                 xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "ZJULife.Common.ObservableDictionary");
-                xamlMember.Getter = get_7_Map_DefaultViewModel;
+                xamlMember.Getter = get_18_Map_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ZJULife.SearchPage.NavigationHelper":
                 userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ZJULife.SearchPage");
                 xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ZJULife.Common.NavigationHelper");
-                xamlMember.Getter = get_8_SearchPage_NavigationHelper;
+                xamlMember.Getter = get_19_SearchPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ZJULife.SearchPage.DefaultViewModel":
                 userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ZJULife.SearchPage");
                 xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "ZJULife.Common.ObservableDictionary");
-                xamlMember.Getter = get_9_SearchPage_DefaultViewModel;
+                xamlMember.Getter = get_20_SearchPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ZJULife.ItemPage.NavigationHelper":
                 userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ZJULife.ItemPage");
                 xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ZJULife.Common.NavigationHelper");
-                xamlMember.Getter = get_10_ItemPage_NavigationHelper;
+                xamlMember.Getter = get_21_ItemPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ZJULife.ItemPage.DefaultViewModel":
                 userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ZJULife.ItemPage");
                 xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "ZJULife.Common.ObservableDictionary");
-                xamlMember.Getter = get_11_ItemPage_DefaultViewModel;
+                xamlMember.Getter = get_22_ItemPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ZJULife.PivotPage.NavigationHelper":
                 userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ZJULife.PivotPage");
                 xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ZJULife.Common.NavigationHelper");
-                xamlMember.Getter = get_12_PivotPage_NavigationHelper;
+                xamlMember.Getter = get_23_PivotPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ZJULife.PivotPage.DefaultViewModel":
                 userType = (global::ZJULife.ZJULife_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ZJULife.PivotPage");
                 xamlMember = new global::ZJULife.ZJULife_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "ZJULife.Common.ObservableDictionary");
-                xamlMember.Getter = get_13_PivotPage_DefaultViewModel;
+                xamlMember.Getter = get_24_PivotPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }

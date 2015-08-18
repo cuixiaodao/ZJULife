@@ -5,7 +5,8 @@
     xmlns:local="using:ZJULife"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:valueconverter="using:ZJULife.Converters"
+    xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout"       
+    xmlns:valueconverter="using:ZJULife.Converters"   
     mc:Ignorable="d"   
     Background="{ThemeResource MyDark}" >
 
@@ -102,23 +103,14 @@
             </Grid.ColumnDefinitions>
 
             <Grid x:Name="PlacesListColumn" Margin="0,80,0,0" VerticalAlignment="Stretch" Background="{ThemeResource MyDark}" >
-                <Grid.Resources>
-                    <valueconverter:WidthConverter x:Key="widthConverter" />
-
-                    <DataTemplate x:Name="ItemTemplate">
-                        <TextBlock Text="{Binding Name}" FontFamily="微软雅黑"  FontWeight="Medium" FontSize="18" Foreground="{ThemeResource MyWhite}"                                                                                                   
-                            TextAlignment="Left" HorizontalAlignment="Left" Margin="12,0,0,12" TextWrapping="Wrap"/>
-                    </DataTemplate>
-
-                    <CollectionViewSource x:Name="GroupedPlaces" IsSourceGrouped="True" ItemsPath="InternalList" />
-                </Grid.Resources>
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto" />
                     <RowDefinition Height="9*" />
                 </Grid.RowDefinitions>
 
-                <ComboBox x:Name="CampusComboBox"  BorderThickness="0,0,0,2.5" FontSize="28" FontWeight="SemiBold" PlaceholderText="请选择校区" SelectionChanged="CampusComboBox_SelectionChanged" >
+                <ComboBox x:Name="CampusComboBox" BorderThickness="0" FontSize="28" FontWeight="SemiBold" 
+                          PlaceholderText="请选择校区" SelectionChanged="CampusComboBox_SelectionChanged" >
                     <ComboBoxItem Content="紫金港" Tag="ZJG" />
                     <ComboBoxItem Content="玉泉" Tag="YQ" />
                     <ComboBoxItem Content="西溪" Tag="XX" />
@@ -126,7 +118,50 @@
                     <ComboBoxItem Content="之江" Tag="ZJ" />
                 </ComboBox>
 
-                <SemanticZoom Grid.Row="1" Name="semanticZoom" VerticalAlignment="Top" Margin="4,0,4,0">
+                <layout:SfAccordion  x:Name="PlacesAccordion" Grid.Row="1" VerticalAlignment="Top" Margin="4,0,4,0" BorderBrush="{ThemeResource MyDark}"
+                                     SelectionMode="OneOrMore" DisplayMemberPath="Key" AccentBrush="{ThemeResource MyDark}" >
+                    
+                    <layout:SfAccordion.Resources>
+                        <DataTemplate x:Name="ItemTemplate">
+                            <TextBlock Text="{Binding Name}" FontFamily="微软雅黑"  FontWeight="Medium" FontSize="18" Foreground="{ThemeResource MyWhite}"                                                                                                   
+                            TextAlignment="Left" HorizontalAlignment="Left" Margin="12,0,0,12" TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </layout:SfAccordion.Resources>
+
+                    <layout:SfAccordion.HeaderTemplate>
+                        <DataTemplate>
+                            <Grid HorizontalAlignment="Left" >
+                                <Grid.Resources>
+                                    <valueconverter:SourceConverter x:Key="sourceConverter" />
+                                </Grid.Resources>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="3*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding Key,Converter={StaticResource sourceConverter} }" />
+                                <TextBlock Grid.Column="1" FontSize="22" Margin="4,4,0,8" Text="{Binding Key}" Foreground="{StaticResource MyWhite}" FontFamily="微软雅黑"/>
+                            </Grid>
+                        </DataTemplate>
+                    </layout:SfAccordion.HeaderTemplate>
+                    
+                    <layout:SfAccordion.ContentTemplate>
+                        <DataTemplate>
+                            <ListView VerticalAlignment="Bottom" HorizontalAlignment="Right"                                   
+			                        Margin="0,10,0,10" ItemsSource="{Binding InternalList}"
+			                        ItemTemplate="{StaticResource ItemTemplate}" 
+                                    ContinuumNavigationTransitionInfo.ExitElementContainer="True"
+                                    ScrollViewer.HorizontalScrollMode="Disabled"                                                                           
+                                    IsItemClickEnabled="True"
+                                    ItemClick="ListView_ItemClick"                    
+                                    SelectionMode="None"                        
+                                    Foreground="{StaticResource MyWhite}">
+                            </ListView>
+                        </DataTemplate>
+                    </layout:SfAccordion.ContentTemplate>
+                </layout:SfAccordion>
+                
+                <!--<SemanticZoom Grid.Row="1" Name="semanticZoom" VerticalAlignment="Top" Margin="4,0,4,0">
                     <SemanticZoom.ZoomedInView>
                         <ListView VerticalAlignment="Bottom" HorizontalAlignment="Right"
                                     x:Name="PlacesList"
@@ -162,15 +197,15 @@
                             </ListView.GroupStyle>
                         </ListView>
                     </SemanticZoom.ZoomedInView>
-                    <!--<SemanticZoom.ZoomedOutView>
+                    <SemanticZoom.ZoomedOutView>
                         <GridView
                             VerticalAlignment="Center" HorizontalAlignment="Left"                                    
 			                ItemsSource="{Binding Source={StaticResource GroupedPlaces},Path=CollectionGroups}"			                                                    
                             ScrollViewer.HorizontalScrollMode="Disabled"    
                             ScrollViewer.IsHorizontalScrollChainingEnabled="False" 
-                           >                        -->
-                    <!-- ItemTemplate="{ThemeResource GroupHeaderTemplate}"-->
-                    <!--    
+                           >                        
+                     ItemTemplate="{ThemeResource GroupHeaderTemplate}"
+                        
                             <GridView.ItemTemplate>
                                 <DataTemplate x:Name="GroupHeaderTemplate">
                                     <Grid HorizontalAlignment="Left" Margin="0,0,0,20" Background="{ThemeResource MyDark}" Opacity="0.9">
@@ -188,8 +223,8 @@
                                 </DataTemplate>
                             </GridView.ItemTemplate>
                         </GridView>                                                
-                    </SemanticZoom.ZoomedOutView>-->
-                </SemanticZoom>
+                    </SemanticZoom.ZoomedOutView>
+                </SemanticZoom>-->
             </Grid>
         </Grid>
     </Grid>

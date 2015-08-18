@@ -22,8 +22,8 @@
     <RootPropertyPathName Name="ActualHeight" />
     <RootPropertyPathName Name="CollectionGroups" />
     <RootPropertyPathName Name="Group" />
-    <RootPropertyPathName Name="InternalList" />
     <RootPropertyPathName Name="Key" />
+    <RootPropertyPathName Name="InternalList" />
     <RootPropertyPathName Name="RelativeItems" />
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="Title" />
@@ -154,17 +154,18 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Background" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
+      <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="NavigateUri" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
@@ -385,6 +386,17 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Child" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Controls.Layout.SfAccordion">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="DisplayMemberPath" />
+      <RootProperty Name="AccentBrush" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="ContentTemplate" />
     </RootType>
     <RootType FullName="ZJULife.Converters.SourceConverter" />
     <RootType FullName="ZJULife.Map" />

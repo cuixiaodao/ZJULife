@@ -9,46 +9,6 @@ namespace ZJULife.MapHelper
     internal enum Kinds
     { Dorm, StudyPlace, DiningHall, Gym, Building, Spot, Market, Hospital };
 
-    //class Place
-    //{
-    //    private static List<Place> places= new List<Place>();
-    //    public Place(string name, Geopoint position, Kinds kind, string description)
-    //    {
-    //        this.Name = name;
-    //        this.Position = position;
-    //        this.Kind = kind;
-    //        this.Description = description;
-    //    }
-    //    public string Name { get; set; }
-    //    public Geopoint Position { get; set; }
-    //    public string Description { get; set; }
-    //    public Kinds Kind { get; set; }
-
-    //    public static async Task<List<Place>> GetPlacesAsync()
-    //    {
-    //        if (places.Count != 0)
-    //            return places;
-
-    //        Uri dataUri = new Uri("ms-appx:///MapHelper/Places.json");
-    //        StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(dataUri);
-    //        string jsonText = await FileIO.ReadTextAsync(file);
-    //        JsonObject jsonObject = JsonObject.Parse(jsonText);
-    //        JsonArray jsonArray = jsonObject["Places"].GetArray();
-
-    //        foreach (JsonValue place in jsonArray)
-    //        {
-    //            JsonObject placeObject = place.GetObject();
-    //            Place newPlace = new Place(placeObject["Name"].GetString(),
-    //                                    new Geopoint(new BasicGeoposition { Latitude = placeObject["Latitude"].GetNumber(), Longitude = placeObject["Longitude"].GetNumber() }),
-    //                                    (Kinds)Enum.Parse(typeof(Kinds), placeObject["Kind"].GetString()),
-    //                                    placeObject["Description"].GetString());
-    //            places.Add(newPlace);
-    //        }
-
-    //        return places;
-    //    }
-    //}
-
     [Table("Places")]
     internal class PlaceData
     {
