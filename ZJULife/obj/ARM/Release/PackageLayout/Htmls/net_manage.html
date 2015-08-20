@@ -5,60 +5,73 @@
 <script src="js/viewport-adjust.js"></script>
 
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>网络办理</title>
 <link href="css/format.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<h2><strong style="font-size: 18px">运营商选择</strong></h2>
-<p><span style="font-style: normal;">移动:移动用户数量最多，校内可用短号免费拨打（相当普遍）；但资费较高，2G网速很慢，建议入手4G机型。</span></p>
-<p><span style="font-style: normal;">电信：电信3G网速较快，支持短号（但用户数少，基本成摆设），可以办理含闪讯在内的套餐。但支持电信的神机较少，搞机党慎入。</span></p>
-<p><span style="font-style: normal;">联通：用户数最少，网速快，支持联通的机型最丰富。</span></p>
-<h2><strong style="font-size: 18px">关于内网、闪讯、vpn说明比较</strong></h2>
-<p>内网其实是校内局域网，所以与有没有办理闪讯、vpn无关，一般插上网线就可以直接访问，下载速度理论上是100M带宽。</p>
-<p>闪讯是电信业务。连接有线网需要使用闪讯客户端(win8.1下可能崩溃)。登录需要使用手机接收动态密码。无线连接可以通过ZJUWLAN\CHIANNET连接。常和电信手机业务绑定办理，至少三年，签合同办理业务前请务必看清条约、弄清是否适合自己的需求。（关于闪讯，存在较多争议，请百度&ldquo;闪讯篡改链接&rdquo;。闪讯业务每年都有变化，仅供参考）<br>
-  提供以下套餐：（求助）（待去zjg考证） <br>
-保底39+10元闪讯，8M</p>
-<p><img src="net_manage/sxtc.jpg" width="554" height="343"></p>
-<p> Vpn归学校管辖。个人比较推荐，不绑定手机业务，可以通过ZJUWLAN链连接无线网。开学提供1个月试用以使用学号作为用户名，默认密码为身份证号后6位，VPN业务办理请访问浙大VPN服务网,可以自己在网上变更套餐类型。</p>
-<table width="100%" border="1" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="277" valign="top"><p>10.00 元/月 </p></td>
-    <td width="277" valign="top"><p>提供1M带宽，可使用校内无线网络和RVPN服务。 </p></td>
-  </tr>
-  <tr>
-    <td width="277" valign="top"><p>30.00 元/月 </p></td>
-    <td width="277" valign="top"><p>提供3M带宽，可使用校内无线网络和RVPN服务。 </p></td>
-  </tr>
-  <tr>
-    <td width="277" valign="top"><p>50.00 元/月 </p></td>
-    <td width="277" valign="top"><p>提供6M带宽，可使用校内无线网络和RVPN服务。 </p></td>
-  </tr>
-</table>
-<h2><strong style="font-size: 18px">VPN使用方法</strong></h2>
-<p><strong><span style="font-style: normal;">第一种方法</span>：</strong>使用客户端连接，建议以兼容模式运行老版本客户端，有静态网关加成。。客户端下载与使用帮助（必看）<span class="xml"><a href="http://luckweb.057101.com/bt2/index.asp">http://zuits.zju.edu.cn/redir.php?catalog_id=1921&amp;object_id=1935</a></span></p>
-<p> <strong style="">第二种方法：</strong>自己创建一个VPN连接，进入控制面板-&gt;网络和 Internet-&gt;网络和共享中心，然后依次点击设置新的连接或网络-&gt;连接到工作区-&gt;否创建连接,VPN连接-&gt;使用我的Internet连接 (VPN) 。 然后Internet地址填入lns.zju.edu.cn ，目标名称自定，点击创建。紧接着在控制面板-&gt;网络和 Internet-&gt;网络连接中找到刚才创建的VPN，右击属性，如下修改，然后点击桌面右下角网络，点击vpn,选择连接，输入vpn账号和密码即可登录。</p>
-<p><img src="net_manage/VPNSetting1.jpg" width="421" height="607"  alt="" /></p>
-<p><img src="net_manage/VPNSetting2.jpg" width="418" height="603"  alt="" /></p>
-<p><img src="net_manage/VPNSetting3.jpg" width="421" height="607"  alt="" /></p>
-<p>使用VPN，或者使用新版VPN客户端，为了以最大速率下载内网资源，还需要设置一次静态网关。静态网关设置方法如下：</p>
-<p><span style="">1.新建静态网关.txt</span></p>
-<p>2.输入</p>
-<blockquote>
-  <p>route -p add 10.0.0.0      mask 255.0.0.0      ip4默认网关</p>
-  <p>route -p add 210.32.0.0    mask 255.255.240.0  ip4默认网关 </p>
-  <p>route -p add 210.32.128.0  mask 255.255.192.0  ip4默认网关</p>
-  <p>route -p add 222.205.0.0   mask 255.255.128.0  ip4默认网关 </p>
-</blockquote>
-<p>3.将”ip4默认网关”替换为自己电脑的ip4默认网关，可通过进入控制面板-&gt;网络和 Internet-&gt;网络和共享中心,点击以太网-&gt;详细信息查看.</p>
-<p><img src="net_manage/StaticWG.png" width="422" height="563"  alt="" /></p>
-<p>4.保存，并改文件扩展名为.bat，双击运行即可。</p>
-<h2 style="font-size: 40px">ip绑定指南</h2>
-<p>玉泉等校区必须绑定IP才能上网。第一步：获取物理网卡地址。插上网线，进入控制面板-&gt;网络和 Internet-&gt;网络和共享中心,点击以太网-&gt;详细信息，即可看到物理网卡地址。</p>
-<p><img src="net_manage/IPbd1.jpg" width="554" height="303"></p>
-<p><img src="net_manage/IPbd2.jpg" width="554" height="430"></p>
-<p>获取物理网卡地址后，进入浙江大学学生公寓网，<a href="http://home.chinasinew.com/">http://home.chinasinew.com/</a>，点击右上角&ldquo;学生自助服务网&rdquo;登录后，选择ip地址绑定，填入网卡地址，即可完成绑定，1~2天后即可上网。绑定错误须记下物理网卡地址，到1舍自助完成重新绑定。</p>
-<p>遇到任何网络问题，可去cc98电脑医院、网上冲浪板块求助，或拨打vpn保修电话(玉  泉： 87951669，紫金港：88981111，挺管用的)。 </p>
-<p>&nbsp;</p>
+    <p class="h1">运营商选择</p>
+    <p>三大运营商政策每年都在改变，具体哪家更优惠、更适合自己要靠同学们自己判断，建议去百度贴吧浙江大学吧、cc98搜下学长学姐比较运营商政策的帖子，或者发帖咨询（新生板块、校园信息板块）
+        再<strong>一定要</strong>结合自己的使用需求确定运营商。运营商的选择还是挺重要的。</p>
+    <p>移动:移动用户数量最多，校内用短号拨打移动用户资费便宜些。但现在用户数量多优势已不明显，一方面电信联通的很多套餐也有一定的免费拨打时长（无论对方机型），
+       另一方面，除了情侣党，同学们打电话不多（app作者个人每月几分钟），保证适当流量即可（<srong>紫金港校区全面覆盖ZJUWLAN</srong>，用流量的机会也不多） 。支持移动3G基本只有少量定制机，所以大多数移动用户都是2G，网速慢，建议入手4G机型。</p>
+    <p>电信：电信3G的带宽基本是在1M以上的，转换成网速124KB/s以上，所以基本不用担心网速的问题。但，支持电信3G制式的基本只有定制机，机型少，搞机党慎入。 电信手机套餐往往和宽度业务（闪讯）捆绑。</p>
+    <p>联通：联通3G中，HSPA+支持21M带宽（杭州覆盖不错）。21M上网是需要上网上营业厅开通下的，毕竟2.5M/s的速度是可以很快烧完流量的，所以联通默认是不开启的。即使不用21M带宽，网速也基本在1M/s所以不用担心3G会慢。
+        只要手机上没印运营商标志的，基本都是支持联通3G的，机型丰富。</p>
+    <p class="h1">关于内网、闪讯、vpn说明比较</p>
+    <p>内网其实是校内局域网，所以与有没有办理闪讯、vpn无关，一般插上网线就可以直接访问，下载速度理论上是100M带宽（所以从NHD、98ftp下载资源速度很快，将来会升到1000M）。</p>
+    <p>
+        闪讯是电信业务。有线一般通过闪讯客户端连接，无线连接可以通过ZJUWLAN/CHIANNET连接，常和电信手机业务绑定办理，签合同办理业务前请务必看清条约、弄清是否适合自己的需求。
+    </p>
+    <p>闪迅套餐每年都变，强烈建议<strong>不要仓促办理，一定要去cc98上搜索下闪迅或者发帖询问</strong></p>
+    <p> Vpn归学校管辖。可以通过ZJUWLAN连接无线网，也可以有线连接。<strong>开学提供1个月试用</strong>(所以不要急着办理网络),学号为用户名，
+        默认密码为身份证号后6位，VPN业务办理请访问浙大VPN服务网（见内网导航）,可以自己在网上变更套餐类型。</p>
+    <table width="100%" border="1" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>10.00 元/月 </td>
+            <td>提供1M带宽，可使用校内无线网络和RVPN服务。</td>
+        </tr>
+        <tr>
+            <td>30.00 元/月 </td>
+            <td>提供3M带宽，可使用校内无线网络和RVPN服务。 </td>
+        </tr>
+        <tr>
+            <td>50.00 元/月 </td>
+            <td>提供6M带宽，可使用校内无线网络和RVPN服务。 </td>
+        </tr>
+    </table>
+    <p class="h1">VPN使用方法</p>
+    <p><strong>第一种方法：</strong>使用客户端连接，建议以兼容模式运行老版本客户端，有静态网关加成。。客户端下载与使用帮助（必看）<a href="http://zuits.zju.edu.cn/redir.php?catalog_id=1921&amp;object_id=1935">http://zuits.zju.edu.cn/redir.php?catalog_id=1921&amp;object_id=1935</a></p>
+    <p> <strong>第二种方法：</strong>自己创建一个VPN连接，进入控制面板-&gt;网络和 Internet-&gt;网络和共享中心，然后依次点击设置新的连接或网络-&gt;连接到工作区-&gt;否创建连接,VPN连接-&gt;使用我的Internet连接 (VPN) 。 然后Internet地址填入lns.zju.edu.cn ，目标名称自定，点击创建。紧接着在控制面板-&gt;网络和 Internet-&gt;网络连接中找到刚才创建的VPN，右击属性，如下修改，然后点击桌面右下角网络，点击vpn,选择连接，输入vpn账号和密码即可登录。</p>
+    <p><img src="net_manage/VPNSetting1.jpg" /></p>
+    <p><img src="net_manage/VPNSetting2.jpg" /></p>
+    <p><img src="net_manage/VPNSetting3.jpg" /></p>
+    <p>使用VPN，或者使用新版VPN客户端，为了以最大速率下载内网资源，还需要设置一次静态网关。或者用学长的脚本：<a href="http://www.cc98.org/dispbbs.asp?BoardID=328&id=3583130#8">http://www.cc98.org/dispbbs.asp?BoardID=328&id=3583130#8</a>8楼的下载打开照提示即可。或者
+        自己动手：</p>
+    <p><span style="">1.新建静态网关.txt</span></p>
+    <p>2.输入</p>
+    <p>route -p add 10.0.0.0      mask 255.0.0.0      ip4默认网关</p>
+    <p>route -p add 210.32.0.0    mask 255.255.240.0  ip4默认网关 </p>
+    <p>route -p add 210.32.128.0  mask 255.255.192.0  ip4默认网关</p>
+    <p>route -p add 222.205.0.0   mask 255.255.128.0  ip4默认网关 </p>
+
+    <!--<code>
+    route -p add 10.0.0.0      mask 255.0.0.0      ip4默认网关
+    route -p add 210.32.0.0    mask 255.255.240.0  ip4默认网关 
+    route -p add 210.32.128.0  mask 255.255.192.0  ip4默认网关
+    route -p add 222.205.0.0   mask 255.255.128.0  ip4默认网关 
+    </code>-->
+
+    <p>3.将”ip4默认网关”替换为自己电脑的ip4默认网关，可通过进入控制面板-&gt;网络和 Internet-&gt;网络和共享中心,点击以太网-&gt;详细信息查看.</p>
+    <p><img src="net_manage/StaticWG.png"/></p>
+    <p>4.保存，并改文件扩展名为.bat，双击运行即可。</p>
+    <p class=h1"">ip绑定指南</p>
+    <p>玉泉等校区必须绑定IP才能上网。第一步：获取物理网卡地址。插上网线，进入控制面板-&gt;网络和Internet-&gt;网络和共享中心,点击以太网-&gt;详细信息，即可看到物理网卡地址。</p>
+    <p><img src="net_manage/IPbd1.jpg"></p>
+    <p><img src="net_manage/IPbd2.jpg"></p>
+    <p>获取物理网卡地址后，进入浙江大学学生公寓网，<a href="http://home.chinasinew.com/">http://home.chinasinew.com/</a>，点击右上角&ldquo;学生自助服务网&rdquo;登录后，选择ip地址绑定，填入网卡地址，即可完成绑定，1~2天后即可上网。绑定错误须记下物理网卡地址，到1舍自助完成重新绑定。</p>
+    <p>遇到任何网络问题，可去cc98电脑医院、网上冲浪板块求助，或拨打vpn保修电话(玉  泉： 87951669，紫金港：88981111，挺管用的)。 </p>
+    <p class="h1">访问国外网站</p>
+    <p>出于学术需求，部分同学需要访问国外网站，可以参考cc98=>电脑技术=》网上冲浪版块置顶帖进行设置，也可版搜其他帖子。</p>
 </body>
 </html>

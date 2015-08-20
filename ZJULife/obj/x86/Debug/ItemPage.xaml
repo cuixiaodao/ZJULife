@@ -41,7 +41,7 @@
             </Viewbox>
         </Grid>
 
-        <WebView x:Name="ItemContent" Grid.Row="1" />
+        <WebView x:ConnectionId='1' x:Name="ItemContent" Grid.Row="1"                                                    />
     </Grid>
 </Page>
 

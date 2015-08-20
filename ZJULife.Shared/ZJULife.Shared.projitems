@@ -22,8 +22,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\Icon12.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Icon13.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Icon14.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon15.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Icon16.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\icon15.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Icon2.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Icon3.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Icon4.png" />
@@ -63,6 +62,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Htmls\eating\dongbeicai.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\eating\wangzijiulou.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\eating\yaduokafei.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\experience.html" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\hospital.html" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\hotel.html" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage.html" />
@@ -74,6 +74,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\VPNSetting2.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\VPNSetting3.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_resources.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_resources\DownloadSpeed.png" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\OffenGoPlaces.html" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\ShoppingRecommend.html" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\study_room.html" />

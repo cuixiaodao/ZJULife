@@ -75,11 +75,8 @@
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon14.png">
       <PackagePath>Assets\Icon14.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon15.png">
-      <PackagePath>Assets\Icon15.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon16.png">
-      <PackagePath>Assets\Icon16.png</PackagePath>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\icon15.png">
+      <PackagePath>Assets\icon15.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Assets\Icon2.png">
       <PackagePath>Assets\Icon2.png</PackagePath>
@@ -163,6 +160,9 @@
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\StaticWG.png">
       <PackagePath>Htmls\net_manage\StaticWG.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_resources\DownloadSpeed.png">
+      <PackagePath>Htmls\net_resources\DownloadSpeed.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\after_class.html">
       <PackagePath>Htmls\after_class.html</PackagePath>
     </AppxPackagedFile>
@@ -177,6 +177,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\eating.html">
       <PackagePath>Htmls\eating.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\experience.html">
+      <PackagePath>Htmls\experience.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\hospital.html">
       <PackagePath>Htmls\hospital.html</PackagePath>

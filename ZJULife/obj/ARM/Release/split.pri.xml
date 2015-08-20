@@ -359,18 +359,6 @@
 						</Candidate>
 					</NamedResource>
 				</ResourceMapSubtree>
-				<ResourceMapSubtree name="anti_fake">
-					<NamedResource name="anti_fake1.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/anti_fake/anti_fake1.jpg">
-						<Candidate type="Path">
-							<Value>Htmls\anti_fake\anti_fake1.jpg</Value>
-						</Candidate>
-					</NamedResource>
-					<NamedResource name="anti_fake2.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/anti_fake/anti_fake2.jpg">
-						<Candidate type="Path">
-							<Value>Htmls\anti_fake\anti_fake2.jpg</Value>
-						</Candidate>
-					</NamedResource>
-				</ResourceMapSubtree>
 				<ResourceMapSubtree name="award">
 					<NamedResource name="award1.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/award/award1.jpg">
 						<Candidate type="Path">
@@ -421,11 +409,6 @@
 					<NamedResource name="sxtc.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/sxtc.jpg">
 						<Candidate type="Path">
 							<Value>Htmls\net_manage\sxtc.jpg</Value>
-						</Candidate>
-					</NamedResource>
-					<NamedResource name="Thumb-up128.png" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/Thumb-up128.png">
-						<Candidate type="Path">
-							<Value>Htmls\net_manage\Thumb-up128.png</Value>
 						</Candidate>
 					</NamedResource>
 					<NamedResource name="VPNSetting1.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/VPNSetting1.jpg">

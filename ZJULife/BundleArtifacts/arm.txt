@@ -1,2 +1,2 @@
-MainPackage=D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Release\ZJULife_2015.819.1633.2399_ARM.appx
-SymbolPackage=C:\Users\cuichao\Desktop\ZJULife_2015.819.1633.2399_Test\ZJULife_2015.819.1633.2399_ARM.appxsym
+MainPackage=D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Release\ZJULife_2015.820.1633.2398_ARM.appx
+SymbolPackage=C:\Users\cuichao\Desktop\ZJULife_2015.820.1633.2398_Test\ZJULife_2015.820.1633.2398_ARM.appxsym

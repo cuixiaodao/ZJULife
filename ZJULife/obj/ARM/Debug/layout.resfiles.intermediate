@@ -11,8 +11,7 @@ Assets\Icon11.png
 Assets\Icon12.png
 Assets\Icon13.png
 Assets\Icon14.png
-Assets\Icon15.png
-Assets\Icon16.png
+Assets\icon15.png
 Assets\Icon2.png
 Assets\Icon3.png
 Assets\Icon4.png
@@ -53,6 +52,7 @@ Htmls\eating.html
 Htmls\eating\dongbeicai.jpg
 Htmls\eating\wangzijiulou.jpg
 Htmls\eating\yaduokafei.jpg
+Htmls\experience.html
 Htmls\hospital.html
 Htmls\hotel.html
 Htmls\net_manage.html
@@ -64,6 +64,7 @@ Htmls\net_manage\VPNSetting1.jpg
 Htmls\net_manage\VPNSetting2.jpg
 Htmls\net_manage\VPNSetting3.jpg
 Htmls\net_resources.html
+Htmls\net_resources\DownloadSpeed.png
 Htmls\OffenGoPlaces.html
 Htmls\ShoppingRecommend.html
 Htmls\study_room.html

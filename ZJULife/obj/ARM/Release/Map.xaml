@@ -98,8 +98,8 @@
 
         <Grid x:Name="MyPlacesGrid" Visibility="Collapsed" Opacity="0.8" >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition  Width="2*" />
                 <ColumnDefinition  Width="3*" />
+                <ColumnDefinition  Width="4*" />
             </Grid.ColumnDefinitions>
 
             <Grid x:Name="PlacesListColumn" Margin="0,80,0,0" VerticalAlignment="Stretch" Background="{ThemeResource MyDark}" >

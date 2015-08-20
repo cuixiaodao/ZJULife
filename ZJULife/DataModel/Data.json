@@ -18,12 +18,19 @@
                     "ImagePath": "Assets/Icon2.png",
                     "DataPath": "Htmls/net_resources.html"
                 },
-                {
-                    "UniqueId": "Group-1-Item-3",
-                    "Title": "网络办理",
-                    "Description": "关键词：网络办理，闪讯，vpn，宽带，电信，移动",
-                    "ImagePath": "Assets/Icon3.png",
-                    "DataPath": "Htmls/net_manage.html"
+              {
+                "UniqueId": "Group-1-Item-3",
+                "Title": "网络办理",
+                "Description": "关键词：网络办理，闪讯，vpn，宽带，电信，移动",
+                "ImagePath": "Assets/Icon3.png",
+                "DataPath": "Htmls/net_manage.html"
+              },
+              {
+                    "UniqueId": "Group-1-Item-4",
+                    "Title": "经验教训",
+                    "Description": "关键词：经验教训，坑",
+                    "ImagePath": "Assets/Icon15.png",
+                    "DataPath": "Htmls/experience.html"
                 }
             ]
         },
@@ -118,7 +125,7 @@
                     "Title": "购物推荐",
                     "Description": "关键词：购物，买东西，卖，商场",
                     "ImagePath": "Assets/Icon14.png",
-                    "DataPath": "Htmls/hotel.html"
+                    "DataPath": "Htmls/ShoppingRecommend.html"
                 }
             ]
         }
