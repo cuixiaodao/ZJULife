@@ -144,6 +144,7 @@ D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\Syncfusion.SfAccordion.WP.pri
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\Syncfusion.SfShared.WP.xml
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Debug\Syncfusion.SfShared.WP.pri
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.csprojResolveAssemblyReference.cache
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.g.i.cs
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\App.g.cs
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.g.i.cs
@@ -165,6 +166,7 @@ D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.xaml
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.xaml
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.xaml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.xaml
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.xaml
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.xaml
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.xaml
@@ -172,12 +174,11 @@ D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\About.xbf
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\AppRecommend.xbf
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\BusQuery.xbf
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.xbf
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\SearchPage.xbf
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ItemPage.xbf
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\PivotPage.xbf
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\XamlSaveStateFile.xml
-D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.xaml
-D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Map.xbf
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.exe
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.pdb
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.csproj.GenerateResource.Cache
@@ -195,4 +196,3 @@ D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Syncfusion.SfAccordion.WP.pri.xml
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\Syncfusion.SfShared.WP.pri.xml
 D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ProjectArchitectures.txt
-D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Debug\ZJULife.csprojResolveAssemblyReference.cache

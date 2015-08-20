@@ -55,8 +55,6 @@
     <Content Include="$(MSBuildThisFileDirectory)Htmls\after_class\afterclass3.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\after_class\afterclass4.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\anti_fake.html" />
-    <Content Include="$(MSBuildThisFileDirectory)Htmls\anti_fake\anti_fake1.jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)Htmls\anti_fake\anti_fake2.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\award.html" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\award\award1.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\common_class.html" />
@@ -72,13 +70,12 @@
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\IPbd2.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\StaticWG.png" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\sxtc.jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\Thumb-up128.png" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\VPNSetting1.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\VPNSetting2.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_manage\VPNSetting3.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\net_resources.html" />
-    <Content Include="$(MSBuildThisFileDirectory)Htmls\ShoppingRecommend.html" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\OffenGoPlaces.html" />
+    <Content Include="$(MSBuildThisFileDirectory)Htmls\ShoppingRecommend.html" />
     <Content Include="$(MSBuildThisFileDirectory)Htmls\study_room.html" />
   </ItemGroup>
   <ItemGroup>
@@ -93,21 +90,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)DataModel\DataSource.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Htmls\after_class - Copy\_notes\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Htmls\anti_fake\_notes\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Htmls\award\_notes\" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)DataModel\Data.db" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\after_class\_notes\afterclass1.jpg.mno" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\after_class\_notes\afterclass2.jpg.mno" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\after_class\_notes\afterclass3.jpg.mno" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\eating\_notes\dongbeicai.jpg.mno" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\eating\_notes\wangzijiulou.jpg.mno" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\eating\_notes\yaduokafei.jpg.mno" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\net_manage\Thumbs.db" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\net_manage\_notes\IPbd1.jpg.mno" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\net_manage\_notes\IPbd2.jpg.mno" />
-    <None Include="$(MSBuildThisFileDirectory)Htmls\net_manage\_notes\sxtc.jpg.mno" />
   </ItemGroup>
 </Project>

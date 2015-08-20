@@ -163,9 +163,6 @@
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\StaticWG.png">
       <PackagePath>Htmls\net_manage\StaticWG.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_manage\Thumb-up128.png">
-      <PackagePath>Htmls\net_manage\Thumb-up128.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\after_class.html">
       <PackagePath>Htmls\after_class.html</PackagePath>
     </AppxPackagedFile>
@@ -193,11 +190,11 @@
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\net_resources.html">
       <PackagePath>Htmls\net_resources.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\ShoppingRecommend.html">
-      <PackagePath>Htmls\ShoppingRecommend.html</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\OffenGoPlaces.html">
       <PackagePath>Htmls\OffenGoPlaces.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\ShoppingRecommend.html">
+      <PackagePath>Htmls\ShoppingRecommend.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\study_room.html">
       <PackagePath>Htmls\study_room.html</PackagePath>
@@ -213,12 +210,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\after_class\afterclass4.jpg">
       <PackagePath>Htmls\after_class\afterclass4.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\anti_fake\anti_fake1.jpg">
-      <PackagePath>Htmls\anti_fake\anti_fake1.jpg</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\anti_fake\anti_fake2.jpg">
-      <PackagePath>Htmls\anti_fake\anti_fake2.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife.Shared\Htmls\award\award1.jpg">
       <PackagePath>Htmls\award\award1.jpg</PackagePath>

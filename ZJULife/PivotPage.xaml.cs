@@ -237,7 +237,7 @@ namespace ZJULife
             mail.Subject = "ZJULife Windows客户端问题反馈与功能建议";
             mail.Body = "感谢参与！";
             mail.To.Add(new Windows.ApplicationModel.Email.EmailRecipient("cuichao@zju.edu.cn", "cuichao"));
-            await Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(mail);
+            await Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(mail);          
         }
 
         private void AboutButton_Click(object sender, RoutedEventArgs e)

@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:valueconverter="using:ZJULife.Converters"
     xmlns:data="using:ZJULife.Data" 
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
     mc:Ignorable="d"
     Background="{StaticResource MyDark}">
 
@@ -68,10 +69,11 @@
                             Duration="20"/>
                 </Storyboard>
             </Grid.Resources>
+            
             <Grid x:Name="SearchResultGrid" Visibility="Collapsed">
                 <Grid.Resources>
-                    <CollectionViewSource x:Name="GroupedTrips" IsSourceGrouped="True" ItemsPath="Trips" />
-
+                    <CollectionViewSource x:Name="GroupedTrips" Source="{Binding BusSearchResults}" IsSourceGrouped="True" ItemsPath="Trips" />
+                
                     <Style TargetType="TextBlock" x:Key="MyTextStyle">
                         <Setter Property="Foreground" Value="{ThemeResource MyWhite}" />
                         <Setter Property="FontFamily" Value="微软雅黑" />
@@ -89,7 +91,7 @@
 
                     <DataTemplate x:Name="ItemTemplate">
                         <Border  Margin="0,4,0,24" BorderBrush="{ThemeResource MyGreen}" BorderThickness="0,0,0,2.5">
-                            <Grid Width="{Binding ElementName=semanticZoom,Path=ActualWidth}">
+                            <Grid Width="{Binding ElementName=semanticZoom,Path=ActualWidth}">                           
                                 <Grid.RowDefinitions>
                                     <RowDefinition />
                                     <RowDefinition />
@@ -108,9 +110,6 @@
                                 <TextBlock Grid.Column="2" Grid.Row="1" Text="{Binding PassedStop,Converter={StaticResource passedStopsConverter}}" Style="{ThemeResource MyTextStyle}" />
                             </Grid>
                         </Border>
-
-                        <!--<TextBlock Text="{Binding Name}"  FontFamily="微软雅黑"  FontWeight="Medium" FontSize="24" Foreground="{ThemeResource MyWhite}"-->
-                        <!--TextAlignment="Right" HorizontalAlignment="Right" Margin="40,0,0,20" />-->
                     </DataTemplate>
                 </Grid.Resources>
 
@@ -120,24 +119,20 @@
                 </Grid.RowDefinitions>
 
                 <TextBlock x:Name="ResultsTextBlock" HorizontalAlignment="Left" Style="{ThemeResource MyHelpTextStyle}"
-                    FontSize="20" CharacterSpacing="6"  Text="查询结果"/>
+                    FontSize="20" CharacterSpacing="6" />
                 <Grid x:Name="SearchResultListGrid" Grid.Row="1">
-                    <SemanticZoom Name="semanticZoom" VerticalAlignment="Top" Margin="4,0,4,0" >
+                    <SemanticZoom   Name="semanticZoom" VerticalAlignment="Top" Margin="4,0,4,0" >
                     <SemanticZoom.ZoomedInView >
-                        <ListView VerticalAlignment="Top" HorizontalAlignment="Left"
-                                    x:Name="Trips"                                  
+                            <ListView x:Name="Trips" VerticalContentAlignment="Stretch"
+                                    VerticalAlignment="Top"                                                         
 			                        ItemsSource="{Binding Source={StaticResource GroupedTrips}}"
 			                        ItemTemplate="{StaticResource ItemTemplate}" 
-                                    ContinuumNavigationTransitionInfo.ExitElementContainer="True"
-                                    ScrollViewer.HorizontalScrollMode="Disabled"    
-                                    ScrollViewer.IsHorizontalScrollChainingEnabled="False"
+                                    ContinuumNavigationTransitionInfo.ExitElementContainer="True"                                
                                     IsItemClickEnabled="False"                                                        
                                     SelectionMode="None"                        
-                                    Foreground="{StaticResource MyWhite}" >                                    
-                                    
-                            <!-- ContainerContentChanging="IncrementalUpdateHandler"-->
+                                    Foreground="{StaticResource MyWhite}" >
 
-                            <ListView.GroupStyle>
+                                <ListView.GroupStyle>
                                 <GroupStyle HidesIfEmpty="True" >
                                     <GroupStyle.HeaderTemplate>
                                         <DataTemplate>

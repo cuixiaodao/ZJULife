@@ -264,13 +264,6 @@
 					</Candidate>
 				</NamedResource>
 			</ResourceMapSubtree>
-			<ResourceMapSubtree name="Common">
-				<NamedResource name="ReadMe.txt" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Common/ReadMe.txt">
-					<Candidate type="Path">
-						<Value>Common\ReadMe.txt</Value>
-					</Candidate>
-				</NamedResource>
-			</ResourceMapSubtree>
 			<ResourceMapSubtree name="DataModel">
 				<NamedResource name="Data.db" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/DataModel/Data.db">
 					<Candidate type="Path">
@@ -448,6 +441,34 @@
 					<NamedResource name="VPNSetting3.jpg" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Htmls/net_manage/VPNSetting3.jpg">
 						<Candidate type="Path">
 							<Value>Htmls\net_manage\VPNSetting3.jpg</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Syncfusion.SfAccordion.WP">
+				<NamedResource name="Syncfusion.SfAccordion.WP.xr.xml" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Syncfusion.SfAccordion.WP/Syncfusion.SfAccordion.WP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfAccordion.WP\Syncfusion.SfAccordion.WP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="generic.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Syncfusion.SfAccordion.WP/Themes/generic.xbf">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfAccordion.WP\Themes\generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Syncfusion.SfShared.WP">
+				<NamedResource name="Syncfusion.SfShared.WP.xr.xml" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Syncfusion.SfShared.WP/Syncfusion.SfShared.WP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfShared.WP\Syncfusion.SfShared.WP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="generic.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Syncfusion.SfShared.WP/Themes/generic.xbf">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfShared.WP\Themes\generic.xbf</Value>
 						</Candidate>
 					</NamedResource>
 				</ResourceMapSubtree>

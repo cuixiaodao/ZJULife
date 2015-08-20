@@ -124,3 +124,12 @@ D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Releas
 D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Release\qualifiers.txt.intermediate
 D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
 D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\obj\ARM\Release\ProjectArchitectures.txt
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Release\ZJULife.csprojResolveAssemblyReference.cache
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Release\Syncfusion.SfAccordion.WP.dll
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Release\Syncfusion.SfShared.WP.dll
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Release\Syncfusion.SfAccordion.WP.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Release\Syncfusion.SfAccordion.WP.pri
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Release\Syncfusion.SfShared.WP.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Release\Syncfusion.SfShared.WP.pri
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Release\Syncfusion.SfAccordion.WP.pri.xml
+D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\obj\ARM\Release\Syncfusion.SfShared.WP.pri.xml

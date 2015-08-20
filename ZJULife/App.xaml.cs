@@ -45,11 +45,6 @@ namespace ZJULife
                 this.DebugSettings.EnableFrameRateCounter = true;
             }
 #endif
-            //var statusBar = StatusBar.GetForCurrentView();
-            //statusBar.ForegroundColor = Color.FromArgb(255, 133, 185, 53);
-            //statusBar.BackgroundColor = Color.FromArgb(255, 133, 185, 53);
-            //statusBar.BackgroundOpacity = 1;
-
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -140,14 +135,14 @@ namespace ZJULife
 
         private async void copyDatabase()
         {
-            Windows.Storage.ApplicationDataContainer localsettings = Windows.Storage.ApplicationData.Current.LocalSettings;
-            if (!(localsettings.Values.ContainsKey("dbVersion") && (int)localsettings.Values["dbVersion"] == 1))
+            var savedSettings = Windows.Storage.ApplicationData.Current.LocalSettings.Values;
+            if (!(savedSettings.ContainsKey("dbVersion") && (int)savedSettings["dbVersion"] == 2))
             {
                 //var installationfolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
                 var dataModelfolder = await Windows.ApplicationModel.Package.Current.InstalledLocation.GetFolderAsync("DataModel");
                 var dataFile = await dataModelfolder.GetFileAsync("Data.db");
                 await dataFile.CopyAsync(Windows.Storage.ApplicationData.Current.LocalFolder, "Data.db", NameCollisionOption.ReplaceExisting);
-                localsettings.Values["dbVersion"] = 1;
+                savedSettings["dbVersion"] = 2; //data version should only increase.
             }
         }
     }

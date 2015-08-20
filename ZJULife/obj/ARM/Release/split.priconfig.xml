@@ -5,7 +5,7 @@
     <autoResourcePackage qualifier="Scale" />
     <autoResourcePackage qualifier="DXFeatureLevel" />
   </packaging>
-  <index root="\" startIndexAt="D:\OneDrive\Documents\Visual Studio 2013\Projects\ZJULife\ZJULife\bin\ARM\Release\resources.pri">
+  <index root="\" startIndexAt="D:\OneDrive\Documents\Visual Studio 2015\Projects\ZJULife\ZJULife\bin\ARM\Release\resources.pri">
     <default>
       <qualifier name="Language" value="zh-cn" />
       <qualifier name="Contrast" value="standard" />

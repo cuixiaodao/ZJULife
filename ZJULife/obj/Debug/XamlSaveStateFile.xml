@@ -1,4 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
+    <ReferenceAssembly PathName="c:\program files (x86)\syncfusion\essential studio\13.1.0.21\assemblies for windows phone\8.1\syncfusion.sfaccordion.wp.dll" HashGuid="0d005ba7-6f97-6f41-37a1-d5d1bcc26421" />
+    <ReferenceAssembly PathName="c:\program files (x86)\syncfusion\essential studio\13.1.0.21\assemblies for windows phone\8.1\syncfusion.sfshared.wp.dll" HashGuid="4d2fc06a-252f-25a8-f1a7-4e70d219f6a8" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

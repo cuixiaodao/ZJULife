@@ -102,5 +102,14 @@ namespace ZJULife
 
         #endregion NavigationHelper registration
 
+        private async void ItemContent_NavigationStarting(WebView sender, WebViewNavigationStartingEventArgs args)
+        {
+            if (args.Uri.ToString().Contains("http"))
+            {
+                args.Cancel = true;
+                await Windows.System.Launcher.LaunchUriAsync(args.Uri);
+            }
+
+        }
     }
 }

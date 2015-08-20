@@ -298,7 +298,7 @@ namespace ZJULife
                         }
                         catch (Exception)
                         {
-                            await giveMessageAsync("抱歉，未能找到路线，试试自带地图吧。");
+                            await  giveMessageAsync("抱歉，未能找到路线，试试自带地图吧。");
                         }
                     }
                     
@@ -449,11 +449,13 @@ namespace ZJULife
         private async void CampusComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             PlacesAccordion.ItemsSource = null;
+            PlacesAccordion.Visibility = Visibility.Collapsed;
             var newPlaces = await Place.GetPlacesAsync(((ComboBoxItem)CampusComboBox.SelectedItem).Tag.ToString());
             var places = linqGroupedList(newPlaces);
 
             PlacesAccordion.ItemsSource = places;
             PlacesAccordion.SelectedIndex = Math.Max(places.Count-1,0);
+            PlacesAccordion.Visibility = Visibility.Visible;
         }
 
 

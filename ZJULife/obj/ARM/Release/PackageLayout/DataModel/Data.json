@@ -63,7 +63,7 @@
                     "Title": "自习地点",
                     "Description": "关键词：自习，学习，看书，教室，教学楼",
                     "ImagePath": "Assets/Icon7.png",
-                    "DataPath": "Htmls/after_class.html"
+                    "DataPath": "Htmls/study_room.html"
                 },
                 {
                     "UniqueId": "Group-3-Item-2",

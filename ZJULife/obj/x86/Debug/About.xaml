@@ -88,12 +88,14 @@
                       HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap">
                    ZJULife 提供网络办理、电子地图、校车查询、自习选课以及医食住行等方面的建议和服务，由信电系电科1203班SQTP项目组开发,目前支持安卓/WP。
                 </TextBlock>
-
-                <HyperlinkButton HorizontalAlignment="Center" NavigateUri="https://github.com/CuiXiaoDao/ZJULife.git" FontSize="16" 
-                                 Foreground="CornflowerBlue" Content="点我，github源码" />
-                <HyperlinkButton HorizontalAlignment="Center" NavigateUri="https://onedrive.live.com/view.aspx?resid=3D9D2BF742D85628!228750" 
-                                 FontSize="16" Foreground="CornflowerBlue" Content="点我，参与内容编辑" />
                 
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <HyperlinkButton Margin="10,0,15,0" HorizontalAlignment="Center" NavigateUri="https://github.com/CuiXiaoDao/ZJULife.git" FontSize="16" 
+                                 Foreground="CornflowerBlue" Content="点我，github源码" />
+                    <HyperlinkButton Margin="15,0,10,0" HorizontalAlignment="Center" NavigateUri="https://onedrive.live.com/view.aspx?resid=3D9D2BF742D85628!228750&amp;ithint=onenote%2c&amp;app=OneNote&amp;authkey=!AD3of5EAaTQIbLo" 
+                                 FontSize="16" Foreground="CornflowerBlue" Content="点我，参与内容编辑" />
+                </StackPanel>
+
 
                 <TextBlock Margin="0,4,0,4" Foreground="{ThemeResource MyWhite}" FontFamily="微软雅黑"
                     FontWeight="SemiBold" FontSize="20" HorizontalAlignment="Center" > Enjoy Your Life!</TextBlock>

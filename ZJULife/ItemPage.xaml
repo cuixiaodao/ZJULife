@@ -41,6 +41,6 @@
             </Viewbox>
         </Grid>
 
-        <WebView x:Name="ItemContent" Grid.Row="1" />
+        <WebView x:Name="ItemContent" Grid.Row="1" NavigationStarting="ItemContent_NavigationStarting"/>
     </Grid>
 </Page>

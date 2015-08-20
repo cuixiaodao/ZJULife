@@ -445,6 +445,34 @@
 					</NamedResource>
 				</ResourceMapSubtree>
 			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Syncfusion.SfAccordion.WP">
+				<NamedResource name="Syncfusion.SfAccordion.WP.xr.xml" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Syncfusion.SfAccordion.WP/Syncfusion.SfAccordion.WP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfAccordion.WP\Syncfusion.SfAccordion.WP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="generic.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Syncfusion.SfAccordion.WP/Themes/generic.xbf">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfAccordion.WP\Themes\generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Syncfusion.SfShared.WP">
+				<NamedResource name="Syncfusion.SfShared.WP.xr.xml" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Syncfusion.SfShared.WP/Syncfusion.SfShared.WP.xr.xml">
+					<Candidate type="Path">
+						<Value>Syncfusion.SfShared.WP\Syncfusion.SfShared.WP.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="generic.xbf" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Files/Syncfusion.SfShared.WP/Themes/generic.xbf">
+						<Candidate type="Path">
+							<Value>Syncfusion.SfShared.WP\Themes\generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
 		</ResourceMapSubtree>
 		<ResourceMapSubtree name="Resources">
 			<NamedResource name="NavigationFailedExceptionMessage" uri="ms-resource://45681cuichaozju.13699E8A4EC7B/Resources/NavigationFailedExceptionMessage">
