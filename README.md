@@ -1,6 +1,8 @@
 # ZJULife, for students in ZheJiang University
 
-此应用包括以下板块:
+此应用初衷为方便新生，快速进入大学生活。此应用WP版代码、UI由本人完成，相关资料由小伙伴们一起收集。
+
+应用包括以下板块:
 
 - 面向新生
   - 防坑须知： 包括校内外常见黑心商家，根据98整理所得
@@ -20,5 +22,15 @@
   - 吃货交流： 学校附近美食介绍
   - 临时住宿： 学校临时住宿申请
   - 购物推荐： 学校附近超市、商场
-  
-  由于WP越来越微弱，此应用已弃疗。收集的数据ZJULife.Shared/Htmls/下，如需要可使用。
+
+由于WP越来越微弱，此应用已弃疗。收集的数据ZJULife.Shared/Htmls/下，如需要可使用。
+
+<figure class="half">
+  <img src="./UI/p1.png" width=300/>
+  <img src="./UI/p2.png" width=300/>
+</figure>
+
+<figure class="half">
+  <img src="./UI/p3.png" width=300/>
+  <img src="./UI/p4.png" width=300/>
+</figure>
